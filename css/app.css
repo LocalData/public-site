@@ -140,7 +140,7 @@ body {
 320 = 30 260 30 (minimum responsive width)
  */
 .out {
-  overflow: auto; }
+  overflow: hidden; }
 
 .in {
   margin: 0px auto; }
@@ -148,13 +148,13 @@ body {
 /* only here for demos */
 .photo {
   background: transparent url(../img/bg.jpg) no-repeat;
-  background-size: 50% auto; }
-  .photo .a {
-    height: 12em; }
+  background-size: 100%; }
 
 .a, .b {
   float: left;
-  width: 50%; }
+  width: 50%;
+  padding-bottom: 32767px !important;
+  margin-bottom: -32767px !important; }
   @media all and (max-width: 768px) {
     .a, .b {
       float: none;
