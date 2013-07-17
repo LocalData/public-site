@@ -88,10 +88,29 @@ table {
  ******************************************************************************/
 body {
   font-family: Open Sans, Helvetica, sans-serif;
-  color: #6e6663; }
+  color: #6e6663;
+  font-size: 16px;
+  line-height: 23px; }
 
-p {
-  text-align: justify; }
+h1 {
+  font-size: 76px;
+  line-height: 79px;
+  margin-bottom: 35px; }
+
+h1 span {
+  color: #b7aba5; }
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #58aeff; }
+
+nav a,
+nav a:hover {
+  font-weight: bold;
+  color: #6e6663;
+  display: inline-block;
+  margin-right: 20px; }
 
 /*******************************************************************************
  * _layout.scss
@@ -106,7 +125,7 @@ body {
   margin: 0;
   padding: 0; }
 
-.out {
+.contrast {
   background: #fde7df; }
 
 /*
@@ -126,6 +145,13 @@ body {
 .in {
   margin: 0px auto; }
 
+/* only here for demos */
+.photo {
+  background: transparent url(../img/bg.jpg) no-repeat;
+  background-size: 50% auto; }
+  .photo .a {
+    height: 12em; }
+
 .a, .b {
   float: left;
   width: 50%; }
@@ -133,11 +159,6 @@ body {
     .a, .b {
       float: none;
       width: 100%; } }
-
-.a {
-  background: transparent url(../img/bg.jpg);
-  background-size: 100%;
-  height: 12em; }
 
 .a .in {
   float: right;
@@ -200,6 +221,10 @@ body {
       width: auto;
       float: none;
       padding: 0 30px; } }
+
+nav {
+  padding-top: 10px;
+  padding-bottom: 30px; }
 
 /*******************************************************************************
  * _components.scss
