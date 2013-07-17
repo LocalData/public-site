@@ -1,0 +1,242 @@
+/*******************************************************************************
+ * style.scss
+ *
+ * This file shouldn't directly contain any SCSS code, instead it only serves to
+ * combine the SCSS contained in other Sass partials through @import directives.
+ *
+ * BASE............Styling for common HTML and Drupal elements.
+ * LAYOUT..........Styles for the page structure that contain components.
+ * COMPONENTS......Components, their modifiers and sub-components.
+ ******************************************************************************/
+/*******************************************************************************
+ * _utils.scss
+ *
+ * Sass offers come very useful features, these include variables functions and
+ * mixins. Extensions such as Compass and Susy can also be used to provide extra
+ * functions and mixins to be used throughout the theme. This file acts as a
+ * single place for defining these things, which can then be accessed by
+ * importing _utils.scss where required. The following should be defined in this
+ * file:
+ * - Custom Sass mixins for the theme.
+ * - Custom Sass functions for the theme.
+ * - Overriding the default variables provided by extensions such as Compass.
+ * - Defining new variables for:
+ *      - Colors.
+ *      - Font sizes and families.
+ *      - Layout and grid sizing.
+ ******************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*******************************************************************************
+ * _base.scss
+
+ * Base styles define the default look.
+ *
+ * These rules will generally be made up of element selectors for HTML elements
+ * such as headings, paragraphs and lists. Common elements such as form
+ * items, collapsible fieldsets and messages should be included in this partial.
+ *
+ * The styleguide module (http://drupal.org/project/styleguide) gives you a good
+ * overview of Drupals common elements for styling. By setting a solid baseline
+ * before adding any more specific customisations you ensure that as any new
+ * features are added they will be correctly styled without any extra work.
+ ******************************************************************************/
+body {
+  font-family: Open Sans, Helvetica, sans-serif;
+  color: #6e6663; }
+
+p {
+  text-align: justify; }
+
+/*******************************************************************************
+ * _layout.scss
+ *
+ * The layout of the major regions (usually, but not necessarily Drupal regions)
+ * that components will be placed within. Layout styles for the theme's
+ * components should not be placed here and should instead be kept with the
+ * relevant SCSS for that component.
+ ******************************************************************************/
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+.out {
+  background: #fde7df; }
+
+/*
+2000 = 236 708 56 56 708 236
+1280 = 84 500 56 56 500 84
+1200 = 57 500 43 43 500 57
+1120 = 30 500 30 30 500 30
+900 = 30 390 30 30 390 30
+769 = 30 324 30 30 390 30
+768 = 30 708 30
+500 = 30 440 30
+320 = 30 260 30 (minimum responsive width)
+ */
+.out {
+  overflow: auto; }
+
+.in {
+  margin: 0px auto; }
+
+.a, .b {
+  float: left;
+  width: 50%; }
+  @media all and (max-width: 768px) {
+    .a, .b {
+      float: none;
+      width: 100%; } }
+
+.a {
+  background: transparent url(../img/bg.jpg);
+  background-size: 100%;
+  height: 12em; }
+
+.a .in {
+  float: right;
+  padding: 0 5.6% 0 0; }
+  @media all and (max-width: 1999px) {
+    .a .in {
+      padding: 0 8.6% 0 0; } }
+  @media all and (max-width: 1279px) {
+    .a .in {
+      padding: 0 7% 0 0; } }
+  @media all and (max-width: 1199px) {
+    .a .in {
+      padding: 0 5.6% 0 0; } }
+  @media all and (max-width: 1119px) {
+    .a .in {
+      padding: 0 6.6% 0 0; } }
+  @media all and (max-width: 899px) {
+    .a .in {
+      padding: 0 7.8% 0 0; } }
+
+.b .in {
+  float: left;
+  padding: 0 0 0 5.6%; }
+  @media all and (max-width: 1999px) {
+    .b .in {
+      padding: 0 0 0 8.6%; } }
+  @media all and (max-width: 1279px) {
+    .b .in {
+      padding: 0 0 0 7%; } }
+  @media all and (max-width: 1199px) {
+    .b .in {
+      padding: 0 0 0 5.6%; } }
+  @media all and (max-width: 1119px) {
+    .b .in {
+      padding: 0 0 0 6.6%; } }
+  @media all and (max-width: 899px) {
+    .b .in {
+      padding: 0 0 0 7.8%; } }
+
+.a .in,
+.b .in {
+  width: 500px; }
+  @media all and (max-width: 1119px) {
+    .a .in,
+    .b .in {
+      width: 390px; } }
+  @media all and (max-width: 899px) {
+    .a .in,
+    .b .in {
+      width: 390px; } }
+  @media all and (max-width: 768px) {
+    .a .in,
+    .b .in {
+      width: 92%;
+      float: none;
+      padding: 0 4%; } }
+  @media all and (max-width: 768px) {
+    .a .in,
+    .b .in {
+      width: auto;
+      float: none;
+      padding: 0 30px; } }
+
+/*******************************************************************************
+ * _components.scss
+ *
+ * Imports more partials that contain full components (modules in SMACSS), their
+ * sub-components and modifiers.
+ *
+ * Components are discrete parts of your page that should sit within the regions
+ * of your layouts. You should try to abstract your components as much as
+ * possible to promote reuse throughout the theme. Components should be flexible
+ * enough to respond to any width and should never rely on context
+ * (e.g. .sidebar-first .component) for styling. This allows modules to be
+ * placed throughout the theme with no risk of them breaking.
+ *
+ * If you find you need to change the look of a component depending on it's
+ * context you should avoid using context based classes at all costs. Instead it
+ * is better to add another "modifier" class to the component to alter the
+ * styling. Again, this promotes reuse.
+ *
+ * Sub-components are the individual parts that make up a component. As a
+ * general rule, adding a class to target a sub-component is a much better
+ * option than using descendant selectors or element selectors. In many cases
+ * sub-components can be made more reusable by making them components in their
+ * own right, so they can then be used within other components.
+ *
+ * Almost everything that doesn't belong in base should be made a component.
+ * Here's some common examples throughout Drupal:
+ *
+ * - Blocks
+ * - Content Types - For example, you may have a generic node component that
+ *      contains sub-components for the submitted by line and links. Specific
+ *      components can then be created for each content type to style the
+ *      specifics of each. Finally, by using entity view modes you can easily
+ *      apply modifications based on the .node-[view-mode] classes.
+ * - Forms - For instance the log in form.
+ * - Views - Each views output style could be made into a component, the content
+ *       of each row should be provided my a view mode styled by it's component
+ *       CSS. Exposed filter forms, views pagers and other views elements are
+ *       also good candidates for components.
+ ******************************************************************************/
