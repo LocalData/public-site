@@ -1,3 +1,4 @@
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=9a6feb00-f8b3-48aa-b165-798ef59ba4f6&fontids=673817,673808");
 /*******************************************************************************
  * style.scss
  *
@@ -72,6 +73,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: "NeuzeitOfficeW01-Regula";
+  src: url("../fonts/673817/4a572866-5605-49ea-ba15-94da930eb437.eot?#iefix");
+  src: url("../fonts/673817/4a572866-5605-49ea-ba15-94da930eb437.eot?#iefix") format("eot"), url("../fonts/673817/f5e09b25-479c-4a4c-b681-5a6d440e5e38.woff") format("woff"), url("../fonts/673817/5b005a1e-83eb-46ce-b33c-56b0d14d6168.ttf") format("truetype"), url("../fonts/673817/85050462-ab1f-4478-a289-36eed1d3c53f.svg#85050462-ab1f-4478-a289-36eed1d3c53f") format("svg"); }
+
+@font-face {
+  font-family: "Neuzeit Office W01 Bold";
+  src: url("../fonts/673808/c8c628d4-177d-463a-93dd-01e996bcd645.eot?#iefix");
+  src: url("../fonts/673808/c8c628d4-177d-463a-93dd-01e996bcd645.eot?#iefix") format("eot"), url("../fonts/673808/fb051ede-ed8d-494e-bebc-13e53b133b4e.woff") format("woff"), url("../fonts/673808/c147aa15-6e48-4b80-bdf0-cc505d0a72dd.ttf") format("truetype"), url("../fonts/673808/d4cb246e-742d-4269-9f6a-901a050ff03f.svg#d4cb246e-742d-4269-9f6a-901a050ff03f") format("svg"); }
+
 /*******************************************************************************
  * _base.scss
 
@@ -87,18 +98,40 @@ table {
  * features are added they will be correctly styled without any extra work.
  ******************************************************************************/
 body {
-  font-family: Open Sans, Helvetica, sans-serif;
+  font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
   color: #6e6663;
   font-size: 16px;
   line-height: 23px; }
 
 h1 {
+  letter-spacing: -2px;
   font-size: 76px;
   line-height: 79px;
   margin-bottom: 35px; }
+  h1 span {
+    color: #b7aba5; }
 
-h1 span {
-  color: #b7aba5; }
+h2, h3 {
+  font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.5em; }
+
+h2 {
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: -1px;
+  margin-top: 1em; }
+
+h2:first-child {
+  margin-top: 0; }
+
+h3 {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: -1px; }
+
+p {
+  margin-bottom: 1em; }
 
 a,
 a:hover {
@@ -107,10 +140,41 @@ a:hover {
 
 nav a,
 nav a:hover {
+  font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
   font-weight: bold;
+  letter-spacing: -1px;
   color: #6e6663;
   display: inline-block;
-  margin-right: 20px; }
+  margin-right: 45px; }
+
+.box {
+  background: #fff;
+  border: 6px solid #6e6663;
+  display: inline-block;
+  margin-right: 10px;
+  width: 90px;
+  height: 62px;
+  font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 62px;
+  letter-spacing: -1px; }
+
+.small {
+  font-size: 16px; }
+
+.danger {
+  border-color: #f15a24;
+  color: #f15a24; }
+
+.warn {
+  border-color: #ffad00;
+  color: #ffad00; }
+
+.ok {
+  border-color: #58aeff;
+  color: #58aeff; }
 
 /*******************************************************************************
  * _layout.scss
@@ -125,8 +189,16 @@ body {
   margin: 0;
   padding: 0; }
 
+.out {
+  overflow: hidden;
+  padding: 75px 0 75px 0; }
+
 .contrast {
-  background: #fde7df; }
+  background: #fcf5f0;
+  padding: 20px 0 20px 0; }
+
+.rule .in {
+  border-bottom: 5px solid #f5ebe6; }
 
 /*
 2000 = 236 708 56 56 708 236
@@ -139,9 +211,6 @@ body {
 500 = 30 440 30
 320 = 30 260 30 (minimum responsive width)
  */
-.out {
-  overflow: hidden; }
-
 .in {
   margin: 0px auto; }
 
@@ -221,10 +290,6 @@ body {
       width: auto;
       float: none;
       padding: 0 30px; } }
-
-nav {
-  padding-top: 10px;
-  padding-bottom: 30px; }
 
 /*******************************************************************************
  * _components.scss

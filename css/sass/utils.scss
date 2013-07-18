@@ -20,9 +20,25 @@
 
 $body-color: #6e6663;
 $body-accent: #b7aba5;
-$tan: #fff3da;
-$pink: #fde7df;
+
+$pink: #fcf5f0;
+$thinpink: #f5ebe6;
+
+$red: #f15a24;
+$orange: #ffad00;
 $blue: #58aeff;
 
-$font: Open Sans, Helvetica, sans-serif;
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=9a6feb00-f8b3-48aa-b165-798ef59ba4f6&fontids=673817,673808");
+@font-face{
+font-family:"NeuzeitOfficeW01-Regula";
+src:url("../fonts/673817/4a572866-5605-49ea-ba15-94da930eb437.eot?#iefix");
+src:url("../fonts/673817/4a572866-5605-49ea-ba15-94da930eb437.eot?#iefix") format("eot"),url("../fonts/673817/f5e09b25-479c-4a4c-b681-5a6d440e5e38.woff") format("woff"),url("../fonts/673817/5b005a1e-83eb-46ce-b33c-56b0d14d6168.ttf") format("truetype"),url("../fonts/673817/85050462-ab1f-4478-a289-36eed1d3c53f.svg#85050462-ab1f-4478-a289-36eed1d3c53f") format("svg");
+}
+@font-face{
+font-family:"Neuzeit Office W01 Bold";
+src:url("../fonts/673808/c8c628d4-177d-463a-93dd-01e996bcd645.eot?#iefix");
+src:url("../fonts/673808/c8c628d4-177d-463a-93dd-01e996bcd645.eot?#iefix") format("eot"),url("../fonts/673808/fb051ede-ed8d-494e-bebc-13e53b133b4e.woff") format("woff"),url("../fonts/673808/c147aa15-6e48-4b80-bdf0-cc505d0a72dd.ttf") format("truetype"),url("../fonts/673808/d4cb246e-742d-4269-9f6a-901a050ff03f.svg#d4cb246e-742d-4269-9f6a-901a050ff03f") format("svg");
+}
 
+$font: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
+$bold: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;

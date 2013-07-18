@@ -21,16 +21,45 @@ body {
 }
 
 h1 {
+  letter-spacing: -2px;
   font-size: 76px;
   line-height: 79px;
   margin-bottom: 35px;
+
+  span {
+    color: $body-accent;
+  }
 }
 
-h1 span {
-  color: $body-accent;
+
+h2, h3 {
+  font-family: $bold;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: -1px;
+  margin-top: 1em;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: -1px;
 }
 
 p {
+  margin-bottom: 1em;
+}
+
+hr {
 
 }
 
@@ -42,9 +71,47 @@ a:hover {
 
 nav a,
 nav a:hover {
+  font-family: $bold;
   font-weight: bold;
+  letter-spacing: -1px;
   color: $body-color;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 45px;
 }
+
+.box {
+  background: #fff;
+  border: 6px solid $body-color;
+  display: inline-block;
+  margin-right: 10px;
+  width: 90px;
+  height: 62px;
+
+  font-family: $bold;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 62px;
+  letter-spacing: -1px;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.danger {
+  border-color: $red;
+  color: $red;
+}
+
+.warn {
+  border-color: $orange;
+  color: $orange;
+}
+
+.ok {
+  border-color: $blue;
+  color: $blue;
+}
+
 

@@ -13,12 +13,19 @@ body {
   padding: 0;
 }
 
-.out {
 
+.out {
+  overflow: hidden;
+  padding: 75px 0 75px 0;
 }
 
 .contrast {
   background: $pink;
+  padding: 20px 0 20px 0;
+}
+
+.rule .in {
+  border-bottom: 5px solid $thinpink;
 }
 
 /*
@@ -32,10 +39,6 @@ body {
 500 = 30 440 30
 320 = 30 260 30 (minimum responsive width)
  */
-
-.out {
-  overflow: hidden;
-}
 
 .in {
   margin: 0px auto;
@@ -135,6 +138,5 @@ body {
 }
 
 nav {
-  padding-top: 10px;
-  padding-bottom: 30px
 }
+
