@@ -146,6 +146,14 @@ nav a:hover {
   color: #6e6663;
   display: inline-block;
   margin-right: 45px; }
+  @media all and (max-width: 768px) {
+    nav a,
+    nav a:hover {
+      display: block;
+      margin-right: 0;
+      line-height: 44px;
+      border-bottom: 1px solid #b7aba5;
+      padding-left: 44px; } }
 
 .box {
   background: #fff;
@@ -191,14 +199,14 @@ body {
 
 .out {
   overflow: hidden;
-  padding: 75px 0 75px 0; }
+  padding: 60px 0 60px 0; }
 
 .contrast {
   background: #fcf5f0;
   padding: 20px 0 20px 0; }
 
 .rule .in {
-  border-bottom: 5px solid #f5ebe6; }
+  border-top: 5px solid #f5ebe6; }
 
 /*
 2000 = 236 708 56 56 708 236

@@ -77,6 +77,14 @@ nav a:hover {
   color: $body-color;
   display: inline-block;
   margin-right: 45px;
+
+  @media all and (max-width: 768px) {
+    display: block;
+    margin-right:0;
+    line-height: 44px;
+    border-bottom: 1px solid $body-accent;
+    padding-left: 44px;
+  }
 }
 
 .box {

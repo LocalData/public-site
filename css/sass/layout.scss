@@ -13,10 +13,9 @@ body {
   padding: 0;
 }
 
-
 .out {
   overflow: hidden;
-  padding: 75px 0 75px 0;
+  padding: 60px 0 60px 0;
 }
 
 .contrast {
@@ -24,8 +23,8 @@ body {
   padding: 20px 0 20px 0;
 }
 
-.rule .in {
-  border-bottom: 5px solid $thinpink;
+.rule  .in {
+  border-top: 5px solid $thinpink;
 }
 
 /*
