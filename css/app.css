@@ -75,13 +75,13 @@ table {
 
 @font-face {
   font-family: "NeuzeitOfficeW01-Regula";
-  src: url("../fonts/673817/4a572866-5605-49ea-ba15-94da930eb437.eot?#iefix");
-  src: url("../fonts/673817/4a572866-5605-49ea-ba15-94da930eb437.eot?#iefix") format("eot"), url("../fonts/673817/f5e09b25-479c-4a4c-b681-5a6d440e5e38.woff") format("woff"), url("../fonts/673817/5b005a1e-83eb-46ce-b33c-56b0d14d6168.ttf") format("truetype"), url("../fonts/673817/85050462-ab1f-4478-a289-36eed1d3c53f.svg#85050462-ab1f-4478-a289-36eed1d3c53f") format("svg"); }
+  src: url("../fonts/673817/regular.eot?#iefix");
+  src: url("../fonts/673817/regular.eot?#iefix") format("eot"), url("../fonts/673817/regular.woff") format("woff"), url("../fonts/673817/regular.ttf") format("truetype"), url("../fonts/673817/regular.svg#85050462-ab1f-4478-a289-36eed1d3c53f") format("svg"); }
 
 @font-face {
   font-family: "Neuzeit Office W01 Bold";
-  src: url("../fonts/673808/c8c628d4-177d-463a-93dd-01e996bcd645.eot?#iefix");
-  src: url("../fonts/673808/c8c628d4-177d-463a-93dd-01e996bcd645.eot?#iefix") format("eot"), url("../fonts/673808/fb051ede-ed8d-494e-bebc-13e53b133b4e.woff") format("woff"), url("../fonts/673808/c147aa15-6e48-4b80-bdf0-cc505d0a72dd.ttf") format("truetype"), url("../fonts/673808/d4cb246e-742d-4269-9f6a-901a050ff03f.svg#d4cb246e-742d-4269-9f6a-901a050ff03f") format("svg"); }
+  src: url("../fonts/673808/bold.eot?#iefix");
+  src: url("../fonts/673808/bold.eot?#iefix") format("eot"), url("../fonts/673808/bold.woff") format("woff"), url("../fonts/673808/bold.ttf") format("truetype"), url("../fonts/673808/bold.svg#d4cb246e-742d-4269-9f6a-901a050ff03f") format("svg"); }
 
 /*******************************************************************************
  * _base.scss
@@ -100,16 +100,20 @@ table {
 body {
   font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
   color: #6e6663;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 23px; }
 
 h1 {
-  letter-spacing: -2px;
   font-size: 76px;
   line-height: 79px;
   margin-bottom: 35px; }
   h1 span {
     color: #b7aba5; }
+
+h1.logo {
+  font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
+  font-size: 26px;
+  color: #fff; }
 
 h2, h3 {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
@@ -119,16 +123,23 @@ h2, h3 {
 h2 {
   font-size: 40px;
   line-height: 47px;
-  letter-spacing: -1px;
   margin-top: 1em; }
 
 h2:first-child {
   margin-top: 0; }
 
+header h2 {
+  font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  color: #58aeff; }
+
 h3 {
   font-size: 22px;
   line-height: 22px;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  text-align: center; }
 
 p {
   margin-bottom: 1em; }
@@ -155,11 +166,27 @@ nav a:hover {
       border-bottom: 1px solid #b7aba5;
       padding-left: 44px; } }
 
+nav a:hover {
+  color: #58aeff; }
+
+footer .logo {
+  color: #6e6663; }
+
+footer nav a,
+footer nav a:hover {
+  font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #b7aba5; }
+
+footer nav a:hover {
+  color: #58aeff; }
+
 .box {
   background: #fff;
   border: 6px solid #6e6663;
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 11px;
   width: 90px;
   height: 62px;
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
@@ -198,106 +225,105 @@ body {
   padding: 0; }
 
 .out {
-  overflow: hidden;
-  padding: 60px 0 60px 0; }
+  overflow: hidden; }
 
 .contrast {
-  background: #fcf5f0;
-  padding: 20px 0 20px 0; }
+  background: #fcf5f0; }
 
-.rule .in {
-  border-top: 5px solid #f5ebe6; }
-
-/*
-2000 = 236 708 56 56 708 236
-1280 = 84 500 56 56 500 84
-1200 = 57 500 43 43 500 57
-1120 = 30 500 30 30 500 30
-900 = 30 390 30 30 390 30
-769 = 30 324 30 30 390 30
-768 = 30 708 30
-500 = 30 440 30
-320 = 30 260 30 (minimum responsive width)
- */
 .in {
-  margin: 0px auto; }
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  width: 1528px;
+  margin: 0px auto;
+  overflow: auto;
+  padding: 50px 0 50px 0; }
+  @media all and (max-width: 1999px) {
+    .in {
+      width: 1112px; } }
+  @media all and (max-width: 1279px) {
+    .in {
+      width: 1060px; } }
+  @media all and (max-width: 1119px) {
+    .in {
+      width: 840px; } }
+  @media all and (max-width: 899px) {
+    .in {
+      width: 708px; } }
+  @media all and (max-width: 768px) {
+    .in {
+      width: auto;
+      padding: 0 30px; } }
+
+.contrast + .contrast .in {
+  padding-top: 0; }
+
+.contrast .rule {
+  margin-bottom: 50px; }
+
+.rule {
+  border: 0 none;
+  border-bottom: 5px solid #f5ebe6; }
+
+.contrast .rule {
+  border-bottom: 6px solid #fff; }
 
 /* only here for demos */
 .photo {
   background: transparent url(../img/bg.jpg) no-repeat;
-  background-size: 100%; }
+  background-size: 50%; }
 
+/*
+
+2000 = 236 708 56 56 708 236 = 1528px center
+1280 = 84 500 56 56 500 84 = 1112px center
+1120 = 30 500 30 30 500 30 = 1060px center
+900 = 30 390 30 30 390 30 = 840px center
+769 = 30 324 30 30 390 30 = 708px center
+768 = 30 708 30
+500 = 30 440 30
+320 = 30 260 30 (minimum responsive width)
+
+1200 = 57 500 43 43 500 57 = 1086px center
+ */
 .a, .b {
-  float: left;
-  width: 50%;
-  padding-bottom: 32767px !important;
-  margin-bottom: -32767px !important; }
+  width: 708px;
+  padding-right: 56px;
+  float: left; }
+  @media all and (max-width: 1999px) {
+    .a, .b {
+      width: 500px;
+      padding-right: 43px; } }
+  @media all and (max-width: 1279px) {
+    .a, .b {
+      padding-right: 30px; } }
+  @media all and (max-width: 1119px) {
+    .a, .b {
+      width: 390px; } }
+  @media all and (max-width: 899px) {
+    .a, .b {
+      width: 324px; } }
   @media all and (max-width: 768px) {
     .a, .b {
+      padding: 0;
+      width: auto;
       float: none;
       width: 100%; } }
 
-.a .in {
-  float: right;
-  padding: 0 5.6% 0 0; }
+.b {
+  padding-right: 0;
+  padding-left: 56px; }
   @media all and (max-width: 1999px) {
-    .a .in {
-      padding: 0 8.6% 0 0; } }
+    .b {
+      padding-left: 43px; } }
   @media all and (max-width: 1279px) {
-    .a .in {
-      padding: 0 7% 0 0; } }
-  @media all and (max-width: 1199px) {
-    .a .in {
-      padding: 0 5.6% 0 0; } }
-  @media all and (max-width: 1119px) {
-    .a .in {
-      padding: 0 6.6% 0 0; } }
-  @media all and (max-width: 899px) {
-    .a .in {
-      padding: 0 7.8% 0 0; } }
-
-.b .in {
-  float: left;
-  padding: 0 0 0 5.6%; }
-  @media all and (max-width: 1999px) {
-    .b .in {
-      padding: 0 0 0 8.6%; } }
-  @media all and (max-width: 1279px) {
-    .b .in {
-      padding: 0 0 0 7%; } }
-  @media all and (max-width: 1199px) {
-    .b .in {
-      padding: 0 0 0 5.6%; } }
-  @media all and (max-width: 1119px) {
-    .b .in {
-      padding: 0 0 0 6.6%; } }
-  @media all and (max-width: 899px) {
-    .b .in {
-      padding: 0 0 0 7.8%; } }
-
-.a .in,
-.b .in {
-  width: 500px; }
-  @media all and (max-width: 1119px) {
-    .a .in,
-    .b .in {
-      width: 390px; } }
-  @media all and (max-width: 899px) {
-    .a .in,
-    .b .in {
-      width: 390px; } }
+    .b {
+      padding-left: 30px; } }
   @media all and (max-width: 768px) {
-    .a .in,
-    .b .in {
-      width: 92%;
-      float: none;
-      padding: 0 4%; } }
-  @media all and (max-width: 768px) {
-    .a .in,
-    .b .in {
+    .b {
+      padding: 0;
       width: auto;
       float: none;
-      padding: 0 30px; } }
+      width: 100%; } }
 
 /*******************************************************************************
  * _components.scss

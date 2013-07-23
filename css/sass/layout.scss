@@ -15,127 +15,127 @@ body {
 
 .out {
   overflow: hidden;
-  padding: 60px 0 60px 0;
 }
 
 .contrast {
   background: $pink;
-  padding: 20px 0 20px 0;
 }
-
-.rule  .in {
-  border-top: 5px solid $thinpink;
-}
-
-/*
-2000 = 236 708 56 56 708 236
-1280 = 84 500 56 56 500 84
-1200 = 57 500 43 43 500 57
-1120 = 30 500 30 30 500 30
-900 = 30 390 30 30 390 30
-769 = 30 324 30 30 390 30
-768 = 30 708 30
-500 = 30 440 30
-320 = 30 260 30 (minimum responsive width)
- */
 
 .in {
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+
+  width: 1528px;
   margin: 0px auto;
+  overflow: auto;
+  padding: 50px 0 50px 0;
+
+  @media all and (max-width: 1999px) {
+    width: 1112px;
+  }
+
+  @media all and (max-width: 1279px) {
+    width: 1060px;
+  }
+
+  @media all and (max-width: 1119px) {
+    width: 840px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 708px;
+  }
+
+  @media all and (max-width: 768px) {
+    width: auto;
+    padding: 0 30px;
+  }
+}
+
+.contrast + .contrast .in {
+  padding-top: 0;
+}
+
+.contrast .rule {
+  margin-bottom: 50px;
+}
+
+.rule {
+  border: 0 none;
+  border-bottom: 5px solid $thinpink;
+}
+
+.contrast .rule {
+  border-bottom: 6px solid #fff;
 }
 
 /* only here for demos */
 .photo {
     background: transparent url(../img/bg.jpg) no-repeat;
-    background-size: 100%
+    background-size: 50%
 }
 
+
+/*
+
+2000 = 236 708 56 56 708 236 = 1528px center
+1280 = 84 500 56 56 500 84 = 1112px center
+1120 = 30 500 30 30 500 30 = 1060px center
+900 = 30 390 30 30 390 30 = 840px center
+769 = 30 324 30 30 390 30 = 708px center
+768 = 30 708 30
+500 = 30 440 30
+320 = 30 260 30 (minimum responsive width)
+
+1200 = 57 500 43 43 500 57 = 1086px center
+ */
+
 .a, .b {
-  float: left;
-  width: 50%;
+  width: 708px;
+  padding-right: 56px;
+  float:left;
+
+  @media all and (max-width: 1999px) {
+    width: 500px;
+    padding-right: 43px;
+  }
+
+  @media all and (max-width: 1279px) {
+    padding-right :30px;
+  }
+
+  @media all and (max-width: 1119px) {
+    width: 390px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 324px;
+  }
 
   @media all and (max-width: 768px) {
+    padding: 0;
+    width: auto;
     float:none;
     width: 100%;
   }
-  padding-bottom: 32767px !important;
-  margin-bottom: -32767px !important;
 }
 
-.a .in {
-  float: right;
-  padding: 0 5.6% 0 0;
+.b {
+  padding-right: 0;
+  padding-left: 56px;
 
   @media all and (max-width: 1999px) {
-    padding: 0 8.6% 0 0;
+    padding-left: 43px;
   }
 
   @media all and (max-width: 1279px) {
-    padding: 0 7% 0 0;
-  }
-
-  @media all and (max-width: 1199px) {
-    padding: 0 5.6% 0 0;
-  }
-
-  @media all and (max-width: 1119px) {
-    padding: 0 6.6% 0 0;
-  }
-
-  @media all and (max-width: 899px) {
-    padding: 0 7.8% 0 0;
-  }
-}
-
-.b .in {
-  float:left;
-  padding: 0 0 0 5.6%;
-
-  @media all and (max-width: 1999px) {
-    padding: 0 0 0 8.6%;
-  }
-
-  @media all and (max-width: 1279px) {
-    padding: 0 0 0 7%;
-  }
-
-  @media all and (max-width: 1199px) {
-    padding: 0 0 0 5.6%;
-  }
-
-  @media all and (max-width: 1119px) {
-    padding: 0 0 0 6.6%;
-  }
-
-  @media all and (max-width: 899px) {
-    padding: 0 0 0 7.8%;
-  }
-}
-
-.a .in,
-.b .in {
-  width:500px;
-
-  @media all and (max-width: 1119px) {
-    width: 390px;
-  }
-
-  @media all and (max-width: 899px) {
-    width: 390px;
+    padding-left :30px;
   }
 
   @media all and (max-width: 768px) {
-    width: 92%;
-    float: none;
-    padding: 0 4%;
-  }
-
-  @media all and (max-width: 768px) {
+    padding: 0;
     width: auto;
-    float: none;
-    padding: 0 30px;
+    float:none;
+    width: 100%;
   }
 }
-
-nav {
-}
-

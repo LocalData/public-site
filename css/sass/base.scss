@@ -16,13 +16,11 @@
 body {
   font-family: $font;
   color: $body-color;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 23px;
 }
 
 h1 {
-
-  letter-spacing: -2px;
   font-size: 76px;
   line-height: 79px;
   margin-bottom: 35px;
@@ -30,6 +28,12 @@ h1 {
   span {
     color: $body-accent;
   }
+}
+
+h1.logo {
+  font-family: $bold;
+  font-size: 26px;
+  color: #fff;
 }
 
 
@@ -42,7 +46,6 @@ h2, h3 {
 h2 {
   font-size: 40px;
   line-height: 47px;
-  letter-spacing: -1px;
   margin-top: 1em;
 }
 
@@ -50,10 +53,19 @@ h2:first-child {
   margin-top: 0;
 }
 
+header h2  {
+  font-family: $font;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  color: $blue;
+}
+
 h3 {
   font-size: 22px;
   line-height: 22px;
   letter-spacing: -1px;
+  text-align: center;
 }
 
 p {
@@ -88,11 +100,31 @@ nav a:hover {
   }
 }
 
+nav a:hover {
+  color: $blue;
+}
+
+footer .logo {
+  color: $body-color;
+}
+
+footer nav a,
+footer nav a:hover {
+  font-family: $font;
+  font-weight: normal;
+  color: #b7aba5;
+}
+
+footer nav a:hover {
+  color: $blue;
+}
+
 .box {
   background: #fff;
   border: 6px solid $body-color;
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 11px;
   width: 90px;
   height: 62px;
 
@@ -122,5 +154,6 @@ nav a:hover {
   border-color: $blue;
   color: $blue;
 }
+
 
 
