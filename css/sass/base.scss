@@ -15,6 +15,7 @@
 
 body {
   font-family: $font;
+  -webkit-font-smoothing: antialiased;
   color: $body-color;
   font-size: 15px;
   line-height: 23px;
@@ -28,6 +29,12 @@ h1 {
   span {
     color: $body-accent;
   }
+
+  @media all and (max-width: 768px) {
+    font-size: 46px;
+    line-height: 45px;
+  }
+
 }
 
 h1.logo {
@@ -64,9 +71,13 @@ header h2  {
 h3 {
   font-size: 22px;
   line-height: 22px;
-  letter-spacing: -1px;
   text-align: center;
 }
+
+ .a h3,
+ .b h3 {
+   text-align: left;
+ }
 
 p {
   margin-bottom: 1em;

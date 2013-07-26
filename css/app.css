@@ -99,6 +99,7 @@ table {
  ******************************************************************************/
 body {
   font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
   color: #6e6663;
   font-size: 15px;
   line-height: 23px; }
@@ -109,6 +110,10 @@ h1 {
   margin-bottom: 35px; }
   h1 span {
     color: #b7aba5; }
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: 46px;
+      line-height: 45px; } }
 
 h1.logo {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
@@ -138,8 +143,11 @@ header h2 {
 h3 {
   font-size: 22px;
   line-height: 22px;
-  letter-spacing: -1px;
   text-align: center; }
+
+.a h3,
+.b h3 {
+  text-align: left; }
 
 p {
   margin-bottom: 1em; }
@@ -163,14 +171,10 @@ body {
   padding: 0; }
 
 .out {
-  overflow: hidden; }
-
-.contrast {
-  background: #fcf5f0; }
+  overflow: hidden;
+  background: #fff; }
 
 .in {
-  -webkit-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
   width: 1528px;
   margin: 0px auto;
   overflow: auto;
@@ -191,24 +195,6 @@ body {
     .in {
       width: auto;
       padding: 0 30px; } }
-
-.contrast + .contrast .in {
-  padding-top: 0; }
-
-.contrast .rule {
-  margin-bottom: 50px; }
-
-.rule {
-  border: 0 none;
-  border-bottom: 5px solid #f5ebe6; }
-
-.contrast .rule {
-  border-bottom: 6px solid #fff; }
-
-/* only here for demos */
-.photo {
-  background: transparent url(../img/bg.jpg) no-repeat;
-  background-size: 50%; }
 
 /*
 
@@ -244,8 +230,7 @@ body {
     .a, .b {
       padding: 0;
       width: auto;
-      float: none;
-      width: 100%; } }
+      float: none; } }
 
 .b {
   padding-right: 0;
@@ -260,8 +245,53 @@ body {
     .b {
       padding: 0;
       width: auto;
-      float: none;
-      width: 100%; } }
+      float: none; } }
+
+.contrast {
+  background: #fcf5f0; }
+
+.contrast + .contrast .in {
+  padding-top: 0; }
+
+.contrast .rule {
+  margin-bottom: 50px; }
+
+.rule {
+  border: 0 none;
+  border-bottom: 5px solid #f5ebe6; }
+
+.contrast .rule {
+  border-bottom: 6px solid #fff; }
+
+/* Photo header ------------------------------------------------------------- */
+.photo {
+  background: transparent url(../img/bg.jpg) no-repeat;
+  background-size: 50%; }
+  @media all and (max-width: 768px) {
+    .photo {
+      background: none;
+      background-size: auto; } }
+
+@media all and (max-width: 768px) {
+  .photo .in {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media all and (max-width: 768px) {
+  .photo .a,
+  .photo .b {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+@media all and (max-width: 768px) {
+  .photo .a {
+    padding-bottom: 100px;
+    margin-bottom: 2em;
+    background: transparent url(../img/bg.jpg) no-repeat;
+    background-size: 100%; } }
+
+.demoback {
+  background: #f5ebe6; }
 
 /*******************************************************************************
  * _components.scss
@@ -348,10 +378,23 @@ nav a:hover {
       margin-right: 0;
       line-height: 44px;
       border-bottom: 1px solid #b7aba5;
-      padding-left: 44px; } }
+      padding-left: 30px;
+      background: #fff; } }
 
 nav a:hover {
   color: #58aeff; }
+
+@media all and (max-width: 768px) {
+  .nav {
+    background: #fff;
+    padding: 0 15px 0 20px; } }
+
+.nav .in {
+  padding: 20px 0 60px;
+  margin-bottom: 0; }
+  @media all and (max-width: 768px) {
+    .nav .in {
+      padding-bottom: 20px; } }
 
 .subnav {
   border-top: 5px solid #b7aba5;
@@ -375,7 +418,8 @@ nav a:hover {
 /* Factoids ----------------------------------------------------------------- */
 .factoid {
   font-size: 36px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  color: #f15a24; }
 
 .factoid .number {
   font-size: 150px;
