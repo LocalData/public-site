@@ -37,3 +37,119 @@
  *       CSS. Exposed filter forms, views pagers and other views elements are
  *       also good candidates for components.
  ******************************************************************************/
+
+ /* Boxes ------------------------------------------------------------------- */
+
+.box {
+  background: #fff;
+  border: 6px solid $body-color;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 11px;
+  width: 90px;
+  height: 62px;
+
+  font-family: $bold;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 62px;
+  letter-spacing: -1px;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.danger {
+  border-color: $red;
+  color: $red;
+}
+
+.warn {
+  border-color: $orange;
+  color: $orange;
+}
+
+.ok {
+  border-color: $blue;
+  color: $blue;
+}
+
+/* Navigation --------------------------------------------------------------- */
+
+nav a,
+nav a:hover {
+  font-family: $bold;
+  font-weight: bold;
+  color: $body-color;
+  display: inline-block;
+  margin-right: 45px;
+
+  @media all and (max-width: 768px) {
+    display: block;
+    margin-right:0;
+    line-height: 44px;
+    border-bottom: 1px solid $body-accent;
+    padding-left: 44px;
+  }
+}
+
+nav a:hover {
+  color: $blue
+}
+
+.subnav {
+  border-top: 5px solid $body-accent;
+  padding-top: 1em;
+}
+
+.subnav li {
+  line-height: 2em;
+  list-style-type: circle;
+}
+
+.subnav a,
+.subnav a:hover {
+  font-family: $font;
+  font-weight: normal;
+  color: $blue;
+}
+
+.subnav .selected,
+.subnav .selected a,
+.subnav .selected a:hover {
+  color: $red;
+}
+
+
+/* Factoids ----------------------------------------------------------------- */
+.factoid {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.factoid .number {
+  font-size: 150px;
+  line-height: 1em;
+  display: block;
+}
+
+/* Footer ------------------------------------------------------------------- */
+footer .logo {
+  color: $body-color;
+}
+
+footer nav a,
+footer nav a:hover {
+  font-family: $font;
+  font-weight: normal;
+  color: #b7aba5;
+}
+
+footer nav a:hover {
+  color: $blue;
+}
+
+
+
