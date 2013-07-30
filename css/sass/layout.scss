@@ -46,6 +46,9 @@ body {
   }
 }
 
+header .in {
+  padding-bottom: 10px;
+}
 
 
 /*
@@ -69,11 +72,11 @@ body {
 
   @media all and (max-width: 1999px) {
     width: 500px;
-    padding-right: 43px;
+    padding-right: 56px;
   }
 
   @media all and (max-width: 1279px) {
-    padding-right :30px;
+    padding-right :43px;
   }
 
   @media all and (max-width: 1119px) {
@@ -81,6 +84,7 @@ body {
   }
 
   @media all and (max-width: 899px) {
+    padding-right: 30px;
     width: 324px;
   }
 
@@ -96,14 +100,15 @@ body {
   padding-left: 56px;
 
   @media all and (max-width: 1999px) {
-    padding-left: 43px;
+    padding-left: 56px;
   }
 
   @media all and (max-width: 1279px) {
-    padding-left :30px;
+    padding-left: 43px;
   }
 
   @media all and (max-width: 768px) {
+    padding-left: 30px;
     padding: 0;
     width: auto;
     float: none;

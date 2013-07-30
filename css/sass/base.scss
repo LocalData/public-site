@@ -83,14 +83,18 @@ p {
   margin-bottom: 1em;
 }
 
-hr {
-
+img {
+  max-width: 100%;
 }
 
 a,
 a:hover {
   text-decoration: none;
   color: $blue;
+}
+
+.skiplink {
+  line-height: 100px;
 }
 
 

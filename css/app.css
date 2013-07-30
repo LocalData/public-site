@@ -152,10 +152,16 @@ h3 {
 p {
   margin-bottom: 1em; }
 
+img {
+  max-width: 100%; }
+
 a,
 a:hover {
   text-decoration: none;
   color: #58aeff; }
+
+.skiplink {
+  line-height: 100px; }
 
 /*******************************************************************************
  * _layout.scss
@@ -196,6 +202,9 @@ body {
       width: auto;
       padding: 0 30px; } }
 
+header .in {
+  padding-bottom: 10px; }
+
 /*
 
 2000 = 236 708 56 56 708 236 = 1528px center
@@ -216,15 +225,16 @@ body {
   @media all and (max-width: 1999px) {
     .a, .b {
       width: 500px;
-      padding-right: 43px; } }
+      padding-right: 56px; } }
   @media all and (max-width: 1279px) {
     .a, .b {
-      padding-right: 30px; } }
+      padding-right: 43px; } }
   @media all and (max-width: 1119px) {
     .a, .b {
       width: 390px; } }
   @media all and (max-width: 899px) {
     .a, .b {
+      padding-right: 30px;
       width: 324px; } }
   @media all and (max-width: 768px) {
     .a, .b {
@@ -237,12 +247,13 @@ body {
   padding-left: 56px; }
   @media all and (max-width: 1999px) {
     .b {
-      padding-left: 43px; } }
+      padding-left: 56px; } }
   @media all and (max-width: 1279px) {
     .b {
-      padding-left: 30px; } }
+      padding-left: 43px; } }
   @media all and (max-width: 768px) {
     .b {
+      padding-left: 30px;
       padding: 0;
       width: auto;
       float: none; } }
@@ -397,12 +408,12 @@ nav a:hover {
       padding-bottom: 20px; } }
 
 .subnav {
-  border-top: 5px solid #b7aba5;
+  border-top: 5px solid #fcf5f0;
   padding-top: 1em; }
 
 .subnav li {
   line-height: 2em;
-  list-style-type: circle; }
+  list-style-type: none; }
 
 .subnav a,
 .subnav a:hover {
@@ -410,10 +421,23 @@ nav a:hover {
   font-weight: normal;
   color: #58aeff; }
 
+.subnav .selected {
+  list-style-type: circle; }
+
 .subnav .selected,
 .subnav .selected a,
 .subnav .selected a:hover {
   color: #f15a24; }
+
+/* Case studies ------------------------------------------------------------- */
+h1.case {
+  font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1em;
+  letter-spacing: 1px;
+  padding-left: 6px; }
 
 /* Factoids ----------------------------------------------------------------- */
 .factoid {
@@ -427,14 +451,44 @@ nav a:hover {
   display: block; }
 
 /* Footer ------------------------------------------------------------------- */
+footer .in {
+  overflow: auto; }
+
 footer .logo {
-  color: #6e6663; }
+  color: #6e6663;
+  width: 100px;
+  float: left;
+  line-height: 1em; }
+
+footer nav {
+  float: right;
+  text-align: right;
+  margin-bottom: 2em; }
+
+@media all and (max-width: 768px) {
+  footer .logo,
+  footer nav {
+    float: none;
+    text-align: left; } }
 
 footer nav a,
 footer nav a:hover {
   font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
   font-weight: normal;
   color: #b7aba5; }
+  @media all and (max-width: 768px) {
+    footer nav a,
+    footer nav a:hover {
+      line-height: 44px; } }
 
 footer nav a:hover {
   color: #58aeff; }
+
+footer .social {
+  padding-left: 40px; }
+  @media all and (max-width: 768px) {
+    footer .social {
+      padding: 0; } }
+
+footer .social a:last-child {
+  margin-right: 0; }

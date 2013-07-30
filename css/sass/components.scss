@@ -117,13 +117,14 @@ nav a:hover {
 }
 
 .subnav {
-  border-top: 5px solid $body-accent;
+  border-top: 5px solid $pink;
   padding-top: 1em;
 }
 
 .subnav li {
   line-height: 2em;
-  list-style-type: circle;
+  list-style-type: none;
+
 }
 
 .subnav a,
@@ -133,12 +134,27 @@ nav a:hover {
   color: $blue;
 }
 
+.subnav .selected {
+  list-style-type: circle;
+}
+
 .subnav .selected,
 .subnav .selected a,
 .subnav .selected a:hover {
   color: $red;
 }
 
+/* Case studies ------------------------------------------------------------- */
+
+h1.case {
+  font-family: $bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1em;
+  letter-spacing: 1px;
+  padding-left: 6px;
+}
 
 /* Factoids ----------------------------------------------------------------- */
 .factoid {
@@ -154,8 +170,30 @@ nav a:hover {
 }
 
 /* Footer ------------------------------------------------------------------- */
+footer .in {
+  overflow: auto;
+}
+
 footer .logo {
   color: $body-color;
+
+  width: 100px;
+  float:left;
+  line-height: 1em;
+}
+
+footer nav {
+  float: right;
+  text-align: right;
+  margin-bottom: 2em;
+}
+
+footer .logo,
+footer nav {
+  @media all and (max-width: 768px) {
+    float: none;
+    text-align: left;
+  }
 }
 
 footer nav a,
@@ -163,11 +201,26 @@ footer nav a:hover {
   font-family: $font;
   font-weight: normal;
   color: #b7aba5;
+
+  @media all and (max-width: 768px) {
+    line-height: 44px;
+  }
 }
 
 footer nav a:hover {
   color: $blue;
 }
 
+footer .social {
+  padding-left: 40px;
+
+  @media all and (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+footer .social a:last-child {
+  margin-right: 0;
+}
 
 
