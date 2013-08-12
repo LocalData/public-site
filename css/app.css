@@ -152,7 +152,7 @@ h3 {
 p {
   margin-bottom: 1em; }
 
-img {
+img.responsive {
   max-width: 100%; }
 
 a,
@@ -517,6 +517,97 @@ footer .social {
 
 footer .social a:last-child {
   margin-right: 0; }
+
+/* Partners------------------------------------------------------------------ */
+.partners {
+  text-align: center; }
+
+.partner-item {
+  display: inline-block;
+  padding: 10px 20px 0 20px;
+  height: 80px; }
+
+img.partner-logo {
+  display: inline-block;
+  max-width: 300px;
+  min-width: 50px;
+  height: 60px; }
+
+#houston {
+  height: 80px; }
+
+#uchicago {
+  height: 40px;
+  padding-bottom: 20px; }
+
+#mapc {
+  height: 60px;
+  padding-bottom: 10px; }
+
+#harvard {
+  height: 40px;
+  padding-bottom: 20px; }
+
+#placeeconomics {
+  height: 50px;
+  padding-bottom: 15px; }
+
+#wayne {
+  height: 50px;
+  padding-bottom: 15px; }
+
+#detroit {
+  height: 80px; }
+
+/* Partners------------------------------------------------------------------ */
+.press-item {
+  float: left;
+  display: inline-block;
+  height: 150px;
+  margin: 10px 4%;
+  width: 25%;
+  font-size: 18px; }
+
+.press-item a {
+  display: block;
+  text-align: center; }
+
+.quote {
+  text-align: center;
+  height: 65px;
+  padding-bottom: 5px; }
+
+img.press-logo {
+  bottom: 0;
+  display: block;
+  max-width: 200px;
+  min-width: 50px;
+  margin: auto auto 10px auto;
+  text-align: center;
+  height: 80px; }
+
+#fastco {
+  height: 80px; }
+
+#ddj {
+  height: 70px;
+  padding-top: 5px; }
+
+#nieman {
+  height: 14px;
+  padding-top: 33px; }
+
+#directions {
+  height: 40px;
+  padding-top: 20px; }
+
+#planetizen {
+  height: 40px;
+  padding-top: 20px; }
+
+#strata {
+  height: 80px;
+  padding-top: 0px; }
 
 /* Signup ------------------------------------------------------------------- */
 form label {
