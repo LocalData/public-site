@@ -21,19 +21,20 @@ body {
 .in {
   width: 1528px;
   margin: 0px auto;
-  overflow: auto;
   padding: 50px 0 50px 0;
+  overflow: auto;
+
 
   @media all and (max-width: 1999px) {
     width: 1112px;
   }
 
   @media all and (max-width: 1279px) {
-    width: 1060px;
+    width: 1086px;
   }
 
   @media all and (max-width: 1119px) {
-    width: 840px;
+    width: 866px;
   }
 
   @media all and (max-width: 899px) {
@@ -46,8 +47,14 @@ body {
   }
 }
 
+
 header .in {
+  padding-top: 20px;
   padding-bottom: 10px;
+}
+
+header .b {
+  padding-top: 75px;
 }
 
 
@@ -68,23 +75,24 @@ header .in {
 .a, .b {
   width: 708px;
   padding-right: 56px;
+
+  /* column sizing */
   float:left;
 
   @media all and (max-width: 1999px) {
     width: 500px;
-    padding-right: 56px;
   }
 
   @media all and (max-width: 1279px) {
-    padding-right :43px;
+    padding-right: 43px;
   }
 
   @media all and (max-width: 1119px) {
+    padding-right: 30px;
     width: 390px;
   }
 
   @media all and (max-width: 899px) {
-    padding-right: 30px;
     width: 324px;
   }
 
@@ -106,6 +114,11 @@ header .in {
   @media all and (max-width: 1279px) {
     padding-left: 43px;
   }
+
+  @media all and (max-width: 1119px) {
+    padding-left: 30px;
+  }
+
 
   @media all and (max-width: 768px) {
     padding-left: 30px;
@@ -142,7 +155,7 @@ header .in {
 /* Photo header ------------------------------------------------------------- */
 
 .photo {
-    background: transparent url(../img/bg.jpg) no-repeat;
+    background: url(../img/bg3.jpg) no-repeat;
     background-size: 50%;
 
     @media all and (max-width: 768px) {
@@ -171,7 +184,7 @@ header .in {
   @media all and (max-width: 768px) {
     padding-bottom: 100px;
     margin-bottom: 2em;
-    background: transparent url(../img/bg.jpg) no-repeat;
+    background: transparent url(../img/bg3.jpg) no-repeat;
     background-size: 100%;
   }
 }
