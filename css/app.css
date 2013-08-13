@@ -224,7 +224,7 @@ header .b {
  */
 .a, .b {
   width: 708px;
-  padding-right: 56px;
+  margin-right: 56px;
   /* column sizing */
   float: left; }
   @media all and (max-width: 1999px) {
@@ -232,36 +232,36 @@ header .b {
       width: 500px; } }
   @media all and (max-width: 1279px) {
     .a, .b {
-      padding-right: 43px; } }
+      margin-right: 43px; } }
   @media all and (max-width: 1119px) {
     .a, .b {
-      padding-right: 30px;
+      margin-right: 30px;
       width: 390px; } }
   @media all and (max-width: 899px) {
     .a, .b {
       width: 324px; } }
   @media all and (max-width: 768px) {
     .a, .b {
-      padding: 0;
+      margin: 0;
       width: auto;
       float: none; } }
 
 .b {
-  padding-right: 0;
-  padding-left: 56px; }
+  margin-right: 0;
+  margin-left: 56px; }
   @media all and (max-width: 1999px) {
     .b {
-      padding-left: 56px; } }
+      margin-left: 56px; } }
   @media all and (max-width: 1279px) {
     .b {
-      padding-left: 43px; } }
+      margin-left: 43px; } }
   @media all and (max-width: 1119px) {
     .b {
-      padding-left: 30px; } }
+      margin-left: 30px; } }
   @media all and (max-width: 768px) {
     .b {
-      padding-left: 30px;
-      padding: 0;
+      margin-left: 30px;
+      margin: 0;
       width: auto;
       float: none; } }
 
@@ -283,7 +283,7 @@ header .b {
 
 /* Photo header ------------------------------------------------------------- */
 .photo {
-  background: url(../img/bg3.jpg) no-repeat;
+  background: url(../img/bg4.jpg) no-repeat;
   background-size: 50%; }
   @media all and (max-width: 768px) {
     .photo {
@@ -305,7 +305,7 @@ header .b {
   .photo .a {
     padding-bottom: 100px;
     margin-bottom: 2em;
-    background: transparent url(../img/bg3.jpg) no-repeat;
+    background: transparent url(../img/bg4.jpg) no-repeat;
     background-size: 100%; } }
 
 .demoback {
@@ -447,6 +447,20 @@ h1.case {
   letter-spacing: 1px;
   padding-left: 6px; }
 
+.quote {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffad00;
+  text-align: left;
+  margin-bottom: 16px; }
+
+hr.pointer {
+  border: 0px none;
+  border-top: 6px solid #f15a24;
+  position: relative;
+  z-index: 100;
+  width: 180%; }
+
 /* Factoids ----------------------------------------------------------------- */
 .factoid {
   font-size: 36px;
@@ -457,6 +471,9 @@ h1.case {
   font-size: 150px;
   line-height: 1em;
   display: block; }
+
+.factoid.orange {
+  color: #ffad00; }
 
 /* Header ------------------------------------------------------------------- */
 header .logo,
@@ -474,7 +491,7 @@ footer .logo {
   background: #ffad00;
   color: #fff;
   display: block;
-  margin-top: 300px;
+  margin-top: 375px;
   margin-bottom: 115px;
   padding: 0 20px; }
 
@@ -524,40 +541,45 @@ footer .social a:last-child {
 
 .partner-item {
   display: inline-block;
-  padding: 10px 20px 0 20px;
-  height: 80px; }
+  padding: 10px 17px 0 17px;
+  height: 70px; }
+
+.partners :first-child {
+  padding-left: 0; }
+.partners :last-child {
+  padding-right: 0; }
 
 img.partner-logo {
   display: inline-block;
   max-width: 300px;
-  min-width: 50px;
-  height: 60px; }
+  min-width: 40px;
+  height: 50px; }
 
 #houston {
-  height: 80px; }
+  height: 70px; }
 
 #uchicago {
-  height: 40px;
+  height: 30px;
   padding-bottom: 20px; }
 
 #mapc {
-  height: 60px;
+  height: 50px;
   padding-bottom: 10px; }
 
 #harvard {
-  height: 40px;
+  height: 30px;
   padding-bottom: 20px; }
 
 #placeeconomics {
-  height: 50px;
+  height: 40px;
   padding-bottom: 15px; }
 
 #wayne {
-  height: 50px;
+  height: 30px;
   padding-bottom: 15px; }
 
 #detroit {
-  height: 80px; }
+  height: 70px; }
 
 /* Partners------------------------------------------------------------------ */
 .press-item {
@@ -566,13 +588,13 @@ img.partner-logo {
   height: 150px;
   margin: 10px 4%;
   width: 25%;
-  font-size: 18px; }
+  font-size: 17px; }
 
 .press-item a {
   display: block;
   text-align: center; }
 
-.quote {
+.press-item .quote {
   text-align: center;
   padding-bottom: 15px; }
 

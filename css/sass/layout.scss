@@ -74,7 +74,7 @@ header .b {
 
 .a, .b {
   width: 708px;
-  padding-right: 56px;
+  margin-right: 56px;
 
   /* column sizing */
   float:left;
@@ -84,11 +84,11 @@ header .b {
   }
 
   @media all and (max-width: 1279px) {
-    padding-right: 43px;
+    margin-right: 43px;
   }
 
   @media all and (max-width: 1119px) {
-    padding-right: 30px;
+    margin-right: 30px;
     width: 390px;
   }
 
@@ -97,32 +97,32 @@ header .b {
   }
 
   @media all and (max-width: 768px) {
-    padding: 0;
+    margin: 0;
     width: auto;
     float:none;
   }
 }
 
 .b {
-  padding-right: 0;
-  padding-left: 56px;
+  margin-right: 0;
+  margin-left: 56px;
 
   @media all and (max-width: 1999px) {
-    padding-left: 56px;
+    margin-left: 56px;
   }
 
   @media all and (max-width: 1279px) {
-    padding-left: 43px;
+    margin-left: 43px;
   }
 
   @media all and (max-width: 1119px) {
-    padding-left: 30px;
+    margin-left: 30px;
   }
 
 
   @media all and (max-width: 768px) {
-    padding-left: 30px;
-    padding: 0;
+    margin-left: 30px;
+    margin: 0;
     width: auto;
     float: none;
   }
@@ -155,7 +155,7 @@ header .b {
 /* Photo header ------------------------------------------------------------- */
 
 .photo {
-    background: url(../img/bg3.jpg) no-repeat;
+    background: url(../img/bg4.jpg) no-repeat;
     background-size: 50%;
 
     @media all and (max-width: 768px) {
@@ -184,7 +184,7 @@ header .b {
   @media all and (max-width: 768px) {
     padding-bottom: 100px;
     margin-bottom: 2em;
-    background: transparent url(../img/bg3.jpg) no-repeat;
+    background: transparent url(../img/bg4.jpg) no-repeat;
     background-size: 100%;
   }
 }
