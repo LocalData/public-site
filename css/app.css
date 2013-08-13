@@ -101,7 +101,7 @@ body {
   font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #6e6663;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 23px; }
 
 h1 {
@@ -151,6 +151,9 @@ h3 {
 
 p {
   margin-bottom: 1em; }
+
+li {
+  list-style: circle; }
 
 img.responsive {
   max-width: 100%; }
@@ -476,8 +479,9 @@ hr.pointer {
   color: #ffad00; }
 
 /* Header ------------------------------------------------------------------- */
-header .logo,
-footer .logo {
+header .logo a,
+footer .logo a {
+  display: inline-block;
   height: 150px;
   width: 344px;
   background: transparent url(../img/logo.png) no-repeat left center;
@@ -634,6 +638,9 @@ img.press-logo {
 form label {
   font-size: 16px;
   line-height: 20px; }
+
+form .question {
+  font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif; }
 
 form input {
   font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif; }

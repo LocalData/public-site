@@ -17,7 +17,7 @@ body {
   font-family: $font;
   -webkit-font-smoothing: antialiased;
   color: $body-color;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 23px;
 }
 
@@ -81,6 +81,10 @@ h3 {
 
 p {
   margin-bottom: 1em;
+}
+
+li {
+  list-style: circle;
 }
 
 img.responsive {

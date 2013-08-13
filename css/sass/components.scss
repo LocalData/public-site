@@ -192,8 +192,9 @@ hr.pointer {
 
 /* Header ------------------------------------------------------------------- */
 
-header .logo,
-footer .logo {
+header .logo a,
+footer .logo a {
+  display: inline-block;
   height: 150px;
   width: 344px;
   background: transparent url(../img/logo.png) no-repeat left center;
@@ -393,6 +394,10 @@ img.press-logo {
 form label {
   font-size: 16px;
   line-height: 20px;
+}
+
+form .question {
+  font-family: $bold;
 }
 
 form input {
