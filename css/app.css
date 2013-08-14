@@ -107,7 +107,8 @@ body {
 h1 {
   font-size: 76px;
   line-height: 79px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  letter-spacing: -2px; }
   h1 span {
     color: #b7aba5; }
   @media all and (max-width: 768px) {
@@ -364,7 +365,6 @@ form input[type=submit] {
   width: 90px;
   height: 62px;
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
-  font-weight: bold;
   font-size: 20px;
   text-align: center;
   line-height: 62px;
@@ -389,7 +389,6 @@ form input[type=submit] {
 nav a,
 nav a:hover {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
-  font-weight: bold;
   color: #6e6663;
   display: inline-block;
   margin-right: 45px; }
@@ -450,7 +449,7 @@ h1.case {
   letter-spacing: 1px;
   padding-left: 6px; }
 
-.quote {
+.case .quote {
   font-size: 24px;
   line-height: 30px;
   color: #ffad00;
@@ -479,12 +478,19 @@ hr.pointer {
   color: #ffad00; }
 
 /* Header ------------------------------------------------------------------- */
+header .in {
+  overflow: visible; }
+
 header .logo a,
 footer .logo a {
+  position: relative;
+  z-index: 100;
+  left: -53px;
   display: inline-block;
-  height: 150px;
-  width: 344px;
+  height: 112px;
+  width: 281px;
   background: transparent url(../img/logo.png) no-repeat left center;
+  background-size: auto 112px;
   text-indent: -99999px; }
 
 .signup,
@@ -501,7 +507,8 @@ footer .logo a {
 
 /* Footer ------------------------------------------------------------------- */
 footer .in {
-  overflow: auto; }
+  overflow: visible;
+  padding-top: 0; }
 
 footer .logo {
   float: left; }
@@ -509,7 +516,8 @@ footer .logo {
 footer nav {
   float: right;
   text-align: right;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  margin-top: 50px; }
 
 @media all and (max-width: 768px) {
   footer .logo,
@@ -659,7 +667,9 @@ form input[type=submit] {
   border: 6px solid #58aeff;
   font-family: NeuzeitOfficeW01-Regula, Open Sans, Helvetica, sans-serif;
   background: #fff;
-  width: auto; }
+  width: auto;
+  height: auto;
+  line-height: 2em; }
 
 .pair {
   overflow: auto; }

@@ -51,7 +51,6 @@ form input[type=submit] {
   height: 62px;
 
   font-family: $bold;
-  font-weight: bold;
   font-size: 20px;
   text-align: center;
   line-height: 62px;
@@ -82,7 +81,6 @@ form input[type=submit] {
 nav a,
 nav a:hover {
   font-family: $bold;
-  font-weight: bold;
   color: $body-color;
   display: inline-block;
   margin-right: 45px;
@@ -157,7 +155,7 @@ h1.case {
   padding-left: 6px;
 }
 
-.quote {
+.case .quote {
   font-size: 24px;
   line-height: 30px;
   color: #ffad00;
@@ -191,13 +189,21 @@ hr.pointer {
 }
 
 /* Header ------------------------------------------------------------------- */
+header .in {
+  overflow: visible;
+}
 
 header .logo a,
 footer .logo a {
+  position: relative;
+  z-index: 100;
+
+  left: -53px;
   display: inline-block;
-  height: 150px;
-  width: 344px;
+  height: 112px;
+  width: 281px;
   background: transparent url(../img/logo.png) no-repeat left center;
+  background-size: auto 112px;
   text-indent: -99999px;
 }
 
@@ -219,7 +225,8 @@ footer .logo a {
 
 /* Footer ------------------------------------------------------------------- */
 footer .in {
-  overflow: auto;
+  overflow: visible;
+  padding-top: 0;
 }
 
 footer .logo {
@@ -230,6 +237,7 @@ footer nav {
   float: right;
   text-align: right;
   margin-bottom: 2em;
+  margin-top: 50px;
 }
 
 footer .logo,
@@ -420,6 +428,8 @@ form input[type=submit] {
   font-family: $font;
   background: #fff;
   width: auto;
+  height: auto;
+  line-height: 2em;
 }
 
 .pair {
