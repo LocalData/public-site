@@ -419,6 +419,10 @@ form input[type=text] {
   margin-bottom: 1.5em;
 }
 
+form input[type=text].missing {
+  border: 4px solid #ffad00;
+}
+
 form input[type=submit] {
   margin-top: 1em;
   cursor: pointer;
