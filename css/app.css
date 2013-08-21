@@ -294,6 +294,14 @@ header .b {
       background: none;
       background-size: auto; } }
 
+.case .photo {
+  background: url(../img/case1.jpg) no-repeat;
+  background-size: 50%; }
+  @media all and (max-width: 768px) {
+      .photo {
+          background: none;
+          background-size: auto; } }
+
 @media all and (max-width: 768px) {
   .photo .in {
     padding-left: 0;
