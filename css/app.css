@@ -180,6 +180,9 @@ body {
   margin: 0;
   padding: 0; }
 
+.hidden {
+  display: none; }
+
 .out {
   overflow: hidden;
   background: #fff; }
@@ -293,22 +296,6 @@ header .b {
     .photo {
       background: none;
       background-size: auto; } }
-
-.case.muncie .photo {
-  background: url(../img/bg-case-muncie.jpg) no-repeat;
-  background-size: 50%; }
-  @media all and (max-width: 768px) {
-      .photo {
-          background: none;
-          background-size: auto; } }
-
-.case.gary .photo {
-background: url(../img/bg-case-gary.jpg) no-repeat;
-background-size: 50%; }
-@media all and (max-width: 768px) {
-    .photo {
-        background: none;
-        background-size: auto; } }
 
 @media all and (max-width: 768px) {
   .photo .in {

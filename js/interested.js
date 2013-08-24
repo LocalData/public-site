@@ -41,10 +41,9 @@ $(document).ready(function () {
 
 
   // Collect and submit entries from the form.
-  $('#interested').submit(function (e) {
+  $('#sec-form').submit(function (e) {
     e.preventDefault();
     $('#form-submit').val('Submitting...');
-
 
     // Validation
     $('#req-message').hide();
@@ -69,6 +68,7 @@ $(document).ready(function () {
     }
 
     var data = $(this).serialize();
+    console.log("posting");
     // Record responses in the spreadsheet.
     $.ajax({
       url: formUrl,
@@ -83,6 +83,8 @@ $(document).ready(function () {
       }
     }).done(function () {
       // Thank the user.
+      console.log("done");
+
       $('#sec-form').hide(500, function () {
         $('#sec-thanks').show(600);
       });
