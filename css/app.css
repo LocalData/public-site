@@ -694,3 +694,15 @@ form p {
 
 form .hidden {
   display: none; }
+
+/* Team --------------------------------------------------------------------- */
+.team {
+  overflow: auto; }
+
+.team p {
+  margin-bottom: 2em; }
+
+.team img {
+  float: left;
+  margin-right: 20px;
+  display: inline-block; }
