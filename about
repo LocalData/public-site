@@ -30,10 +30,10 @@
     <div class="out contrast nav">
       <div class="in">
         <nav>
-          <a href="about">About</a>
+          <a href="about" class="active">About</a>
           <a href="case-muncie">In Action</a>
           <a href="http://blog.localdata.com">News</a>
-          <a href="signup.html">Contact</a>
+          <a href="signup">Contact</a>
         </nav>
       </div>
     </div>
@@ -48,65 +48,28 @@
 
           <p>LocalData began as a 2012 Code for America project with the City of Detroit. Three Code for America fellows (Matt, Alicia and Prashant) identified a need for local data in Detroit. Though community groups were actively surveying neighborhoods and using this data — neighborhood level surveys took a long time and further stressed the under-resourced technical assistance providers that were assisting this effort. Additionally, comprehensive city-wide surveys were taken infrequently, often involving multiple partners, with months of surveying and transcription.</p>
 
-          <h2>Built on a solid base</h2>
-          <p>No more looking up addresses or entering in property ID numbers.
-          Your survey can be based off parcel boundaries, building footprints,
-          or any other base data you already have.</p>
-
-          <h2>Mobile friendly from the start</h2>
-          <p>Take the phones and tablets you already own out in the field. We've designed    LocalData's data collection app to work great on
-            a wide variety of smartphones. Have bad connectivity? You can even
-            go offline for extended periods. The app knows when you've reconnected
-            and automatically syncs the data.</p>
-
-          <p><a href="#">Read more: what devices can you use with LocalData?</a></p>
-
-          <h2>Made for collaboration</h2>
-          <p>Have just one data collector or hundreds of people going out in the
-            field? We've got you covered. We don't limit you by number of data collectors,
-            which makes LocalData great </p>
-          <p><a href="#">See how Gary, Indiana used volunteer events to
-            collect the data they needed</a></p>
-
-          <h2>Share your data</h2>
-          <p>Our tools make it easy to get your data in the format you need.
-            Quickly transfer information between departments and keep stakeholders
-            informed by sharing access. We can also help design custom solutions
-            for making your data a community resource.</p>
-
-          <p><a href="http://blog.localdata.com">Read more: we believe shared data helps everyone</a></p>
-
-          <h2>Nothing to download</h2>
-          <p>With LocalData, there's no software to download. You can securely
-            access your data in the cloud from work, on the road, and at home.
-            Your data collectors don't need to install anything, either -- skip
-            e
-
-
-        </div>
-
-
-
-        <div class="b">
-        </div>
-      </div>
-    </div>
-
-    <div class="out contrast">
-      <div class="in">
-        <div class="a">
           <h2>The tech</h2>
 
           <p>The tech LocalData continues to be an open source project. Our code is on GitHub. The mobile app is built on HTML5, JavaScript, and Leaflet, and the backend uses Node.js, MongoDB, and PostGIS. We're working to make the project better and more reusable, and would love your contributions and ideas.</p>
-
         </div>
 
-        <div class="b">
-          <h3>Export to:</h3>
-          <div class="box small">GeoJSON</div>
-          <div class="box danger">CSV</div>
-          <div class="box ok">KML</div>
-          <div class="box warn">SHP</div>
+        <div class="b team">
+
+          <h2>The team</h2>
+
+          <h3 class="section-header">Matt Hampel</h3>
+          <img src="img/photo-matt.jpg" width="84" height="84" class="team-photo" />
+          <p><strong><a href="mailto:matth@localdata.com">Matt Hampel</a></strong> is a web developer and student of the changing landscape of civic information gathering. Matt has worked with nonprofits, newspapers, universities, and other organizations to build tools for the public good. Before joining Code for America, he worked as a technology project manager at the University of Michigan.</p>
+
+          <h3 class="section-header">Alicia Rouault</h3>
+          <img src="img/photo-alicia.jpg" width="84" height="84" class="team-photo" />
+          <p><strong><a href="mailto:alicia@localdata.com">Alicia Rouault</a></strong> is an urban planner and interactive product manager. Prior to her work at Code for America, Alicia worked in economic development and urban planning on the development of a national urban manufacturing toolkit for cities. On the East coast, Alicia worked as Assistant Editor of Urban Omnibus, in community development with the City of Newark’s Division of Planning and Economic Development, and with non-profits Pratt Center for Community Development and Citizens Committee for New York City. Alicia has studied at University of Toronto, Pratt Institute and Massachusetts Institute of Technology.
+         </p>
+
+          <h3 class="section-header">Prashant Singh</h3>
+          <img src="img/photo-prashant.jpg" width="84" height="84" class="team-photo" />
+          <p><strong><a href="mailto:prashant@localdata.com">Prashant Singh</a></strong> kindled his interest in technology for citizens and communities through a Code for America Fellowship. Before that, he created consumer television products at Microsoft for the Xbox, phones, and set-top boxes. Prashant likes to make, tinker, and dirty his hands with software, bicycles, furniture, and whatever else will fit in his apartment. Before working on consumer technology, Prashant was a signal processing researcher. He received his BS and MS degrees in electrical engineering from Rice University.</p>
+
         </div>
       </div>
     </div>

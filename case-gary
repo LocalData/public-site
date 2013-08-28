@@ -44,7 +44,7 @@
           <a href="about">About</a>
           <a href="#" class="selected">In Action</a>
           <a href="http://blog.localdata.com">News</a>
-          <a href="contact">Contact</a>
+          <a href="signup">Contact</a>
         </nav>
       </div>
     </div>
@@ -101,9 +101,9 @@
     <div class="out">
       <div class="in">
         <div class="a">
-          <h2>Interested? <a href="signup.html">Contact us.</a></h2>
+          <h2>Interested? <a href="signup">Contact us.</a></h2>
 
-          <p><a href="signup.html">Get in touch</a> &mdash; we're happy to share more information on how LocalData
+          <p><a href="signup">Get in touch</a> &mdash; we're happy to share more information on how LocalData
             can solve your data collection challenges.</p>
         </div>
 

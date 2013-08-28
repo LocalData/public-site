@@ -18,7 +18,7 @@
         <div class="a">
           <h1 class="logo"><a href="index">LocalData</a></h1>
 
-            <a href="signup.html" class="signup btn">Sign up</a>
+            <a href="signup" class="signup btn">Sign up</a>
         </div>
 
         <div class="b">
@@ -38,7 +38,7 @@
           <a href="about">About</a>
           <a href="case-muncie">In Action</a>
           <a href="#">News</a>
-          <a href="signup.html">Contact</a>
+          <a href="signup">Contact</a>
           <a href="#">Log In</a>
         </nav>
       </div>
@@ -226,7 +226,7 @@
           <a href="case-muncie">In Action</a>
           <a href="http://blog.localdata.com">News</a>
           <a href="privacy">Privacy</a>
-          <a href="contact">Contact</a>
+          <a href="signup">Contact</a>
         </nav>
       </div>
     </div>

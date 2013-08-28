@@ -19,10 +19,11 @@
         </div>
 
         <div class="b">
-            <h1 class="case">In action</h1>
-            <h1>Rightsizing Muncie, Indiana</h1>
+            <h1 class="case">Contact</h1>
+            <h1>We'd love to talk</h1>
 
-            <h2>PlaceEconomics teams up with University of Pennsylvania in Muncie to help revive a rust-belt city and preserve historic landmarks.</h2>
+            <h2>Want to know more about LocalData?
+                Contact us at info@localdata.com or 415 366 1073.</h2>
 
             <a class="skiplink">Learn more</a>
 
@@ -42,7 +43,7 @@
           <a href="about">About</a>
           <a href="#">In Action</a>
           <a href="http://blog.localdata.com">News</a>
-          <a href="contact" class="selected">Contact</a>
+          <a href="signup" class="selected">Contact</a>
         </nav>
       </div>
     </div>
@@ -99,9 +100,9 @@
     <div class="out">
       <div class="in">
         <div class="a">
-          <h2>Interested? <a href="signup.html">Contact us.</a></h2>
+          <h2>Interested? <a href="signup">Contact us.</a></h2>
 
-          <p><a href="signup.html">Get in touch</a> &mdash; we're happy to share more information on how LocalData
+          <p><a href="signup">Get in touch</a> &mdash; we're happy to share more information on how LocalData
             can solve your data collection challenges.</p>
         </div>
 
@@ -134,7 +135,7 @@
           <a href="case">In Action</a>
           <a href="http://blog.localdata.com">News</a>
           <a href="privacy">Privacy</a>
-          <a href="contact">Contact</a>
+          <a href="signup">Contact</a>
         </nav>
       </div>
     </div>

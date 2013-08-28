@@ -11,7 +11,7 @@
     <![endif]-->
 
   </head>
-  <body>
+  <body class="leads">
     <header class="out photo">
       <div class="in">
         <div class="a">
@@ -20,9 +20,9 @@
 
         <div class="b">
             <h1 class="case"></h1>
-            <h1>Sign up to learn more</h1>
+            <h1>How can we help?</h1>
 
-            <h2>We'd like to get to know you better. Please tell us about your needs and we'll be in touch.</h2>
+            <h2>We'd like to get to know you better. Please tell us about your needs and we'll be in touch. Or, email us at <a href="mailto:info@localdata.com">info@localdata.com</a> </h2>
 
             <div class="hidden" id="sec-thanks">
               <h1>Thank you! We will get back to you shortly.</h1>
@@ -167,7 +167,7 @@
           <a href="case-muncie">In Action</a>
           <a href="http://blog.localdata.com">News</a>
           <a href="privacy">Privacy</a>
-          <a href="signup.html">Contact</a>
+          <a href="signup">Contact</a>
         </nav>
       </div>
     </div>
