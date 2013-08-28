@@ -76,6 +76,7 @@ form input[type=submit] {
   color: $blue;
 }
 
+
 /* Navigation --------------------------------------------------------------- */
 
 nav a,
@@ -98,6 +99,8 @@ nav a:hover {
 nav a:hover {
   color: $blue
 }
+
+nav
 
 .nav {
   @media all and (max-width: 768px) {
@@ -169,6 +172,46 @@ hr.pointer {
   position: relative;
   z-index: 100;
   width: 180%;
+}
+
+/* Home --------------------------------------------------------------------- */
+.home header .b {
+  overflow: auto;
+}
+
+.home .iphone {
+  height: 550px;
+  position: absolute;
+  background: transparent url(../img/iphone.svg) no-repeat center center;
+  background-size: 100% 100%;
+
+  width: 708px;
+  @media all and (max-width: 1999px) {
+    width: 500px;
+  }
+
+  @media all and (max-width: 1119px) {
+    width: 390px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 324px;
+  }
+
+  @media all and (max-width: 768px) {
+    width: auto;
+  }
+}
+
+.home .graphs {
+  clear: both;
+  height: 380px;
+  background: transparent url(../img/graphs.svg) no-repeat center bottom;
+  background-size: 90%;
+}
+
+.in + .graphs {
+  margin-bottom: 0;
 }
 
 /* Factoids ----------------------------------------------------------------- */

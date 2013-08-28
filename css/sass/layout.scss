@@ -50,6 +50,9 @@ body {
   }
 }
 
+.in.thin {
+  padding-bottom: 0;
+}
 
 header .in {
   padding-top: 20px;
@@ -167,6 +170,12 @@ header .b {
     }
 }
 
+
+.muncie .photo {
+  background: url(../img/bg-case-muncie.jpg) no-repeat;
+  background-size: 50%;
+}
+
 .photo .in {
   @media all and (max-width: 768px) {
     padding-left: 0;
@@ -179,16 +188,6 @@ header .b {
   @media all and (max-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
-  }
-}
-
-
-.photo .a {
-  @media all and (max-width: 768px) {
-    padding-bottom: 100px;
-    margin-bottom: 2em;
-    background: transparent url(../img/bg4.jpg) no-repeat;
-    background-size: 100%;
   }
 }
 
