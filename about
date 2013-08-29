@@ -19,9 +19,9 @@
         </div>
 
         <div class="b">
-            <h1><span>Better data makes</span><br> better cities.</h1>
+            <h1><span>Every community</span><br> can design its own future.</h1>
 
-            <h2>Collecting and analyzing it should be easy.</h2>
+            <h2>LocalData makes it possible.</h2>
         </div>
       </div>
     </header>
@@ -30,7 +30,7 @@
     <div class="out contrast nav">
       <div class="in">
         <nav>
-          <a href="about" class="active">About</a>
+          <a href="about" class="selected">About</a>
           <a href="case-muncie">In Action</a>
           <a href="http://blog.localdata.com">News</a>
           <a href="signup">Contact</a>

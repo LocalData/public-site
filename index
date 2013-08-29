@@ -58,7 +58,7 @@
     </div>
 
     <div class="out contrast">
-      <div class="in thin">
+      <div class="in graphs">
         <div class="a">
           <h2>Rich data analysis</h2>
 
@@ -72,8 +72,6 @@
           <div class="box ok">KML</div>
           <div class="box warn">SHP</div>
         </div>
-
-        <div class="graphs"></div>
       </div>
     </div>
 

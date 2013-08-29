@@ -85,6 +85,7 @@ nav a:hover {
   color: $body-color;
   display: inline-block;
   margin-right: 45px;
+  padding-top: 15px;
 
   @media all and (max-width: 768px) {
     display: block;
@@ -100,7 +101,11 @@ nav a:hover {
   color: $blue
 }
 
-nav
+nav a.selected {
+  border-top: 5px solid #f15a24;
+  padding-top: 10px;
+}
+
 
 .nav {
   @media all and (max-width: 768px) {
@@ -110,7 +115,7 @@ nav
 }
 
 .nav .in {
-  padding: 20px 0 60px;
+  padding: 0px 0 60px;
   margin-bottom: 0;
 
   @media all and (max-width: 768px) {
@@ -205,14 +210,11 @@ hr.pointer {
 
 .home .graphs {
   clear: both;
-  height: 380px;
   background: transparent url(../img/graphs.svg) no-repeat center bottom;
-  background-size: 90%;
+  background-size: 80%;
+  padding-bottom: 28%;
 }
 
-.in + .graphs {
-  margin-bottom: 0;
-}
 
 /* Factoids ----------------------------------------------------------------- */
 .factoid {

@@ -209,9 +209,6 @@ body {
       width: auto;
       padding: 0 30px; } }
 
-.in.thin {
-  padding-bottom: 0; }
-
 header .in {
   padding-top: 20px;
   padding-bottom: 10px; }
@@ -394,7 +391,8 @@ nav a:hover {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
   color: #6e6663;
   display: inline-block;
-  margin-right: 45px; }
+  margin-right: 45px;
+  padding-top: 15px; }
   @media all and (max-width: 768px) {
     nav a,
     nav a:hover {
@@ -408,14 +406,17 @@ nav a:hover {
 nav a:hover {
   color: #58aeff; }
 
+nav a.selected {
+  border-top: 5px solid #f15a24;
+  padding-top: 10px; }
+
 @media all and (max-width: 768px) {
-  nav
   .nav {
     background: #fff;
     padding: 0 15px 0 20px; } }
 
 .nav .in {
-  padding: 20px 0 60px;
+  padding: 0px 0 60px;
   margin-bottom: 0; }
   @media all and (max-width: 768px) {
     .nav .in {
@@ -492,12 +493,9 @@ hr.pointer {
 
 .home .graphs {
   clear: both;
-  height: 380px;
   background: transparent url(../img/graphs.svg) no-repeat center bottom;
-  background-size: 90%; }
-
-.in + .graphs {
-  margin-bottom: 0; }
+  background-size: 80%;
+  padding-bottom: 28%; }
 
 /* Factoids ----------------------------------------------------------------- */
 .factoid {

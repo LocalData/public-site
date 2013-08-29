@@ -19,7 +19,7 @@
         </div>
 
         <div class="b">
-            <h1><span>Better data makes</span><br> better cities.</h1>
+            <h1>Every community<br> <span>can design its own future.</span></h1>
 
             <h2>Collecting and analyzing it should be easy.</h2>
         </div>
@@ -48,25 +48,25 @@
 
           <p>LocalData began as a 2012 Code for America project with the City of Detroit. Three Code for America fellows (Matt, Alicia and Prashant) identified a need for local data in Detroit. Though community groups were actively surveying neighborhoods and using this data — neighborhood level surveys took a long time and further stressed the under-resourced technical assistance providers that were assisting this effort. Additionally, comprehensive city-wide surveys were taken infrequently, often involving multiple partners, with months of surveying and transcription.</p>
 
+          <h2>Made for collaboration</h2>
+          <p>Have  one data collector or hundreds of people going out in the
+            field? We've got you covered. We don't limit you by number of data collectors,
+            which makes LocalData great </p>
+          <p><a href="#">See how Gary, Indiana used volunteer events to
+            collect the data they needed</a></p>
+
           <h2>Built on a solid base</h2>
           <p>No more looking up addresses or entering in property ID numbers.
-          Your survey can be based off parcel boundaries, building footprints,
-          or any other base data you already have.</p>
+          Save time by using parcel boundaries, building footprints,
+          and any other official data you already have.</p>
 
-          <h2>Mobile friendly from the start</h2>
+          <h2>Mobile first</h2>
           <p>Take the phones and tablets you already own out in the field. We've designed    LocalData's data collection app to work great on
             a wide variety of smartphones. Have bad connectivity? You can even
             go offline for extended periods. The app knows when you've reconnected
             and automatically syncs the data.</p>
 
           <p><a href="#">Read more: what devices can you use with LocalData?</a></p>
-
-          <h2>Made for collaboration</h2>
-          <p>Have just one data collector or hundreds of people going out in the
-            field? We've got you covered. We don't limit you by number of data collectors,
-            which makes LocalData great </p>
-          <p><a href="#">See how Gary, Indiana used volunteer events to
-            collect the data they needed</a></p>
 
           <h2>Share your data</h2>
           <p>Our tools make it easy to get your data in the format you need.
