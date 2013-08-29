@@ -12,7 +12,7 @@
     <![endif]-->
 
   </head>
-  <body class="case detroit">
+  <body class="case malden">
     <header class="out photo">
       <div class="in">
         <div class="a">
@@ -21,16 +21,16 @@
 
         <div class="b">
             <h1 class="case">In action</h1>
-            <h1>Improving Commercial Real Estate Data in Detroit</h1>
+            <h1>Mapping Malden's Nighttime Economy</h1>
 
-            <h2>Detroit’s Planning Department and Wayne State University uncover the condition and use of commercial properties across the city</h2>
+            <h2>PlaceEconomics teams up with University of Pennsylvania in Muncie to help revive a rust-belt city and preserve historic landmarks.</h2>
 
             <a class="skiplink">Learn more</a>
 
             <nav class="subnav">
               <ul>
-                <li class="selected"><a href="#">Improving Commercial Real Estate Data in Detroit</a></li>
-                <li><a href="#">Rightsizing Muncie, Indiana</a></li>
+                <li class="selected"><a href="#">Paving Detroit's road to recovery</a></li>
+                <li><a href="#">Improving access to services in Cleveland</a></li>
                 <li><a href="#">Boston's effort to improve school busing</a></li>
               </ul>
             </nav>
@@ -53,22 +53,22 @@
     <div class="out contrast">
       <div class="in">
         <div class="a">
-          <h2>Understanding Detroit's Small Businesses</h2>
-          <p>The Detroit CLICS (Commercial Land Inventory City Study) conducted a comprehensive study of commercial land in the City of Detroit to document the use, condition, and design of approximately one third of all commercially zoned parcels in the city. This was the first study of its kind conducted at this scale in twenty-eight years.</p>
+          <h2>Collecting data that matters</h2>
+          <p>Muncie, Indiana faces a problem seen in many post-industrial cities &mdash; abandoned and vacant properties. In March 2013, DC-based consulting group PlaceEconomics joined forces with the city government and a team of grad students from University of Pennsylvania to gather and analyze data useful for making tough decisions in revitalizing this city. As Muncie's government struggles to do more for their citizens with increasingly tightened budgets, new planning methods designed to reduce cost and increase quality of life are being used to change the future of this community.</p>
 
           <div class="factoid">
             <hr class="pointer">
-            <span class="number">9,538</span>
-            commercial properties
+            <span class="number">4,286</span>
+            lots documented
           </div>
 
-          <p>A significant lack of data on the land use and condition of commercial parcels in the city required better data. Inconsistencies between Detroit’s Zoning Ordinance prevented decision makers from reaching informed analysis. CLICs decided to focus on specific corridors in Detroit identified by the planning department and Detroit Works including areas zoned as commercial, Main Street overlay areas, major corridors, thoroughfares and Detroit Works Project demonstration areas of targeted investment and economic development.</p>
+          <p>Nearly a quarter of Muncie's population falls below the poverty line, (2010 census) and vacant properties present a serious issue to quality of life and economic growth of the city. Rightsizing is a new approach to redevelopment which involves understanding what buildings can be preserved and what may need to be demolished to resize outdated city infrastructure.</p>
 
-          <p>Data collected was used to inform the planning and zoning laws for businesses in the city.Ultimately, data needed to be accurate in order to prevent existing zoning legilslation from contradicting a new vision for Detroit’s future outlined in Detroit’s Master Plan. Beyond making data better in this city, the CLICs partnership shared data with the larger public and stakeholder institutions to make more informed decisions about strategic commercial real estate development.</p>
+          <p>In order to make these analyses, the Muncie team organizers needed to gather a lot of new data. The team asked important questions like if there were buildings on the property, whether or not those properties were occupied, what condition the buildings were in, the quality of the building, whether or not it had mixed use and if these significant structures were part of neighborhood business districts.</p>
 
-          <p>The data produced in this study has been used to inform strategic decisionmaking in city government around accessibility to existing businesses, assessment of facades and the curb appeal of existing businesses to shape investment programs, and identify areas of opportunity for revised zoning.</p>
+          <p class="quote">"I loved getting immediate feedback that parcels had been surveyed &mdash; we could see the aerial view with completed parcels checked off."</p>
 
-          <p>The study was implemented in a partnership between the Wayne State University’s Urban Planning graduate class, Data Driven Detroit (d3), and the City of Detroit Planning + Development Department. </p>
+          <p>Overall, 14 data collectors documented 4286 lots in just 4 days, pinpointing which existing buildings had  Landmark status and correlated that information to see if they were also part of a neighborhood business district. Ultimately this dataset allowed planners to make data-driven decisions quickly with site-specific indicators.</p>
         </div>
 
         <div class="b demoback">
@@ -93,7 +93,7 @@
         <div class="b">
           <h2>Major findings</h2>
 
-          <p class="quote">"This was the first study of its kind conducted at this scale in twenty-eight years."</p>
+          <p class="quote">"My favorite aspect was the interactive layout of the application. The user interface was a smart, quick, and simple way to evaluate the homes."</p>
 
         </div>
       </div>
