@@ -304,6 +304,10 @@ header .b {
   background: url(../img/bg-case-muncie.jpg) no-repeat;
   background-size: 50%; }
 
+.detroit .photo {
+  background: url(../img/bg-case-detroit.jpg) no-repeat;
+  background-size: 50%; }
+
 @media all and (max-width: 768px) {
   .photo .in {
     padding-left: 0;
