@@ -26,6 +26,8 @@
 
             <h2>Collecting and analyzing it should be easy.</h2>
 
+            <a href="signup" class="signup btn">Sign up</a>
+
             <div class="iphone"></div>
         </div>
       </div>
@@ -35,11 +37,9 @@
     <div class="out contrast nav">
       <div class="in">
         <nav>
-          <a href="about">About</a>
           <a href="case-muncie">In Action</a>
-          <a href="#">News</a>
+          <a href="about">Our Story</a>
           <a href="signup">Contact</a>
-          <a href="#">Log In</a>
         </nav>
       </div>
     </div>

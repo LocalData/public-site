@@ -34,8 +34,9 @@ h1 {
   @media all and (max-width: 768px) {
     font-size: 46px;
     line-height: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
-
 }
 
 h1.logo {
@@ -55,6 +56,10 @@ h2 {
   font-size: 40px;
   line-height: 47px;
   margin-top: 1em;
+
+  @media all and (max-width: 768px) {
+    margin-top: 0.5em;
+  }
 }
 
 h2:first-child {

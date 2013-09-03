@@ -46,7 +46,7 @@ body {
 
   @media all and (max-width: 768px) {
     width: auto;
-    padding: 0 30px;
+    padding: 15px 30px;
   }
 }
 
@@ -57,6 +57,10 @@ header .in {
 
 header .b {
   padding-top: 75px;
+
+  @media all and (max-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 
@@ -165,6 +169,31 @@ header .b {
       background-size: auto;
     }
 }
+
+.photo .in {
+  @media all and (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.photo .a,
+.photo .b {
+  @media all and (max-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+.photo .a {
+  @media all and (max-width: 768px) {
+    padding-bottom: 100px;
+    margin-bottom: 2em;
+    background: transparent url(../img/bg4.jpg) no-repeat;
+    background-size: 100%;
+  }
+}
+
 
 .leads .photo {
 }

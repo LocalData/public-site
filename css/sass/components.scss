@@ -91,9 +91,16 @@ nav a:hover {
     display: block;
     margin-right:0;
     line-height: 44px;
-    border-bottom: 1px solid $body-accent;
+    border-bottom: 1px solid $body-light;
+    padding-top: 0;
     padding-left: 30px;
     background: #fff;
+  }
+}
+
+nav a:last-child {
+  @media all and (max-width: 768px) {
+    border-bottom-width: 0px;
   }
 }
 
@@ -119,7 +126,7 @@ nav a.selected {
   margin-bottom: 0;
 
   @media all and (max-width: 768px) {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 }
 
@@ -250,6 +257,10 @@ footer .logo a {
   background: transparent url(../img/logo.png) no-repeat left center;
   background-size: auto 112px;
   text-indent: -99999px;
+
+  @media all and (max-width: 768px) {
+    left: -20px;
+  }
 }
 
 .signup,
@@ -265,7 +276,22 @@ footer .logo a {
   margin-top: 375px;
   margin-bottom: 115px;
   padding: 0 20px;
+
 }
+
+@media all and (max-width: 768px) {
+  .a .signup {
+    display: none!important;
+  }
+
+  .b .signup {
+    font-size: 32px;
+    line-height: 60px;
+    display: block;
+    margin: 0;
+  }
+}
+
 
 
 /* Footer ------------------------------------------------------------------- */

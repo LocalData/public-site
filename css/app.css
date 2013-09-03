@@ -114,7 +114,9 @@ h1 {
   @media all and (max-width: 768px) {
     h1 {
       font-size: 46px;
-      line-height: 45px; } }
+      line-height: 45px;
+      margin-top: 0;
+      margin-bottom: 0; } }
 
 h1.logo {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
@@ -130,6 +132,9 @@ h2 {
   font-size: 40px;
   line-height: 47px;
   margin-top: 1em; }
+  @media all and (max-width: 768px) {
+    h2 {
+      margin-top: 0.5em; } }
 
 h2:first-child {
   margin-top: 0; }
@@ -207,7 +212,7 @@ body {
   @media all and (max-width: 768px) {
     .in {
       width: auto;
-      padding: 0 30px; } }
+      padding: 15px 30px; } }
 
 header .in {
   padding-top: 20px;
@@ -215,6 +220,9 @@ header .in {
 
 header .b {
   padding-top: 75px; }
+  @media all and (max-width: 768px) {
+    header .b {
+      padding-top: 0; } }
 
 /*
 
@@ -297,12 +305,25 @@ header .b {
       background: none;
       background-size: auto; } }
 
+@media all and (max-width: 768px) {
+  .photo .in {
+    padding: 0; } }
+
+@media all and (max-width: 768px) {
+  .photo .a,
+  .photo .b {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+@media all and (max-width: 768px) {
+  .photo .a {
+    padding-bottom: 100px;
+    margin-bottom: 2em;
+    background: transparent url(../img/bg4.jpg) no-repeat;
+    background-size: 100%; } }
+
 .muncie .photo {
   background: url(../img/bg-case-muncie.jpg) no-repeat;
-  background-size: 50%; }
-
-.detroit .photo {
-  background: url(../img/bg-case-detroit.jpg) no-repeat;
   background-size: 50%; }
 
 @media all and (max-width: 768px) {
@@ -403,9 +424,14 @@ nav a:hover {
       display: block;
       margin-right: 0;
       line-height: 44px;
-      border-bottom: 1px solid #b7aba5;
+      border-bottom: 1px solid #cbc8c7;
+      padding-top: 0;
       padding-left: 30px;
       background: #fff; } }
+
+@media all and (max-width: 768px) {
+  nav a:last-child {
+    border-bottom-width: 0px; } }
 
 nav a:hover {
   color: #58aeff; }
@@ -424,7 +450,7 @@ nav a.selected {
   margin-bottom: 0; }
   @media all and (max-width: 768px) {
     .nav .in {
-      padding-bottom: 20px; } }
+      padding-bottom: 0px; } }
 
 .subnav {
   border-top: 5px solid #fcf5f0;
@@ -530,6 +556,10 @@ footer .logo a {
   background: transparent url(../img/logo.png) no-repeat left center;
   background-size: auto 112px;
   text-indent: -99999px; }
+  @media all and (max-width: 768px) {
+    header .logo a,
+    footer .logo a {
+      left: -20px; } }
 
 .signup,
 .signup:hover {
@@ -543,6 +573,15 @@ footer .logo a {
   margin-bottom: 115px;
   padding: 0 20px; }
 
+@media all and (max-width: 768px) {
+  .a .signup {
+    display: none !important; }
+
+  .b .signup {
+    font-size: 32px;
+    line-height: 60px;
+    display: block;
+    margin: 0; } }
 /* Footer ------------------------------------------------------------------- */
 footer .in {
   overflow: visible;
