@@ -175,6 +175,9 @@ a:hover {
 .skiplink {
   line-height: 100px; }
 
+label {
+  cursor: pointer; }
+
 /*******************************************************************************
  * _layout.scss
  *
