@@ -50,19 +50,9 @@ body {
   }
 }
 
-header .in {
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
 
-header .b {
-  padding-top: 75px;
 
-  @media all and (max-width: 768px) {
-    padding-top: 0;
-  }
-}
-
+/* Responsive columns ------------------------------------------------------- */
 
 /*
 
@@ -141,6 +131,10 @@ header .b {
 
 .contrast + .contrast .in {
   padding-top: 0;
+
+  @media all and (max-width: 768px) {
+    padding-top: 15px;
+  }
 }
 
 .contrast .rule {
@@ -158,39 +152,63 @@ header .b {
 
 
 
-/* Photo header ------------------------------------------------------------- */
+/* Header structure --------------------------------------------------------- */
 
-.photo {
-    background: url(../img/bg4.jpg) no-repeat;
-    background-size: 50%;
-
-    @media all and (max-width: 768px) {
-      background: none;
-      background-size: auto;
-    }
+header {
+  overflow: auto;
 }
 
-.photo .in {
-  @media all and (max-width: 768px) {
-    padding: 0;
-  }
+header .photo {
+  width: 50%;
+  float: left;
 }
 
-.photo .a,
-.photo .b {
+header .text {
+  width: 50%;
+  float: right;
+}
+
+header .photo,
+header .text {
   @media all and (max-width: 768px) {
+    width: 100%;
+    float: none;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
+header .a {
+  float: right;
+}
+
+header .b {
+  padding-top: 75px;
+
+  @media all and (max-width: 768px) {
+    padding-top: 25px;
+  }
+}
+
+header .a,
+header .b {
+  @media all and (max-width: 768px) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.photo {
+    background: url(../img/bg4.jpg) no-repeat;
+    background-size: 100%;
+
+    @media all and (max-width: 768px) {
+    }
+}
 
 .photo .a {
   @media all and (max-width: 768px) {
     padding-bottom: 100px;
-    margin-bottom: 2em;
-    background: transparent url(../img/bg4.jpg) no-repeat;
-    background-size: 100%;
   }
 }
 
@@ -218,8 +236,3 @@ header .b {
     padding-right: 30px;
   }
 }
-
-.demoback {
-  background: #f5ebe6;
-}
-

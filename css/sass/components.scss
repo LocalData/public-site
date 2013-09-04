@@ -136,9 +136,7 @@ nav a.selected {
 }
 
 .subnav li {
-  line-height: 2em;
   list-style-type: none;
-
 }
 
 .subnav a,
@@ -148,6 +146,7 @@ nav a.selected {
   color: $blue;
 }
 
+.subnav li:hover,
 .subnav .selected {
   list-style-type: circle;
 }
@@ -263,6 +262,9 @@ footer .logo a {
   }
 }
 
+
+/* Signup link -------------------------------------------------------------- */
+
 .signup,
 .signup:hover {
   font-family: $bold;
@@ -276,7 +278,10 @@ footer .logo a {
   margin-top: 375px;
   margin-bottom: 115px;
   padding: 0 20px;
+}
 
+.b .signup {
+  display: none;
 }
 
 @media all and (max-width: 768px) {
@@ -288,7 +293,7 @@ footer .logo a {
     font-size: 32px;
     line-height: 60px;
     display: block;
-    margin: 0;
+    margin: 0 50px 0 0;
   }
 }
 
@@ -314,6 +319,7 @@ footer nav {
 footer .logo,
 footer nav {
   @media all and (max-width: 768px) {
+    margin-top: 0;
     float: none;
     text-align: left;
   }

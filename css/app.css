@@ -214,16 +214,7 @@ body {
       width: auto;
       padding: 15px 30px; } }
 
-header .in {
-  padding-top: 20px;
-  padding-bottom: 10px; }
-
-header .b {
-  padding-top: 75px; }
-  @media all and (max-width: 768px) {
-    header .b {
-      padding-top: 0; } }
-
+/* Responsive columns ------------------------------------------------------- */
 /*
 
 2000 = 236 708 56 56 708 236 = 1528px center
@@ -285,6 +276,9 @@ header .b {
 
 .contrast + .contrast .in {
   padding-top: 0; }
+  @media all and (max-width: 768px) {
+    .contrast + .contrast .in {
+      padding-top: 15px; } }
 
 .contrast .rule {
   margin-bottom: 50px; }
@@ -296,31 +290,48 @@ header .b {
 .contrast .rule {
   border-bottom: 6px solid #fff; }
 
-/* Photo header ------------------------------------------------------------- */
-.photo {
-  background: url(../img/bg4.jpg) no-repeat;
-  background-size: 50%; }
-  @media all and (max-width: 768px) {
-    .photo {
-      background: none;
-      background-size: auto; } }
+/* Header structure --------------------------------------------------------- */
+header {
+  overflow: auto; }
+
+header .photo {
+  width: 50%;
+  float: left; }
+
+header .text {
+  width: 50%;
+  float: right; }
 
 @media all and (max-width: 768px) {
-  .photo .in {
-    padding: 0; } }
-
-@media all and (max-width: 768px) {
-  .photo .a,
-  .photo .b {
+  header .photo,
+  header .text {
+    width: 100%;
+    float: none;
     padding-left: 30px;
     padding-right: 30px; } }
 
+header .a {
+  float: right; }
+
+header .b {
+  padding-top: 75px; }
+  @media all and (max-width: 768px) {
+    header .b {
+      padding-top: 25px; } }
+
+@media all and (max-width: 768px) {
+  header .a,
+  header .b {
+    float: none;
+    width: 100%; } }
+
+.photo {
+  background: url(../img/bg4.jpg) no-repeat;
+  background-size: 100%; }
+
 @media all and (max-width: 768px) {
   .photo .a {
-    padding-bottom: 100px;
-    margin-bottom: 2em;
-    background: transparent url(../img/bg4.jpg) no-repeat;
-    background-size: 100%; } }
+    padding-bottom: 100px; } }
 
 .muncie .photo {
   background: url(../img/bg-case-muncie.jpg) no-repeat;
@@ -336,9 +347,6 @@ header .b {
   .photo .b {
     padding-left: 30px;
     padding-right: 30px; } }
-
-.demoback {
-  background: #f5ebe6; }
 
 /*******************************************************************************
  * _components.scss
@@ -457,7 +465,6 @@ nav a.selected {
   padding-top: 1em; }
 
 .subnav li {
-  line-height: 2em;
   list-style-type: none; }
 
 .subnav a,
@@ -466,6 +473,7 @@ nav a.selected {
   font-weight: normal;
   color: #58aeff; }
 
+.subnav li:hover,
 .subnav .selected {
   list-style-type: circle; }
 
@@ -561,6 +569,7 @@ footer .logo a {
     footer .logo a {
       left: -20px; } }
 
+/* Signup link -------------------------------------------------------------- */
 .signup,
 .signup:hover {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
@@ -573,6 +582,9 @@ footer .logo a {
   margin-bottom: 115px;
   padding: 0 20px; }
 
+.b .signup {
+  display: none; }
+
 @media all and (max-width: 768px) {
   .a .signup {
     display: none !important; }
@@ -581,7 +593,7 @@ footer .logo a {
     font-size: 32px;
     line-height: 60px;
     display: block;
-    margin: 0; } }
+    margin: 0 50px 0 0; } }
 /* Footer ------------------------------------------------------------------- */
 footer .in {
   overflow: visible;
@@ -599,6 +611,7 @@ footer nav {
 @media all and (max-width: 768px) {
   footer .logo,
   footer nav {
+    margin-top: 0;
     float: none;
     text-align: left; } }
 
