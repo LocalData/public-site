@@ -104,6 +104,9 @@ body {
   font-size: 16px;
   line-height: 23px; }
 
+strong {
+  font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif; }
+
 h1 {
   font-size: 76px;
   line-height: 79px;
@@ -302,13 +305,19 @@ header .text {
   width: 50%;
   float: right; }
 
-@media all and (max-width: 768px) {
-  header .photo,
-  header .text {
-    width: 100%;
-    float: none;
-    padding-left: 30px;
-    padding-right: 30px; } }
+header .photo,
+header .text {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px; }
+  @media all and (max-width: 768px) {
+    header .photo,
+    header .text {
+      width: 100%;
+      float: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-left: 30px;
+      padding-right: 30px; } }
 
 header .a {
   float: right; }
@@ -334,8 +343,7 @@ header .b {
     padding-bottom: 100px; } }
 
 .muncie .photo {
-  background: url(../img/bg-case-muncie.jpg) no-repeat;
-  background-size: 50%; }
+  background: url(../img/bg-case-muncie.jpg) no-repeat; }
 
 @media all and (max-width: 768px) {
   .photo .in {
