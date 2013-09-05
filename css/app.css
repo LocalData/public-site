@@ -308,19 +308,15 @@ header .text {
   width: 50%;
   float: right; }
 
-header .photo,
-header .text {
-  margin-bottom: -99999px;
-  padding-bottom: 99999px; }
-  @media all and (max-width: 768px) {
-    header .photo,
-    header .text {
-      width: auto;
-      float: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      padding-left: 30px;
-      padding-right: 30px; } }
+@media all and (max-width: 768px) {
+  header .photo,
+  header .text {
+    width: auto;
+    float: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 header .a {
   float: right; }
@@ -339,7 +335,7 @@ header .b {
 
 .photo {
   background: url(../img/bg4.jpg) no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
 
 @media all and (max-width: 768px) {
   .photo .a {
@@ -517,19 +513,21 @@ h1.case {
 
 .home .iphone {
   height: 550px;
+  width: 708px;
   position: absolute;
   background: transparent url(../img/iphone.svg) no-repeat center center;
-  background-size: 100% 100%;
-  width: 708px; }
+  background-size: auto 100%; }
   @media all and (max-width: 1999px) {
     .home .iphone {
       width: 500px; } }
   @media all and (max-width: 1119px) {
     .home .iphone {
-      width: 390px; } }
+      width: 390px;
+      height: 500px; } }
   @media all and (max-width: 899px) {
     .home .iphone {
-      width: 324px; } }
+      width: 300px;
+      height: 425px; } }
   @media all and (max-width: 768px) {
     .home .iphone {
       width: auto; } }
