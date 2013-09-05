@@ -133,6 +133,7 @@ nav a.selected {
 .subnav {
   border-top: 5px solid $pink;
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .subnav li {
@@ -177,13 +178,6 @@ h1.case {
   margin-bottom: 16px;
 }
 
-hr.pointer {
-  border: 0px none;
-  border-top: 6px solid $red;
-  position: relative;
-  z-index: 100;
-  width: 180%;
-}
 
 /* Home --------------------------------------------------------------------- */
 .home header .b {
@@ -238,6 +232,23 @@ hr.pointer {
 .factoid.orange {
   color: $orange;
 }
+
+hr.pointer {
+  border: 0px none;
+  border-top: 6px solid $red;
+  position: relative;
+  top: 100px;
+  left: 10em;
+  z-index: 100;
+  width: 120%;
+
+  @media all and (max-width: 768px) {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
 
 /* Header ------------------------------------------------------------------- */
 header .in {

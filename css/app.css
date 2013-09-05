@@ -315,7 +315,7 @@ header .text {
   @media all and (max-width: 768px) {
     header .photo,
     header .text {
-      width: 100%;
+      width: auto;
       float: none;
       margin-bottom: 0;
       padding-bottom: 0;
@@ -473,7 +473,8 @@ nav a.selected {
 
 .subnav {
   border-top: 5px solid #fcf5f0;
-  padding-top: 1em; }
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 .subnav li {
   list-style-type: none; }
@@ -509,13 +510,6 @@ h1.case {
   color: #ffad00;
   text-align: left;
   margin-bottom: 16px; }
-
-hr.pointer {
-  border: 0px none;
-  border-top: 6px solid #f15a24;
-  position: relative;
-  z-index: 100;
-  width: 180%; }
 
 /* Home --------------------------------------------------------------------- */
 .home header .b {
@@ -559,6 +553,20 @@ hr.pointer {
 
 .factoid.orange {
   color: #ffad00; }
+
+hr.pointer {
+  border: 0px none;
+  border-top: 6px solid #f15a24;
+  position: relative;
+  top: 100px;
+  left: 10em;
+  z-index: 100;
+  width: 120%; }
+  @media all and (max-width: 768px) {
+    hr.pointer {
+      width: 100%;
+      top: 0;
+      left: 0; } }
 
 /* Header ------------------------------------------------------------------- */
 header .in {

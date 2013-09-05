@@ -174,7 +174,7 @@ header .text {
   padding-bottom: 99999px;
 
   @media all and (max-width: 768px) {
-    width: 100%;
+    width: auto;
     float: none;
     margin-bottom: 0;
     padding-bottom: 0;
