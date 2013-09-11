@@ -701,6 +701,13 @@ img.partner-logo {
   height: 70px; }
 
 /* Partners------------------------------------------------------------------ */
+@media all and (max-width: 768px) {
+  .press-box {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow: scroll;
+    height: 200px; } }
+
 .press-item {
   float: left;
   display: inline-block;
@@ -708,6 +715,16 @@ img.partner-logo {
   margin: 10px 4%;
   width: 25%;
   font-size: 17px; }
+  @media all and (max-width: 768px) {
+    .press-item {
+      height: auto;
+      width: 200px;
+      *display: inline;
+      /* For IE7*/
+      *zoom: 1;
+      /* For IE7*/
+      float: none;
+      white-space: normal; } }
 
 .press-item a {
   display: block;
@@ -723,6 +740,10 @@ img.press-logo {
   margin: auto auto 10px auto;
   text-align: center;
   height: 80px; }
+  @media all and (max-width: 768px) {
+    img.press-logo {
+      max-width: 150px;
+      height: auto; } }
 
 #fastco {
   height: 80px; }
