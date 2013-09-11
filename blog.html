@@ -8,7 +8,7 @@ Revised February 21, 2013
 
 LocalData Theme
 by Matt Hampel
-and Objective Subject
+with Objective Subject
 2013
 
 -->
@@ -54,11 +54,6 @@ and Objective Subject
 
 <!-- Scripts -->
     <script src="http://static.tumblr.com/4kpnlef/Pttmhz2ap/jquery-1.9.1.min.js"></script>
-
-    {block:IfTypeKitID}
-    <script type="text/javascript" src="//use.typekit.net/{text:TypeKit ID}.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    {/block:IfTypeKitID}
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -109,7 +104,33 @@ and Objective Subject
 
       <div class="text">
         <div class="b">
+          {block:IndexPage}
+            <h1 class="case">News from LocalData</h1>
+            <h1>Better news makes better cities</h1>
 
+            <nav class="subnav">
+              <ul>
+                {block:Posts}
+                  <li><a href="{Permalink}">{Title}</a></li>
+                {/block:Posts}
+              </ul>
+            </nav>
+          {/block:IndexPage}
+
+          {block:Posts}
+            {block:PermalinkPage}
+              {block:Text}
+                {block:Title}
+                  <h1 class="case">News</h1>
+                  <h1>{Title}</h1>
+                {/block:Title}
+
+                <p class="date">
+                  {ShortMonth}. {DayOfMonth} {Year}
+                </p>
+              {/block:Text}
+            {/block:PermalinkPage}
+          {/block:Posts}
         </div>
       </div>
     </header>
@@ -117,9 +138,10 @@ and Objective Subject
     <div class="out contrast nav">
       <div class="in">
         <nav>
-          <a href="case-muncie.html">In Action</a>
-          <a href="about" class="selected">Our Story</a>
-          <a href="signup">Contact</a>
+          <a href="http://localdata.com/case-muncie">In Action</a>
+          <a href="http://localdata.com/about">Our Story</a>
+          <a href="http://blog.localdata.com" class="selected">News</a>
+          <a href="http://localdata.com/signup">Contact</a>
         </nav>
       </div>
     </div>
@@ -135,25 +157,6 @@ and Objective Subject
       </div>
     </div>
  -->
-    <footer class="out">
-      <div class="in">
-        <h1 class="logo"><a href="index">LocalData</a></h1>
-
-        <nav>
-          <a href="case-muncie">In Action</a>
-          <a href="about">Our Story</a>
-          <a href="http://blog.localdata.com">News</a>
-          <a href="privacy">Privacy</a>
-          <a href="signup">Contact</a>
-
-          <span class="social">
-            <a href="http://twitter.com/localdata">Twitter</a>
-            <a href="http://twitter.com/localdata">GitHub</a>
-          </span>
-        </nav>
-      </div>
-    </footer>
-
     {block:Posts}
 
 <!--         {block:IfShowNavigation}
@@ -180,147 +183,128 @@ and Objective Subject
  -->
 
 
-
-
-
         {block:Text}
         <!-- TEXT POST
         ///////////////////////////////////////////////////////-->
 
-        <h1 class="case">News</h1>
-        <h1>Rightsizing Muncie, Indiana</h1>
+        <div class="out contrast">
+          <div class="in rule">
+            <div class="a">
+              {block:IndexPage}
+                {block:Title}
+                  <h2><a href="{Permalink}">{Title}</a></h2>
+                {/block:Title}
 
-        <h2>PlaceEconomics teams up with University of Pennsylvania in Muncie to help revive a rust-belt city and preserve historic landmarks.</h2>
+                {block:Date}
+                  <p class="date">
+                    {ShortMonth}. {DayOfMonth} {Year}
+                  </p>
+                {/block:Date}
+              {/block:IndexPage}
 
-        <a class="skiplink">Learn more</a>
+              {Body}
+             </div>
 
+            <div class="b">
 
-        <div class="post text">
-
-          <div class="narrow">
-
-                        {block:Title}
-            <div class="title">
-              <h1>{Title}</h1>
-            </div>
-                        {/block:Title}
-
-            <div class="caption">
-
-            {Body}
-
-            </div> <!-- End caption -->
-
-                        {block:More}
-            <div class="more">
-              <a href="{Permalink}">Read More...</a>
-            </div>
-                        {/block:More}
-
-            <div class="metadata">
-
-                            {block:Date}
-                  <div class="date">
-                <a href="{Permalink}">{ShortMonth}. {DayOfMonth} {Year}</a>
-              </div>
-                            {/block:Date}
-
-                            {block:ContentSource}
+<!--               {block:ContentSource}
                   <div class="date">
                 <a href="{SourceURL}">Via {SourceTitle}</a>
               </div>
-                            {/block:ContentSource}
+              {/block:ContentSource}
+ -->
+<!--               {block:IfShowPostTags}
+                {block:HasTags}
+                  <div class="tags">
+                    {block:Tags}
+                      <a href="{TagURL}">#{Tag}</a>
+                    {/block:Tags}
+                  </div>
+                {/block:HasTags}
+              {/block:IfShowPostTags}
+ -->
+<!--               {block:IfShowPostNotes}
+                {block:NoteCount}
+                  <div class="notes-count">
+                    <a href="{Permalink}">{NoteCountWithLabel}</a>
+                  </div>
+                {/block:NoteCount}
+              {/block:IfShowPostNotes}
+ -->            </div>
+          </div>
+        </div>
+        {/block:Text}
 
-                            {block:IfShowPostTags}
-              {block:HasTags}
-                            <div class="tags">
-                                {block:Tags}
-                <a href="{TagURL}">#{Tag}</a>
-                  {/block:Tags}
-              </div>
-                            {/block:HasTags}
-                {/block:IfShowPostTags}
 
-                            {block:IfShowPostNotes}
-                            {block:NoteCount}
-                            <div class="notes-count">
-                <a href="{Permalink}">{NoteCountWithLabel}</a>
-              </div>
-                            {/block:NoteCount}
-                            {/block:IfShowPostNotes}
 
-            </div> <!-- metadata end -->
-
-          </div> <!-- text end -->
-
-        </div> <!-- post end -->
-                {/block:Text}
 
         {block:Photo}
         <!-- PHOTO POST
         ///////////////////////////////////////////////////////-->
 
-        <div class="post photo">
+        <div class="out">
 
-          <div class="wide">
+          <div class="in">
+            <div class="a">
                         {LinkOpenTag}
 
             <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
 
                         {LinkCloseTag}
-          </div>
-
-          <div class="narrow">
-
-                        {block:Caption}
-            <div class="caption">
-                {Caption}
             </div>
-                        {/block:Caption}
 
-            <div class="metadata">
+            <div class="b">
+              {block:Caption}
+                <div class="caption">
+                    {Caption}
+                </div>
+              {/block:Caption}
 
-              {block:Date}
-                <div class="date">
-                <a href="{Permalink}">{ShortMonth}. {DayOfMonth} {Year}</a>
-              </div>
-                            {/block:Date}
+              <div class="metadata">
 
-                            {block:ContentSource}
+                {block:Date}
                   <div class="date">
-                <a href="{SourceURL}">Via {SourceTitle}</a>
-              </div>
-                            {/block:ContentSource}
+                  <a href="{Permalink}">{ShortMonth}. {DayOfMonth} {Year}</a>
+                </div>
+                              {/block:Date}
 
-                            {block:IfShowPostTags}
-              {block:HasTags}
-                            <div class="tags">
-                                {block:Tags}
-                <a href="{TagURL}">#{Tag}</a>
-                  {/block:Tags}
-              </div>
-                            {/block:HasTags}
-                {/block:IfShowPostTags}
+                              {block:ContentSource}
+                    <div class="date">
+                  <a href="{SourceURL}">Via {SourceTitle}</a>
+                </div>
+                              {/block:ContentSource}
 
-                            {block:IfShowPostNotes}
-                            {block:NoteCount}
-                            <div class="notes-count">
-                <a href="{Permalink}">{NoteCountWithLabel}</a>
-              </div>
-                            {/block:NoteCount}
-                            {/block:IfShowPostNotes}
+                              {block:IfShowPostTags}
+                {block:HasTags}
+                              <div class="tags">
+                                  {block:Tags}
+                  <a href="{TagURL}">#{Tag}</a>
+                    {/block:Tags}
+                </div>
+                              {/block:HasTags}
+                  {/block:IfShowPostTags}
 
-            </div> <!-- metadata end -->
+                              {block:IfShowPostNotes}
+                              {block:NoteCount}
+                              <div class="notes-count">
+                  <a href="{Permalink}">{NoteCountWithLabel}</a>
+                </div>
+                              {/block:NoteCount}
+                              {/block:IfShowPostNotes}
 
-          </div> <!-- narrow end -->
+              </div> <!-- metadata end -->
 
-        </div> <!-- post end -->
+            </div><!-- end b -->
+          </div><!-- end in -->
 
-                {/block:Photo}
+
+        </div> <!-- end out -->
+
+        {/block:Photo}
 
 
-                {block:Photoset}
-          <!-- PHOTOSET POST
+        {block:Photoset}
+        <!-- PHOTOSET POST
         ///////////////////////////////////////////////////////-->
 
         <div class="post photo">
@@ -387,7 +371,6 @@ and Objective Subject
         {block:Link}
         <!-- LINK POST
         ///////////////////////////////////////////////////////-->
-
         <div class="post link">
 
           <div class="narrow">
@@ -692,7 +675,7 @@ and Objective Subject
 
 
 
-            {block:Video}
+        {block:Video}
         <!-- VIDEO POST
         ///////////////////////////////////////////////////////-->
 
@@ -753,7 +736,7 @@ and Objective Subject
           </div> <!-- narrow end -->
 
         </div> <!-- post end -->
-                {/block:Video}
+        {/block:Video}
 
 
 
@@ -824,70 +807,54 @@ and Objective Subject
           </div> <!-- narrow end -->
 
         </div> <!-- post end -->
-                {/block:Answer}
+        {/block:Answer}
 
-            {/block:Posts}
+      {/block:Posts}
 
-            {block:PermalinkPage}
-                <!-- PERMALINK CONTENT
-                ////////////////////////////////////////////////// -->
+      {block:Pagination}
+        <div class="out">
+          <div class="in">
+            <h2>
+            {block:PreviousPage}
+            <a class="back-next" href="{PreviousPage}">Back</a>
+            {/block:PreviousPage}
 
-                <div class="narrow">
+            {block:NextPage}
+            <a class="back-next" href="{NextPage}">Next</a>
+            {/block:NextPage}
+            </h2>
+          </div>
+        </div>
+      {/block:Pagination}
 
-            <div id="permalink-content">
 
-                        {block:IfDisqusShortname}
+      <footer class="out">
+        <div class="in">
+          <h1 class="logo"><a href="index">LocalData</a></h1>
 
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
+          <nav>
+            <a href="http://localdata.com/case-muncie">In Action</a>
+            <a href="http://localdata.com/about">Our Story</a>
+            <a href="http://blog.localdata.com">News</a>
+            <a href="http://localdata.com/privacy">Privacy</a>
+            <a href="http://localdata.com/signup">Contact</a>
 
-                        var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace example with your forum shortname
+            <span class="social">
+              <a href="http://twitter.com/localdata">Twitter</a>
+              <a href="http://twitter.com/localdata">GitHub</a>
+            </span>
+          </nav>
+        </div>
+      </footer>
 
-                            (function() {
-                                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-                        </script>
 
-                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
-                        {/block:IfDisqusShortname}
-
-                            {block:PostNotes}
-              <div class="permalink-notes">
-
-                <h3>Notes</h3>
-
-                                {PostNotes}
-
-              </div> <!-- notes end -->
-                            {/block:PostNotes}
-
-            </div> <!-- permalink content end -->
-
-        {/block:PermalinkPage}
 
       </div> <!-- content end -->
 
       <div id="footer">
 
-                {block:Pagination}
 
-                <h2>
-                {block:PreviousPage}
-                <a class="back-next" href="{PreviousPage}">Back</a>
-                {/block:PreviousPage}
-
-                {block:NextPage}
-                <a class="back-next" href="{NextPage}">Next</a>
-                {/block:NextPage}
-                </h2>
-
-                {/block:Pagination}
-
-        <div id="footer-links">
+<!--         <div id="footer-links">
 
             <ul>
               <li><a href="/">Home</a></li>
@@ -906,19 +873,14 @@ and Objective Subject
           </ul>
         </div>
 
-        <div class="colophon">
-
-                    {block:IfShowCopyright}
-          <p>&copy; {Title} {CopyrightYears}</p>
-                    {/block:IfShowCopyright}
-
-          <p class="promo"><a href="http://zacksultan.com">Observer theme by Zack Sultan</a></p>
-
-        </div>
-
+ -->
       </div><!-- content end -->
 
     </div> <!-- page end -->
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://localdata.github.io/public-site/js/app.js" type="text/javascript"></script>
+
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
