@@ -76,6 +76,17 @@ form input[type=submit] {
   color: $blue;
 }
 
+/* Learn more --------------------------------------------------------------- */
+.learnmore {
+  padding-left: 25px;
+  background: transparent url(../img/arrow.png) no-repeat center left;
+  line-height: 80px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size:11px;
+  font-family: $bold;
+  letter-spacing: 1px;
+}
 
 /* Navigation --------------------------------------------------------------- */
 
