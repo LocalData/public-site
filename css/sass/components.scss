@@ -196,12 +196,13 @@ h1.case {
 }
 
 .home .iphone {
-  height: 550px;
+  height: 530px;
   width: 708px;
 
   position: absolute;
-  background: transparent url(../img/iphone.svg) no-repeat center center;
+  background: transparent url(../img/iphone.png) no-repeat center center;
   background-size: auto 100%;
+  margin-top: -20px;
 
   @media all and (max-width: 1999px) {
     width: 500px;
@@ -209,7 +210,7 @@ h1.case {
 
   @media all and (max-width: 1119px) {
     width: 390px;
-    height: 500px;
+    height: 450px;
   }
 
   @media all and (max-width: 899px) {

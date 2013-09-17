@@ -523,18 +523,19 @@ h1.case {
   overflow: auto; }
 
 .home .iphone {
-  height: 550px;
+  height: 530px;
   width: 708px;
   position: absolute;
-  background: transparent url(../img/iphone.svg) no-repeat center center;
-  background-size: auto 100%; }
+  background: transparent url(../img/iphone.png) no-repeat center center;
+  background-size: auto 100%;
+  margin-top: -20px; }
   @media all and (max-width: 1999px) {
     .home .iphone {
       width: 500px; } }
   @media all and (max-width: 1119px) {
     .home .iphone {
       width: 390px;
-      height: 500px; } }
+      height: 450px; } }
   @media all and (max-width: 899px) {
     .home .iphone {
       width: 300px;
