@@ -1,0 +1,53 @@
+---
+---
+<html>
+  {% include head.html title=post.title %}
+  <body>
+
+    <header class="out">
+      <div class="photo">
+        <div class="a">
+          <h1 class="logo"><a href=".">LocalData</a></h1>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="b">
+            <h1 class="case">News</h1>
+            <h1>{{ page.title }}</h1>
+
+            <p class="date">{{ page.date | date: "%B %d, %Y" }}<p>
+
+            <p>{{ page.excerpt }}</p>
+        </div>
+      </div>
+    </header>
+
+
+    {% include nav.html select="case" %}
+
+    <div class="out contrast">
+      <div class="in rule">
+        <div class="a">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    <div class="out contrast">
+      <div class="in">
+        <div class="a">
+          <a href="{{ site.url}}{{ page.previous.url }}" {% unless page.previous %}style="visibility: hidden;"{% endunless %}>Previous</a>
+        </div>
+
+        <div class="b">
+          <a href="{{ site.url}}{{ page.next.url }}" {% unless page.next %}style="visibility: hidden;"{% endunless %}>Next</a>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include js.html %}
+
+  </body>
+</html>
