@@ -162,7 +162,11 @@ p {
   margin-bottom: 1em; }
 
 li {
-  list-style: circle; }
+  list-style: circle;
+  margin-left: 20px; }
+
+ol, ul {
+  margin-bottom: 16px; }
 
 img.responsive {
   max-width: 100%; }
@@ -177,6 +181,10 @@ a:hover {
 
 label {
   cursor: pointer; }
+
+blockquote {
+  margin-left: 20px;
+  color: #b7aba5; }
 
 /*******************************************************************************
  * _layout.scss
@@ -484,7 +492,11 @@ nav a.selected {
   padding-bottom: 1em; }
 
 .subnav li {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: 0px; }
+
+.subnav ul {
+  margin-bottom: 0px; }
 
 .subnav a,
 .subnav a:hover {

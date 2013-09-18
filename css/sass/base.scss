@@ -95,6 +95,10 @@ p {
 
 li {
   list-style: circle;
+  margin-left: 20px;
+}
+ol, ul {
+  margin-bottom: 16px;
 }
 
 img.responsive {
@@ -113,4 +117,9 @@ a:hover {
 
 label {
   cursor: pointer;
+}
+
+blockquote {
+  margin-left: 20px;
+  color: $body-accent;
 }
