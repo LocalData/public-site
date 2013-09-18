@@ -18,7 +18,9 @@
 
             <p class="date">{{ page.date | date: "%B %d, %Y" }}<p>
 
-            <p>{{ page.excerpt }}</p>
+            {% unless page.excerpt == content %}
+              <p>{{ page.excerpt }}</p>
+            {% endunless %}
         </div>
       </div>
     </header>
