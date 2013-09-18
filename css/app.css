@@ -470,6 +470,7 @@ nav a:hover {
 nav a:hover {
   color: #58aeff; }
 
+nav a:hover,
 nav a.selected {
   border-top: 5px solid #f15a24;
   padding-top: 10px; }
@@ -535,18 +536,19 @@ h1.case {
   overflow: auto; }
 
 .home .iphone {
-  height: 550px;
+  height: 530px;
   width: 708px;
   position: absolute;
-  background: transparent url(../img/iphone.svg) no-repeat center center;
-  background-size: auto 100%; }
+  background: transparent url(../img/iphone.png) no-repeat center center;
+  background-size: auto 100%;
+  margin-top: -20px; }
   @media all and (max-width: 1999px) {
     .home .iphone {
       width: 500px; } }
   @media all and (max-width: 1119px) {
     .home .iphone {
       width: 390px;
-      height: 500px; } }
+      height: 450px; } }
   @media all and (max-width: 899px) {
     .home .iphone {
       width: 300px;
@@ -641,12 +643,20 @@ footer .in {
 
 footer .logo {
   float: left; }
+  @media all and (max-width: 1119px) {
+    footer .logo {
+      margin-bottom: 0; } }
 
 footer nav {
   float: right;
   text-align: right;
   margin-bottom: 2em;
-  margin-top: 50px; }
+  margin-top: 35px; }
+  @media all and (max-width: 1119px) {
+    footer nav {
+      margin-top: 0;
+      text-align: left;
+      float: left; } }
 
 @media all and (max-width: 768px) {
   footer .logo,
@@ -666,7 +676,8 @@ footer nav a:hover {
       line-height: 44px; } }
 
 footer nav a:hover {
-  color: #58aeff; }
+  color: #58aeff;
+  border: 0px none; }
 
 footer .social {
   padding-left: 40px; }

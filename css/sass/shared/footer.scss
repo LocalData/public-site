@@ -5,13 +5,23 @@ footer .in {
 
 footer .logo {
   float:left;
+
+  @media all and (max-width: 1119px) {
+    margin-bottom: 0;
+  }
 }
 
 footer nav {
   float: right;
   text-align: right;
   margin-bottom: 2em;
-  margin-top: 50px;
+  margin-top: 35px;
+
+  @media all and (max-width: 1119px) {
+    margin-top: 0;
+    text-align: left;
+    float: left;
+  }
 }
 
 footer .logo,
@@ -36,6 +46,7 @@ footer nav a:hover {
 
 footer nav a:hover {
   color: $blue;
+  border: 0px none;
 }
 
 footer .social {
