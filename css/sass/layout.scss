@@ -219,8 +219,16 @@ header .b {
 .leads .photo {
 }
 
+.home .photo {
+  background-image: url(../img/dotgrid-white.png), url(../img/bg4.jpg);
+}
+
 .muncie .photo {
   background: url(../img/bg-case-muncie.jpg) no-repeat;
+}
+
+.post .photo {
+  background-image: url(../img/dotgrid.png);
 }
 
 .photo .in {

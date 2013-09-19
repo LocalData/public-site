@@ -349,8 +349,14 @@ header .b {
   .photo .a {
     padding-bottom: 100px; } }
 
+.home .photo {
+  background-image: url(../img/dotgrid-white.png), url(../img/bg4.jpg); }
+
 .muncie .photo {
   background: url(../img/bg-case-muncie.jpg) no-repeat; }
+
+.post .photo {
+  background-image: url(../img/dotgrid.png); }
 
 @media all and (max-width: 768px) {
   .photo .in {
@@ -610,6 +616,9 @@ footer .logo a {
     header .logo a,
     footer .logo a {
       left: -20px; } }
+
+.dots .logo a {
+  background-color: white; }
 
 /* Signup link -------------------------------------------------------------- */
 .signup,
