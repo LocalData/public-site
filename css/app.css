@@ -476,8 +476,8 @@ nav a:hover {
 nav a:hover {
   color: #58aeff; }
 
-nav a:hover,
-nav a.selected {
+nav > a:hover,
+nav > a.selected {
   border-top: 5px solid #f15a24;
   padding-top: 10px; }
 
