@@ -1,6 +1,12 @@
 ---
-title: LocalData and Gary, Indiana on NPR
 layout: post
+title: LocalData and Gary, Indiana on NPR
+excerpt: How LocalData and a former Chicago Mayor surveyed thousands of homes to help transform Gary, Indiana
+image:
+  file: gary-union-station.jpg
+  attribution:
+    text: Gary Union Station by Zachary Perlinksi on Flickr
+    link: http://www.flickr.com/photos/perlinski/4456465001/
 ---
 
 [How LocalData and a former Chicago Mayor surveyed thousands of homes to help transform Gary, Indiana](http://www.npr.org/templates/story/story.php?storyId=207457857)
