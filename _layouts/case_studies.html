@@ -1,5 +1,6 @@
 ---
 ---
+<!DOCTYPE html>
 <html>
   {% include head.html title=page.title %}
   <body class="case {{ page.class }}">
@@ -18,7 +19,7 @@
 
             <h2>{{ page.secondary }}</h2>
 
-            <a class="learnmore" href="#more">Learn more</a>
+            <a class="learnmore" href="{{ page.name }}#more">Learn more</a>
 
             <nav class="subnav">
               <ul>

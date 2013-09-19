@@ -1,5 +1,6 @@
 ---
 ---
+<!DOCTYPE html>
 <html>
   {% include head.html title=post.title %}
   <body class="post">
@@ -39,7 +40,7 @@
           <div class="b">
             {% include post_image.html item=page %}
             {% if page.image.attribution %}
-              <a class="attrib" href="{{ page.image.link }}">{{ page.image.attribution.text }}</a>
+              <a class="attrib" href="{{ page.image.attribution.link }}">{{ page.image.attribution.text }}</a>
             {% endif %}
           </div>
         {% endif %}
