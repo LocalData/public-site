@@ -7,7 +7,7 @@ image:
   max-width: 800px
   attribution:
     text: Mormon Temple in Salt Lake City by bmills on Flickr
-    link: http://www.flickr.com/photos/baraapics/9027529844/
+    link: http://www.flickr.com/photos/32485328@N00/7175124432/
 ---
 LocalData CTO Prashant Singh will present at the [IAP2 North
 America](http://iap2usa.org/conference) in Salt Lake City. If you're at the
