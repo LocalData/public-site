@@ -34,10 +34,15 @@
         <div class="in {% unless forloop.last %} rule {% endunless %}">
           <div class="a">
               <h2>{{ post.title }}</h2>
-              <p>{{ post.date | date: "%B %d, %Y" }}<p>
+              <p><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></p>
               <p>{{ post.excerpt }}</p>
               <p><a href="{{ site.url }}{{ post.url }}">Read More</a></p>
           </div>
+          {% if post.image %}
+          <div class="b">
+            {% include post_image.html item=post %}
+          </div>
+          {% endif %}
         </div>
       </div>
     {% endfor %}

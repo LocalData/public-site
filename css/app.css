@@ -865,3 +865,7 @@ form .hidden {
   float: left;
   margin-right: 20px;
   display: inline-block; }
+
+/* Photo attribution -------------------------------------------------------- */
+.attrib {
+  font-size: 11px; }

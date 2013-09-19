@@ -26,13 +26,21 @@
     </header>
 
 
-    {% include nav.html select="case" %}
+    {% include nav.html select="blog" %}
 
     <div class="out contrast">
       <div class="in rule">
         <div class="a">
           {{ content }}
         </div>
+        {% if page.image %}
+          <div class="b">
+            {% include post_image.html item=page %}
+            {% if page.image.attribution %}
+              <a class="attrib" href="{{ page.image.link }}">{{ page.image.attribution.text }}</a>
+            {% endif %}
+          </div>
+        {% endif %}
       </div>
     </div>
 
