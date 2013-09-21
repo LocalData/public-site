@@ -1,0 +1,83 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html title=page.title %}
+  <body class="case {{ page.class }}">
+
+    <header class="out">
+      <div class="photo">
+        <div class="a">
+          <h1 class="logo"><a href=".">LocalData</a></h1>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="b">
+            <h1 class="case">In action</h1>
+            <h1>{{ page.primary }}</h1>
+
+            <h2>{{ page.secondary }}</h2>
+
+            <a class="learnmore" href="{{ page.name }}#more">Learn more</a>
+
+            <nav class="subnav">
+              <ul>
+                {% for name in site.cases %}
+                  {% for case in site.pages %}
+                    {% if case.name == name %}
+                      <li {% if case.name == page.name %} class="selected" {% endif %}><a href="{{ case.name }}">{{ case.linkTitle }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+
+
+    {% include nav.html select="case" %}
+
+    {{ content }}
+
+    <div class="out">
+      <div class="in">
+        <div class="a">
+          <h2>Interested? <a href="signup">Contact us.</a></h2>
+
+          <p><a href="signup">Get in touch</a> &mdash; we're happy to share more information on how LocalData
+            can solve your data collection challenges.</p>
+        </div>
+
+        <div class="b">
+          <h2>More case studies</h2>
+
+          <ul>
+            {% for name in site.cases %}
+              {% if name != page.name %}
+                {% for case in site.pages %}
+                  {% if case.name == name %}
+                    <li><a href="{{ case.name }}">{{ case.linkTitle }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!--     <div class="out contrast">
+      <div class="in">
+        <h3>Interested? Sign up here</h3>
+
+      </div>
+    </div>
+
+ -->
+    {% include footer.html %}
+    {% include js.html %}
+
+  </body>
+</html>
