@@ -104,6 +104,14 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#form-submit').val('Submit');
       }, 2000);
+    }).always(function () {
+      // Submit signup info to Campaign Monitor.
+      var $cm = $(window.frames[0].document);
+      $cm.find('#hidden-name').val($('#form-name').val());
+      $cm.find('#hidden-email').val($('#form-email').val());
+      $cm.find('#hidden-org').val($('#form-organization').val());
+      $cm.find('#hidden-form').submit();
+
     });
   });
 });
