@@ -162,7 +162,11 @@ p {
   margin-bottom: 1em; }
 
 li {
-  list-style: circle; }
+  list-style: circle;
+  margin-left: 20px; }
+
+ol, ul {
+  margin-bottom: 16px; }
 
 img.responsive {
   max-width: 100%; }
@@ -177,6 +181,10 @@ a:hover {
 
 label {
   cursor: pointer; }
+
+blockquote {
+  margin-left: 20px;
+  color: #b7aba5; }
 
 /*******************************************************************************
  * _layout.scss
@@ -341,8 +349,14 @@ header .b {
   .photo .a {
     padding-bottom: 100px; } }
 
+.home .photo {
+  background-image: url(../img/dotgrid-white.png), url(../img/bg4.jpg); }
+
 .muncie .photo {
   background: url(../img/bg-case-muncie.jpg) no-repeat; }
+
+.post .photo {
+  background-image: url(../img/dotgrid.png); }
 
 @media all and (max-width: 768px) {
   .photo .in {
@@ -428,8 +442,8 @@ form input[type=submit] {
 /* Learn more --------------------------------------------------------------- */
 .learnmore {
   padding-left: 25px;
+  margin-bottom: 45px;
   background: transparent url(../img/arrow.png) no-repeat center left;
-  line-height: 80px;
   display: inline-block;
   text-transform: uppercase;
   font-size: 11px;
@@ -462,8 +476,8 @@ nav a:hover {
 nav a:hover {
   color: #58aeff; }
 
-nav a:hover,
-nav a.selected {
+nav > a:hover,
+nav > a.selected {
   border-top: 5px solid #f15a24;
   padding-top: 10px; }
 
@@ -485,7 +499,11 @@ nav a.selected {
   padding-bottom: 1em; }
 
 .subnav li {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: 0px; }
+
+.subnav ul {
+  margin-bottom: 0px; }
 
 .subnav a,
 .subnav a:hover {
@@ -598,6 +616,12 @@ footer .logo a {
     header .logo a,
     footer .logo a {
       left: -20px; } }
+
+.dots .logo a {
+  background-color: white; }
+
+header .spacer {
+  height: 100px; }
 
 /* Signup link -------------------------------------------------------------- */
 .signup,
@@ -853,3 +877,7 @@ form .hidden {
   float: left;
   margin-right: 20px;
   display: inline-block; }
+
+/* Photo attribution -------------------------------------------------------- */
+.attrib {
+  font-size: 11px; }

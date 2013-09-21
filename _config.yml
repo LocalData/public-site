@@ -1,0 +1,2 @@
+permalink: posts/:categories/:year/:month/:day/:title.html
+cases: ['case-muncie', 'case-detroit']

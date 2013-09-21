@@ -1,3 +1,16 @@
+(function($) {
+  'use strict';
+  $(document).ready(function() { 
+    $(':input').blur(function () {
+      if($(this).val().length > 0) {
+        _gaq.push(['_trackEvent', 'interest', 'completed', $(this).attr('id')]);
+      } 
+      else {
+        _gaq.push(['_trackEvent', 'interest', 'skipped', $(this).attr('id')]);
+      }
+    });
+  });
+}(window.jQuery));
 
 $(document).ready(function () {
   'use strict';
