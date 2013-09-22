@@ -84,7 +84,7 @@ $(document).ready(function () {
     data = encodeURIComponent('"' + data + '"');
     var yqlUrl = '//query.yahooapis.com/v1/public/yql?q=use%20%22store%3A%2F%2F7O6gDwLPu9H5ckqCZGEKxs%22%20as%20google.spreadsheet.post%3B%20insert%20into%20google.spreadsheet.post%20(formkey%2C%20data)%20VALUES%20(%22dDQ5Vm02REM2dEZGalA3bnpqS1BEZmc6MQ%22%2C%20' + data + ')&format=json';
 
-    console.log("posting");
+    //console.log("posting");
     // Record responses in the spreadsheet.
     $.ajax({
       url: yqlUrl,
@@ -92,7 +92,7 @@ $(document).ready(function () {
       dataType: 'jsonp'
     }).done(function () {
       // Thank the user.
-      console.log("done");
+      //console.log("done");
 
       $('#sec-form').hide(500, function () {
         window.scrollTo(0, $('.text').position().top);
