@@ -81,24 +81,22 @@ $(document).ready(function () {
     }
 
     var data = $(this).serialize();
-    console.log("posting");
+    data = encodeURIComponent('"' + data + '"');
+    var yqlUrl = '//query.yahooapis.com/v1/public/yql?q=use%20%22store%3A%2F%2F7O6gDwLPu9H5ckqCZGEKxs%22%20as%20google.spreadsheet.post%3B%20insert%20into%20google.spreadsheet.post%20(formkey%2C%20data)%20VALUES%20(%22dDQ5Vm02REM2dEZGalA3bnpqS1BEZmc6MQ%22%2C%20' + data + ')&format=json';
+
+    //console.log("posting");
     // Record responses in the spreadsheet.
     $.ajax({
-      url: formUrl,
-      data: data,
-      type: 'POST',
-      headers: {
-        ':host': 'docs.google.com',
-        ':method': 'POST',
-        ':path': path,
-        ':scheme': 'https',
-        ':version': 'HTTP/1.1'
-      }
+      url: yqlUrl,
+      type: 'GET',
+      dataType: 'jsonp'
     }).done(function () {
       // Thank the user.
-      console.log("done");
+      //console.log("done");
 
       $('#sec-form').hide(500, function () {
+        window.scrollTo(0, $('.text').position().top);
+        $('#sec-start').hide();
         $('#sec-thanks').show(600);
       });
     }).fail(function () {
@@ -106,6 +104,14 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#form-submit').val('Submit');
       }, 2000);
+    }).always(function () {
+      // Submit signup info to Campaign Monitor.
+      var $cm = $(window.frames[0].document);
+      $cm.find('#hidden-name').val($('#form-name').val());
+      $cm.find('#hidden-email').val($('#form-email').val());
+      $cm.find('#hidden-org').val($('#form-organization').val());
+      $cm.find('#hidden-form').submit();
+
     });
   });
 });
