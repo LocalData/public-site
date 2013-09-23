@@ -464,7 +464,7 @@ nav a:hover {
       margin-right: 0;
       line-height: 44px;
       border-bottom: 1px solid #cbc8c7;
-      padding-top: 0;
+      padding-top: 0px;
       padding-left: 30px;
       background: #fff; } }
 
@@ -479,6 +479,11 @@ nav > a:hover,
 nav > a.selected {
   border-top: 5px solid #f15a24;
   padding-top: 10px; }
+  @media all and (max-width: 768px) {
+    nav > a:hover,
+    nav > a.selected {
+      border-top: 0px;
+      padding-top: 0px; } }
 
 @media all and (max-width: 768px) {
   .nav {
