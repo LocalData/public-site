@@ -11,4 +11,11 @@ $(function(){
   var minHeight = height > textHeight ? height : textHeight;
   console.log(minHeight);
   $('header .photo').css('min-height', minHeight);
+
+
+  var $backs = $('.demoback');
+  $backs.each(function(i, el) {
+    var height = $(el).parent().height();
+    $(el).css('min-height', height);
+  });
 });

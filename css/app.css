@@ -208,7 +208,6 @@ body {
 .in {
   width: 1528px;
   margin: 0px auto;
-  padding: 50px 0 50px 0;
   overflow: auto; }
   @media all and (max-width: 1999px) {
     .in {
@@ -224,8 +223,7 @@ body {
       width: 708px; } }
   @media all and (max-width: 768px) {
     .in {
-      width: auto;
-      padding: 15px 30px; } }
+      width: auto; } }
 
 /* Responsive columns ------------------------------------------------------- */
 /*
@@ -244,6 +242,7 @@ body {
 .a, .b {
   width: 708px;
   margin-right: 56px;
+  padding: 50px 0 50px 0;
   /* column sizing */
   float: left; }
   @media all and (max-width: 1999px) {
@@ -263,7 +262,8 @@ body {
     .a, .b {
       margin: 0;
       width: auto;
-      float: none; } }
+      float: none;
+      padding: 15px 30px; } }
 
 .b {
   margin-right: 0;
@@ -279,10 +279,29 @@ body {
       margin-left: 30px; } }
   @media all and (max-width: 768px) {
     .b {
-      margin-left: 30px;
       margin: 0;
       width: auto;
       float: none; } }
+
+.b.demoback {
+  width: 764px;
+  margin-left: 0;
+  padding-bottom: 0 !important; }
+  @media all and (max-width: 1999px) {
+    .b.demoback {
+      width: 556px;
+      margin-left: 0; } }
+  @media all and (max-width: 1279px) {
+    .b.demoback {
+      margin-left: 543px;
+      margin-left: 0; } }
+  @media all and (max-width: 1119px) {
+    .b.demoback {
+      width: 420px;
+      margin-left: 0; } }
+  @media all and (max-width: 899px) {
+    .b.demoback {
+      width: 354px; } }
 
 .contrast {
   background: #fcf5f0; }
@@ -407,6 +426,10 @@ header .b {
  *       CSS. Exposed filter forms, views pagers and other views elements are
  *       also good candidates for components.
  ******************************************************************************/
+/* Case study specifics ---------------------------------------------------- */
+.detroit .demoback {
+  background: url(../img/detroit-map.png) no-repeat center center; }
+
 /* Boxes ------------------------------------------------------------------- */
 .box,
 form input[type=submit] {
@@ -491,7 +514,7 @@ nav > a.selected {
     padding: 0 15px 0 20px; } }
 
 .nav .in {
-  padding: 0px 0 60px;
+  padding: 0px 0 20px;
   margin-bottom: 0; }
   @media all and (max-width: 768px) {
     .nav .in {
@@ -587,19 +610,25 @@ h1.case {
 .factoid.orange {
   color: #ffad00; }
 
+.factoid.blue {
+  color: #58aeff; }
+
 hr.pointer {
   border: 0px none;
   border-top: 6px solid #f15a24;
   position: relative;
   top: 100px;
-  left: 10em;
+  left: 8em;
   z-index: 100;
-  width: 120%; }
+  width: 60%; }
   @media all and (max-width: 768px) {
     hr.pointer {
       width: 100%;
       top: 0;
       left: 0; } }
+
+.blue hr.pointer {
+  border-color: #58aeff; }
 
 /* Header ------------------------------------------------------------------- */
 header .in {

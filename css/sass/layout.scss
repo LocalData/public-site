@@ -25,7 +25,6 @@ body {
 .in {
   width: 1528px;
   margin: 0px auto;
-  padding: 50px 0 50px 0;
   overflow: auto;
 
   @media all and (max-width: 1999px) {
@@ -46,7 +45,6 @@ body {
 
   @media all and (max-width: 768px) {
     width: auto;
-    padding: 15px 30px;
   }
 }
 
@@ -71,6 +69,7 @@ body {
 .a, .b {
   width: 708px;
   margin-right: 56px;
+  padding: 50px 0 50px 0;
 
   /* column sizing */
   float:left;
@@ -96,6 +95,7 @@ body {
     margin: 0;
     width: auto;
     float:none;
+    padding: 15px 30px;
   }
 }
 
@@ -116,10 +116,34 @@ body {
   }
 
   @media all and (max-width: 768px) {
-    margin-left: 30px;
     margin: 0;
     width: auto;
     float: none;
+  }
+}
+
+.b.demoback {
+  width: 764px;
+  margin-left: 0;
+  padding-bottom: 0!important;
+
+  @media all and (max-width: 1999px) {
+    width: 556px;
+    margin-left: 0;
+  }
+
+  @media all and (max-width: 1279px) {
+    margin-left: 543px;
+    margin-left: 0;
+  }
+
+  @media all and (max-width: 1119px) {
+    width: 420px;
+    margin-left: 0;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 354px;
   }
 }
 
@@ -203,7 +227,6 @@ header .b {
 
     @media all and (max-width: 1119px) {
     }
-
 
     @media all and (max-width: 768px) {
     }
