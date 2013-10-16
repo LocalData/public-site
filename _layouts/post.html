@@ -40,7 +40,11 @@
           <div class="b">
             {% include post_image.html item=page %}
             {% if page.image.attribution %}
+              {% if page.image.link %}
               <a class="attrib" href="{{ page.image.attribution.link }}">{{ page.image.attribution.text }}</a>
+              {% else %}
+              {{ page.image.attribution.text }}
+              {% endif %}
             {% endif %}
           </div>
         {% endif %}
