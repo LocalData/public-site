@@ -8,7 +8,7 @@ image:
     text: Matt Hampel from LocalData and David McDowell from the Southwest Organizing Project talk about vacant building data.
 ---
 
-Chicago’s award-winning [Southwest Organizing Project](http://www.swopchicago.org/home.aspx)is aiming for big impact with a new project: they’re rehabbing more than 50 homes in a Chicago neighborhood. They’ve been collecting data for years, but make this happen, SWOP needs an accurate picture of their neighborhood -- and fast.
+Chicago’s award-winning [Southwest Organizing Project](http://www.swopchicago.org/home.aspx) is aiming for big impact with a new project: they’re rehabbing more than 50 homes in a Chicago neighborhood. They’ve been collecting data for years, but make this happen, SWOP needs an accurate picture of their neighborhood -- and fast.
 
 We believe that every community can design its own future, and that *good data makes for better decisions.* That’s why the [Smart Chicago Collaborative](http://www.smartchicagocollaborative.org/) and LocalData are partnering to make sure that SWOP has the data they need and tools to manage it.
 
