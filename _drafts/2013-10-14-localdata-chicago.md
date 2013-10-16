@@ -1,5 +1,5 @@
 ---
-title: Fast Company on LocalData
+title: A post goes here
 layout: post
 ---
 Check out Fast Company's
