@@ -1,2 +1,2 @@
 permalink: posts/:categories/:year/:month/:day/:title.html
-cases: ['case-muncie', 'case-detroit']
+cases: ['case-muncie', 'case-detroit', 'case-malden', 'case-gary']
