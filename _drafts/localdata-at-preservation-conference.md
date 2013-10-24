@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chat with LocalData in Indianapolis
-excerpt: Catch LocalData in the Survey Slam panel at the National Preservation Conference in Indianapolis.
+excerpt: Catch LocalData on the Survey Slam panel at the National Preservation Conference in Indianapolis.
 image:
   file: blog/indy-preservation.jpg
   attribution:
