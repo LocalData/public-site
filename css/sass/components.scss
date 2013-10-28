@@ -38,6 +38,11 @@
  *       also good candidates for components.
  ******************************************************************************/
 
+ /* Homepage specifics ------------------------------------------------------ */
+ .partners {
+  padding-top: 50px;
+ }
+
  /* Case study specifics ---------------------------------------------------- */
 .detroit .demoback {
   background: url(../img/detroit-map.png) no-repeat center center;
@@ -432,6 +437,9 @@ img.partner-logo {
 
 /* Partners------------------------------------------------------------------ */
 .press-box {
+  overflow: auto;
+  padding-bottom: 50px;
+
   @media all and (max-width: 768px) {
     white-space: nowrap;
 

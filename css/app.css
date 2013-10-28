@@ -426,6 +426,10 @@ header .b {
  *       CSS. Exposed filter forms, views pagers and other views elements are
  *       also good candidates for components.
  ******************************************************************************/
+/* Homepage specifics ------------------------------------------------------ */
+.partners {
+  padding-top: 50px; }
+
 /* Case study specifics ---------------------------------------------------- */
 .detroit .demoback {
   background: url(../img/detroit-map.png) no-repeat center center; }
@@ -789,12 +793,15 @@ img.partner-logo {
   height: 70px; }
 
 /* Partners------------------------------------------------------------------ */
-@media all and (max-width: 768px) {
-  .press-box {
-    white-space: nowrap;
-    overflow-y: hidden;
-    overflow: scroll;
-    height: 200px; } }
+.press-box {
+  overflow: auto;
+  padding-bottom: 50px; }
+  @media all and (max-width: 768px) {
+    .press-box {
+      white-space: nowrap;
+      overflow-y: hidden;
+      overflow: scroll;
+      height: 200px; } }
 
 .press-item {
   float: left;

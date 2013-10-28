@@ -3,10 +3,14 @@ New LocalData site
 Install
 =======
 
-Install SASS:
+Install jekyll:
 
-`gem install sass`
+`gem install jekyll`
 
-Watch the directory for style changes:
+Watch the directory for changes:
 
-`sass --watch css/sass/styles.scss:css/app.css`
+`jekyll serve --watch`
+
+A server will run on localhost:
+
+`[http://localhost:4000/](http://localhost:4000/)`
