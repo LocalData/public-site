@@ -1,4 +1,4 @@
 .DS_STORE
 .sass-cache/
 _site/
-
+_localconfig.yml
