@@ -293,7 +293,7 @@ body {
       margin-left: 0; } }
   @media all and (max-width: 1279px) {
     .b.demoback {
-      margin-left: 543px;
+      width: 543px;
       margin-left: 0; } }
   @media all and (max-width: 1119px) {
     .b.demoback {
@@ -436,7 +436,7 @@ header .b {
   background: url(../img/detroit-map.png) no-repeat center center; }
 
 .gary .photo {
-  background-image: url(../img/bg-case-gary.jpg); }
+  background-image: url(../img/bg-case-gary2.jpg); }
 
 .gary .demoback {
   background: url(../img/gary-map.png) no-repeat center center; }
