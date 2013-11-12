@@ -342,7 +342,8 @@ header .text {
     margin-bottom: 0;
     padding-bottom: 0;
     padding-left: 30px;
-    padding-right: 30px; } }
+    padding-right: 30px;
+    min-heigth: auto !important; } }
 
 header .a {
   float: right; }
@@ -371,7 +372,7 @@ header .b {
   background-image: url(../img/dotgrid-white.png), url(../img/bg4.jpg); }
 
 .muncie .photo {
-  background: url(../img/bg-case-muncie.jpg) no-repeat; }
+  background: url(../img/bg-case-muncie1.jpg) no-repeat; }
 
 .post .photo {
   background-image: url(../img/dotgrid.png); }
