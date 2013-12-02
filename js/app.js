@@ -1,17 +1,18 @@
 $(function(){
   'use strict';
-  // function resize() {
-  //   $('header .photo').css('min-height', $('.text').height());
-  // }
-  // window.onresize = resize;
-  // resize();
+  function resize() {
+    var textHeight = $('.text').height();
+    var height = $( window ).height() - 100;
+    var minHeight = height > textHeight ? height : textHeight;
 
-  var textHeight = $('.text').height();
-  var height = $( window ).height() - 100;
-  var minHeight = height > textHeight ? height : textHeight;
-  console.log(minHeight);
-  $('header .photo').css('min-height', minHeight);
+    if($(window).width() < 769) {
+      minHeight = 100;
+    }
+    console.log(minHeight);
+    $('header .photo').css('min-height', minHeight);
+  }
 
+  $(window).resize(resize);
 
   var $backs = $('.demoback');
   $backs.each(function(i, el) {
