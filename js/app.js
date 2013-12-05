@@ -12,6 +12,7 @@ $(function(){
     $('header .photo').css('min-height', minHeight);
   }
 
+  resize();
   $(window).resize(resize);
 
   var $backs = $('.demoback');
