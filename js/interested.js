@@ -113,5 +113,8 @@ $(document).ready(function () {
       $cm.find('#hidden-form').submit();
 
     });
+
+    // Record an analytics event
+    _gaq.push(['_trackEvent', 'interest', 'submit']);
   });
 });
