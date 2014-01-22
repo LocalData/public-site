@@ -374,6 +374,56 @@ header .spacer {
 /* Footer ------------------------------------------------------------------- */
 @import "shared/footer";
 
+/* Featured-in/Accolades ---------------------------------------------------- */
+.featured {
+  padding-top: 50px;
+  text-align: center;
+  overflow: auto;
+  padding-bottom: 50px;
+
+  @media all and (max-width: 768px) {
+    white-space: nowrap;
+
+    overflow-y: hidden;
+    overflow: scroll;
+    height: 200px;
+  }
+}
+
+.featured-item {
+  display: inline-block;
+  width: 42%;
+  float: left;
+  height: 150px;
+  margin: 10px 4%;
+  font-size: 17px;
+
+  @media all and (max-width: 768px) {
+    height: auto;
+    width: 200px;
+    *display:inline;/* For IE7*/
+    *zoom:1;/* For IE7*/
+    float: none;
+    white-space: normal;
+  }
+}
+
+.featured-item a {
+  display: block;
+  text-align: center;
+}
+
+.featured-item .quote {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#psfk img {
+  max-height: 148px;
+}
+#bestapps img {
+  max-height:40px;
+}
 
 /* Partners------------------------------------------------------------------ */
 .partners {
