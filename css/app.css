@@ -443,6 +443,9 @@ header .b {
 .malden .demoback {
   background: url(../img/maldennight.jpg) no-repeat center center; }
 
+.muncie .demoback {
+  background: url(../img/muncie-map.png) no-repeat center center; }
+
 /* Boxes ------------------------------------------------------------------- */
 .box,
 form input[type=submit] {
