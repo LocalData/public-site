@@ -2,3 +2,4 @@
 .sass-cache/
 _site/
 _localconfig.yml
+css/sass/*.css
