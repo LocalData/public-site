@@ -1,0 +1,172 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html title="Get started with LocalData" %}
+  <body class="leads">
+    <header class="out">
+
+      <div class="photo">
+        <div class="a">
+          <h1 class="logo"><a href=".">LocalData</a></h1>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="b">
+          <h1 class="case"></h1>
+          <div id="sec-start">
+            <h1>Ready to go?</h1>
+
+            <h2>Get ready before the ground thaws with survey tools that are
+            fast and easy to use.</h2>
+
+            <p>Fill out the form below or call us directly at <strong>866-944-4468</strong>.</p>
+          </div>
+
+          <div class="hidden" id="sec-thanks">
+            <h1>Thank you!</h1>
+            <h2>We will be in touch shortly.</h2>
+
+            <p>You can also <a href="http://localhost:8888/public-site/_site/case-muncie.html">read a series of case studies</a> showing how LocalData has been used for data collection ranging from crime to historic preservation.</p>
+
+            <p>Want to get started right now? Give us a call at <strong>866-944-4468</strong>.
+          </div>
+
+          <form action="" id="sec-form">
+              <div class="hidden req" id="req-message">Oops, you're missing some required fields.</div>
+
+              <div class="single">
+                <label for="form-name">Name<a class="req">*</a></label>
+                <input type="text" name="entry.0.single" id="form-name" placeholder="Your name" data-required="true" />
+              </div>
+
+              <div class="pair">
+                <div class="single">
+                  <label for="form-email">Email<a class="req">*</a></label>
+                  <input type="text" name="entry.23.single" id="form-email" data-required="true" placeholder="you@example.com" />
+                </div>
+                <div class="single">
+                  <label for="form-phone">Phone<a class="req">*</a></label>
+                  <input type="text" name="entry.22.single" id="form-phone" data-required="true" placeholder="(555) 555-1234" />
+                </div>
+              </div>
+
+              <div style="display:none;">
+                <input type="text" name="entry.2.single" id="form-last-name" value="_"/>
+              </div>
+
+              <input type="hidden" name="pageNumber" value="0" />
+              <input type="hidden" name="backupCache" value="" />
+              <input type="hidden" name="submit" value="Submit" />
+              <input type="submit" value="Get in touch" class="input-submit" id="form-submit" />
+            </form>
+          </form>
+          <iframe id="cm" src="cmform-2014-ideas.html" width="0" height="0">
+          </iframe>
+
+        </div>
+      </div>
+    </header>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+      'use strict';
+
+      // Fill in e-mail from fragment
+      if (location.hash !== '') {
+        $('#form-email').val(decodeURIComponent(location.hash.slice(1)));
+      }
+
+
+      function setCheckToggle(id) {
+        var $el = $('#' + id);
+        $el.change(function handleToggle(e) {
+          var $sub = $('div[data-condition="' + id + '"]');
+          if ($el.prop('checked')) {
+            $sub.show(400);
+          } else {
+            $sub.hide(400);
+          }
+        });
+      }
+
+      function setRadioToggle(id, name, yes) {
+        var $el = $('input[name="' + name + '"]');
+        $el.change(function handleToggle(e) {
+          var $checked = $('input[name="' + name + '"]:checked');
+          var $sub = $('div[data-condition="' + id + '"]');
+          if ($checked.val() === yes) {
+            $sub.show(400);
+          } else {
+            $sub.hide(400);
+          }
+        });
+      }
+
+      // Collect and submit entries from the form.
+      $('#sec-form').submit(function (e) {
+        e.preventDefault();
+        $('#form-submit').val('Submitting...');
+
+        // Validation
+        $('#req-message').hide();
+        var valid = true;
+        $('input[data-required="true"]').each(function () {
+          var val = $(this).val();
+          if (!val) {
+            $(this).addClass('missing');
+            valid = false;
+          }else {
+            $(this).removeClass('missing');
+          }
+        });
+
+        if (!valid) {
+          $('#req-message').show();
+          $('#form-submit').val('Submit');
+          $('body').animate({
+            scrollTop: 0
+          });
+          return;
+        }
+
+        //console.log("posting");
+        // Record responses in the spreadsheet.
+
+        var $cm = $(window.frames[0].document);
+        $cm.find('#hidden-name').val($('#form-name').val());
+        $cm.find('#hidden-email').val($('#form-email').val());
+        $cm.find('#hidden-phone').val($('#form-phone').val());
+        $cm.find('#hidden-form').submit();
+
+        $('#sec-form').hide(500, function () {
+          window.scrollTo(0, $('.text').position().top);
+          $('#sec-start').hide();
+          $('#sec-thanks').show(600);
+        });
+
+        // Record an analytics event
+        _gaq.push(['_trackEvent', 'interest', 'submit']);
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34929479-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>
