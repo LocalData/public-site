@@ -1,0 +1,185 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html title="LocalData + Illinois" %}
+  <body class="leads">
+    <header class="out">
+
+      <div class="photo">
+        <div class="a">
+          <h1 class="logo"><a href=".">LocalData</a></h1>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="b">
+          <h1 class="case"></h1>
+          <div id="sec-start">
+            <h1 style="font-size:42px; line-height:1em;">LocalData + <br>Housing Action Illinois</h1>
+
+            <h2>Webinar: 10:00 AM, Wednesday, April 9</h2>
+            <p>With funding for community and economic development initiatives becoming more competitive, it’s important for municipalities to have good data. Housing Action Illinois is launching an initiative to help municipalities gather that data and engage their citizens through mapping their communities.</p>
+
+            <p>Please join Housing Action Illinois and LocalData team members for
+            webinar on how LocalData can help you map your community.</p>
+
+            <form action="" id="sec-form">
+                <div class="hidden req" id="req-message">Oops, you're missing some required fields.</div>
+
+                <div class="single">
+                  <label for="form-name">Name<a class="req">*</a></label>
+                  <input type="text" name="entry.0.single" id="form-name" placeholder="Your name" data-required="true" />
+                </div>
+
+                <div class="pair">
+                  <div class="single">
+                    <label for="form-email">Email<a class="req">*</a></label>
+                    <input type="text" name="entry.23.single" id="form-email" data-required="true" placeholder="you@example.com" />
+                  </div>
+                  <div class="single">
+                    <label for="form-phone">Phone<a class="req">*</a></label>
+                    <input type="text" name="entry.22.single" id="form-phone" data-required="true" placeholder="(555) 555-1234" />
+                  </div>
+                </div>
+
+                <div style="display:none;">
+                  <input type="text" name="entry.2.single" id="form-last-name" value="_"/>
+                </div>
+
+                <input type="hidden" name="pageNumber" value="0" />
+                <input type="hidden" name="backupCache" value="" />
+                <input type="hidden" name="submit" value="Submit" />
+                <input type="submit" value="RSVP for April 9" class="input-submit" id="form-submit" />
+              </form>
+            </form>
+
+            <div class="hidden" id="sec-thanks">
+              <h2>Thank you! We'll see you on April 9.</h2>
+
+              <p>You can also <a href="http://localhost:8888/public-site/_site/case-muncie.html">read a series of case studies</a> showing how LocalData has been used for data collection ranging from crime to historic preservation.</p>
+            </div>
+
+            <iframe id="cm" src="cmform-2014-hai-webinar.html" width="0" height="0">
+            </iframe>
+
+            </div>
+
+
+            <h2>Data that makes a difference</h2>
+
+            <p>LocalData is a mapping platform that allows users to easily
+            design and complete community surveys using tablets and smartphones.
+            LocalData eliminates paper-based surveys and time-consuming data
+            entry, providing instantly usable information.</p>
+
+            <p>Cpmmunities have used LocalData in a variety of different ways:</p>
+            <ul>
+
+     <li> <strong>A property conditions survey </strong>of over 1,000 residential parcels in Southwest Rockford will help the community better prioritize future development.</li>
+
+    <li>  A property survey helped Gary, Indiana to create an <strong>inventory of its vacant parcels</strong> for the first time.</li>
+
+     <li> A community foundation surveyed <strong>bike usage in Detroit neighborhoods</strong>.</li>
+
+    <li> A survey of <strong>street lighting helped to improve pedestrian access</strong> to Malden, Massachusetts’ business district.</li>
+
+    </ul>
+
+      <p>LocalData is user friendly; community residents can use their smartphones or tablets to complete surveys, which makes it easy for residents to participate in improving their communities.</p>
+
+      <p>Housing Action Illinois is working with LocalData to secure funding to provide free or reduced price subscriptions for the mapping tool to communities throughout Illinois.</p>
+
+          </div>
+
+      </div>
+    </header>
+
+    {% include js.html %}
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+      'use strict';
+
+      // Fill in e-mail from fragment
+      if (location.hash !== '') {
+        $('#form-email').val(decodeURIComponent(location.hash.slice(1)));
+      }
+
+
+      function setCheckToggle(id) {
+        var $el = $('#' + id);
+        $el.change(function handleToggle(e) {
+          var $sub = $('div[data-condition="' + id + '"]');
+          if ($el.prop('checked')) {
+            $sub.show(400);
+          } else {
+            $sub.hide(400);
+          }
+        });
+      }
+
+      function setRadioToggle(id, name, yes) {
+        var $el = $('input[name="' + name + '"]');
+        $el.change(function handleToggle(e) {
+          var $checked = $('input[name="' + name + '"]:checked');
+          var $sub = $('div[data-condition="' + id + '"]');
+          if ($checked.val() === yes) {
+            $sub.show(400);
+          } else {
+            $sub.hide(400);
+          }
+        });
+      }
+
+      // Collect and submit entries from the form.
+      $('#sec-form').submit(function (e) {
+        e.preventDefault();
+        $('#form-submit').val('Submitting...');
+
+        // Validation
+        $('#req-message').hide();
+        var valid = true;
+        $('input[data-required="true"]').each(function () {
+          var val = $(this).val();
+          if (!val) {
+            $(this).addClass('missing');
+            valid = false;
+          }else {
+            $(this).removeClass('missing');
+          }
+        });
+
+        if (!valid) {
+          $('#req-message').show();
+          $('#form-submit').val('Submit');
+          $('body').animate({
+            scrollTop: 0
+          });
+          return;
+        }
+
+        //console.log("posting");
+        // Record responses in the spreadsheet.
+
+        var $cm = $(window.frames[0].document);
+        $cm.find('#hidden-name').val($('#form-name').val());
+        $cm.find('#hidden-email').val($('#form-email').val());
+        $cm.find('#hidden-phone').val($('#form-phone').val());
+        $cm.find('#hidden-form').submit();
+
+        // Hide the form / show the thanks
+        $('#sec-form').hide(500, function () {
+          window.scrollTo(0, $('.text').position().top);
+          $('#sec-thanks').show(600);
+        });
+
+        // Record an analytics event
+        _gaq.push(['_trackEvent', 'interest', 'submit']);
+      });
+    });
+    </script>
+
+    {% include footer.html %}
+  </body>
+</html>
