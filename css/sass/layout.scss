@@ -201,8 +201,7 @@ header .text {
   }
 }
 
-
-header .a {
+header .photo .a {
   float: right;
 }
 
@@ -222,15 +221,19 @@ header .b {
   }
 }
 
+.text header .a {
+  padding: 0px;
+}
+
 .photo {
-    background: url(../img/bg4.jpg) no-repeat;
-    background-size: cover;
+  background: url(../img/bg4.jpg) no-repeat;
+  background-size: cover;
 
-    @media all and (max-width: 1119px) {
-    }
+  @media all and (max-width: 1119px) {
+  }
 
-    @media all and (max-width: 768px) {
-    }
+  @media all and (max-width: 768px) {
+  }
 }
 
 .photo .a {
@@ -239,7 +242,7 @@ header .b {
   }
 }
 
-
+/* Photos for specific pages - - - - - - - - - - - - - - - - */
 .leads .photo {
 }
 

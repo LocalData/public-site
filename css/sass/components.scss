@@ -155,12 +155,17 @@ nav>a.selected {
   }
 }
 
-
 .nav {
+  background: $pink;
+
   @media all and (max-width: 768px) {
     background: #fff;
     padding: 0 15px 0 20px;
   }
+}
+
+.text .nav {
+  background: #fff;
 }
 
 .nav .in {
@@ -313,6 +318,10 @@ header .in {
   overflow: visible;
 }
 
+header .logo {
+  margin-bottom: 0;
+}
+
 header .logo a,
 footer .logo a {
   position: relative;
@@ -330,6 +339,17 @@ footer .logo a {
     left: -20px;
   }
 }
+
+/* Handle the retina logo */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dppx) {
+
+  header .logo a {
+      background:url('../img/logo@2x.png') no-repeat top left;
+      background-size: auto 112px;
+  }
+}
+
 
 .dots .logo a {
   background-color: white;
