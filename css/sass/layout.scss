@@ -147,6 +147,39 @@ body {
   }
 }
 
+.text .a {
+  width: 858px;
+  @media all and (max-width: 1999px) {
+    width: 650px;
+  }
+
+  @media all and (max-width: 1119px) {
+    margin-right: 30px;
+    width: 525px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 410px;
+  }
+}
+
+.text .b {
+  width: 558px;
+  @media all and (max-width: 1999px) {
+    width: 350px;
+  }
+
+  @media all and (max-width: 1119px) {
+    margin-right: 30px;
+    width: 250px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 204px;
+  }
+
+}
+
 .contrast {
   background: $pink;
 }
