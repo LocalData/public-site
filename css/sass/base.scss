@@ -26,8 +26,8 @@ strong {
 }
 
 h1 {
-  font-size: 76px;
-  line-height: 79px;
+  font-size: 84px;
+  line-height: 78px;
   margin-bottom: 35px;
   letter-spacing: -2px;
 
@@ -49,6 +49,10 @@ h1.logo {
   color: #fff;
 }
 
+.full-width h1 {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
 
 h2, h3 {
   font-family: $bold;

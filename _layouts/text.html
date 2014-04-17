@@ -1,0 +1,57 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html title=page.title %}
+  <body class="text {{ page.class }}">
+
+    {% include nav.html %}
+
+    <header class="out">
+      <div class="in">
+        <div class="a">
+          <h1 class="logo"><a href=".">LocalData</a></h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="out contrast">
+      <div class="in full-width">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+
+    {{ content }}
+
+    <div class="out">
+      <div class="in">
+        <div class="a">
+          <h2>Interested? <a href="signup">Contact us.</a></h2>
+
+          <p><a href="signup">Get in touch</a> &mdash; we're happy to share more information on how LocalData
+            can solve your data collection challenges.</p>
+        </div>
+
+        <div class="b">
+          <h2>More case studies</h2>
+
+          <ul>
+            {% for name in site.cases %}
+              {% if name != page.name %}
+                {% for case in site.pages %}
+                  {% if case.name == name %}
+                    <li><a href="{{ case.name }}">{{ case.linkTitle }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include js.html %}
+
+  </body>
+</html>

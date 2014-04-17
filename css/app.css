@@ -306,6 +306,9 @@ body {
 .contrast {
   background: #fcf5f0; }
 
+.text .contrast {
+  background: #fff; }
+
 .contrast + .contrast .in {
   padding-top: 0; }
   @media all and (max-width: 768px) {
