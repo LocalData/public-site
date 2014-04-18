@@ -108,8 +108,8 @@ strong {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif; }
 
 h1 {
-  font-size: 76px;
-  line-height: 79px;
+  font-size: 84px;
+  line-height: 78px;
   margin-bottom: 35px;
   letter-spacing: -2px; }
   h1 span {
@@ -125,6 +125,10 @@ h1.logo {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
   font-size: 26px;
   color: #fff; }
+
+.full-width h1 {
+  margin-top: 25px;
+  margin-bottom: 0; }
 
 h2, h3 {
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
@@ -303,11 +307,34 @@ body {
     .b.demoback {
       width: 354px; } }
 
+.text .a {
+  width: 858px; }
+  @media all and (max-width: 1999px) {
+    .text .a {
+      width: 650px; } }
+  @media all and (max-width: 1119px) {
+    .text .a {
+      margin-right: 30px;
+      width: 525px; } }
+  @media all and (max-width: 899px) {
+    .text .a {
+      width: 410px; } }
+
+.text .b {
+  width: 558px; }
+  @media all and (max-width: 1999px) {
+    .text .b {
+      width: 350px; } }
+  @media all and (max-width: 1119px) {
+    .text .b {
+      margin-right: 30px;
+      width: 250px; } }
+  @media all and (max-width: 899px) {
+    .text .b {
+      width: 204px; } }
+
 .contrast {
   background: #fcf5f0; }
-
-.text .contrast {
-  background: #fff; }
 
 .contrast + .contrast .in {
   padding-top: 0; }
@@ -347,7 +374,7 @@ header .text {
     padding-right: 30px;
     min-height: auto !important; } }
 
-header .a {
+header .photo .a {
   float: right; }
 
 header .b {
@@ -362,6 +389,9 @@ header .b {
     float: none;
     width: 100%; } }
 
+.text header .a {
+  padding: 0px; }
+
 .photo {
   background: url(../img/bg4.jpg) no-repeat;
   background-size: cover; }
@@ -370,6 +400,7 @@ header .b {
   .photo .a {
     padding-bottom: 100px; } }
 
+/* Photos for specific pages - - - - - - - - - - - - - - - - */
 .home .photo {
   background-image: url(../img/dotgrid-white.png), url(../img/bg4.jpg); }
 
@@ -527,10 +558,15 @@ nav > a.selected {
       border-top: 0px;
       padding-top: 0px; } }
 
-@media all and (max-width: 768px) {
-  .nav {
-    background: #fff;
-    padding: 0 15px 0 20px; } }
+.nav {
+  background: #fcf5f0; }
+  @media all and (max-width: 768px) {
+    .nav {
+      background: #fff;
+      padding: 0 15px 0 20px; } }
+
+.text .nav {
+  background: #fff; }
 
 .nav .in {
   padding: 0px 0 20px;
@@ -653,6 +689,9 @@ hr.pointer {
 header .in {
   overflow: visible; }
 
+header .logo {
+  margin-bottom: 0; }
+
 header .logo a,
 footer .logo a {
   position: relative;
@@ -669,6 +708,11 @@ footer .logo a {
     footer .logo a {
       left: -20px; } }
 
+/* Handle the retina logo */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+  header .logo a {
+    background: url("../img/logo@2x.png") no-repeat top left;
+    background-size: auto 112px; } }
 .dots .logo a {
   background-color: white; }
 
