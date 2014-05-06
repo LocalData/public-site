@@ -376,6 +376,9 @@ header .text {
 
 header .photo .a {
   float: right; }
+  @media all and (max-width: 768px) {
+    header .photo .a {
+      float: none; } }
 
 header .b {
   padding-top: 75px; }
@@ -387,7 +390,7 @@ header .b {
   header .a,
   header .b {
     float: none;
-    width: 100%; } }
+    width: auto; } }
 
 .text header .a {
   padding: 0px; }
@@ -395,10 +398,6 @@ header .b {
 .photo {
   background: url(../img/bg4.jpg) no-repeat;
   background-size: cover; }
-
-@media all and (max-width: 768px) {
-  .photo .a {
-    padding-bottom: 100px; } }
 
 /* Photos for specific pages - - - - - - - - - - - - - - - - */
 .home .photo {
@@ -418,7 +417,7 @@ header .b {
 @media all and (max-width: 768px) {
   .photo .a,
   .photo .b {
-    padding-left: 30px;
+    padding-left: 0;
     padding-right: 30px; } }
 
 /*******************************************************************************
@@ -718,6 +717,9 @@ footer .logo a {
 
 header .spacer {
   height: 100px; }
+  @media all and (max-width: 768px) {
+    header .spacer {
+      height: 0; } }
 
 /* Signup link -------------------------------------------------------------- */
 .signup,
