@@ -1,9 +1,15 @@
 $(function(){
   'use strict';
   function resize() {
-    var textHeight = $('.text').height();
+    var textHeight = $('.text').height() || $('.measureme').height();
     var height = $( window ).height() - 100;
-    var minHeight = height > textHeight ? height : textHeight;
+    var minHeight;
+    if (height > textHeight) {
+      minHeight = height;
+    } else {
+      height = textHeight;
+      console.log("Using textHeight", textHeight);
+    }
 
     if($(window).width() < 769) {
       minHeight = 100;

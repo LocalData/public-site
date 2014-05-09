@@ -6,110 +6,108 @@
   <body class="leads">
     <header class="out">
 
-      <div class="photo">
+      <div class="photo" style="min-height:951px;">
         <div class="a">
           <h1 class="logo"><a href=".">LocalData</a></h1>
         </div>
       </div>
 
-      <div class="text">
-        <div class="b">
-          <h1 class="case"></h1>
-          <div id="sec-start">
-            <h1>Get started with LocalData</h1>
+      <div class="b measureme">
+        <h1 class="case"></h1>
+        <div id="sec-start">
+          <h1>Get started with LocalData</h1>
 
-            <h2>Fill out this quick form to tell us more about your needs. We'll be in touch shortly! Or, call us toll-free at <strong>866-944-4468</strong>.</h2>
-          </div>
+          <h2>Fill out this quick form to tell us more about your needs. We'll be in touch shortly! Or, call us toll-free at <strong>866-944-4468</strong>.</h2>
+        </div>
 
-          <div class="hidden" id="sec-thanks">
-            <h1>Thank you! We will get back to you shortly.</h1>
-          </div>
+        <div class="hidden" id="sec-thanks">
+          <h1>Thank you! We will get back to you shortly.</h1>
+        </div>
 
-          <form action="" id="sec-form">
-              <div class="hidden req" id="req-message">Oops, you're missing some required fields.</div>
+        <form action="" id="sec-form">
+            <div class="hidden req" id="req-message">Oops, you're missing some required fields.</div>
 
+            <div class="single">
+              <label for="form-name">Name<a class="req">*</a></label>
+              <input type="text" name="entry.0.single" id="form-name" placeholder="Your name" data-required="true" />
+            </div>
+
+            <div class="pair">
               <div class="single">
-                <label for="form-name">Name<a class="req">*</a></label>
-                <input type="text" name="entry.0.single" id="form-name" placeholder="Your name" data-required="true" />
+                <label for="form-email">Email<a class="req">*</a></label>
+                <input type="text" name="entry.23.single" id="form-email" data-required="true" placeholder="you@example.com" />
               </div>
-
-              <div class="pair">
-                <div class="single">
-                  <label for="form-email">Email<a class="req">*</a></label>
-                  <input type="text" name="entry.23.single" id="form-email" data-required="true" placeholder="you@example.com" />
-                </div>
-                <div class="single">
-                  <label for="form-phone">Phone<a class="req">*</a></label>
-                  <input type="text" name="entry.22.single" id="form-phone" data-required="true" placeholder="(555) 555-1234" />
-                </div>
+              <div class="single">
+                <label for="form-phone">Phone<a class="req">*</a></label>
+                <input type="text" name="entry.22.single" id="form-phone" data-required="true" placeholder="(555) 555-1234" />
               </div>
+            </div>
 
-              <div class="pair">
-                <div class="single">
-                  <label for="form-title">Title</label>
-                  <input type="text" name="entry.4.single" id="form-title" />
-                </div>
-                <div class="single">
-                  <label for="form-organization">Organization</label>
-                  <input type="text" name="entry.5.single" id="form-organization" class="wide" />
-                </div>
+            <div class="pair">
+              <div class="single">
+                <label for="form-title">Title</label>
+                <input type="text" name="entry.4.single" id="form-title" />
               </div>
+              <div class="single">
+                <label for="form-organization">Organization</label>
+                <input type="text" name="entry.5.single" id="form-organization" class="wide" />
+              </div>
+            </div>
 
-              <!-- Organization type -->
+            <!-- Organization type -->
+            <div class="multi">
+              <p class="question">What type of organization are you with?</p>
+              <div>
+                <input type="radio" name="entry.6.group" id="org-0" for="org-0" value="nonprofit" />
+                <label for="org-0">Nonprofit</label>
+              </div>
+              <div>
+                <input type="radio" name="entry.6.group" id="org-1" for="org-1" value="private" />
+                <label for="org-1">Private sector</label>
+              </div>
+              <div>
+                <input type="radio" name="entry.6.group" id="org-2" for="org-2" value="government" />
+                <label for="org-2">Government</label>
+              </div>
+            </div>
+
+            <!-- Data collection history -->
+            <div class="hidden" data-condition="past-yes">
               <div class="multi">
-                <p class="question">What type of organization are you with?</p>
+                <p class="question">What tools do you use for data collection?</p>
                 <div>
-                  <input type="radio" name="entry.6.group" id="org-0" for="org-0" value="nonprofit" />
-                  <label for="org-0">Nonprofit</label>
+                  <input type="checkbox" name="entry.19.group" id="tech-0" value="paper" />
+                  <label for="tech-0">Pen and paper</label>
                 </div>
                 <div>
-                  <input type="radio" name="entry.6.group" id="org-1" for="org-1" value="private" />
-                  <label for="org-1">Private sector</label>
+                  <input type="checkbox" name="entry.19.group" id="tech-1" value="__option__" />
+                  <label for="tech-1">Technology</label>
                 </div>
-                <div>
-                  <input type="radio" name="entry.6.group" id="org-2" for="org-2" value="government" />
-                  <label for="org-2">Government</label>
+                <div class="hidden" data-condition="tech-1">
+                  <label>Which products?</label>
+                  <input type="text" name="entry.19.group.other_option_" id="tech-other" />
                 </div>
               </div>
-
-              <!-- Data collection history -->
-              <div class="hidden" data-condition="past-yes">
-                <div class="multi">
-                  <p class="question">What tools do you use for data collection?</p>
-                  <div>
-                    <input type="checkbox" name="entry.19.group" id="tech-0" value="paper" />
-                    <label for="tech-0">Pen and paper</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" name="entry.19.group" id="tech-1" value="__option__" />
-                    <label for="tech-1">Technology</label>
-                  </div>
-                  <div class="hidden" data-condition="tech-1">
-                    <label>Which products?</label>
-                    <input type="text" name="entry.19.group.other_option_" id="tech-other" />
-                  </div>
-                </div>
-              </div>
+            </div>
 
 <!--               <div class="req">* Required</div>
- -->
-              <div style="display:none;">
-                  <input type="text" name="entry.2.single" id="form-last-name" value="_"/>
-              </div>
+-->
+            <div style="display:none;">
+                <input type="text" name="entry.2.single" id="form-last-name" value="_"/>
+            </div>
 
-              <input type="hidden" name="pageNumber" value="0" />
-              <input type="hidden" name="backupCache" value= />
-              <input type="hidden" name="submit" value="Submit" />
-              <input type="submit" value="Submit" class="input-submit" id="form-submit" />
-            </form>
-
-
-
+            <input type="hidden" name="pageNumber" value="0" />
+            <input type="hidden" name="backupCache" value= />
+            <input type="hidden" name="submit" value="Submit" />
+            <input type="submit" value="Submit" class="input-submit" id="form-submit" />
           </form>
-          <iframe id="cm" src="cmform.html" width="0" height="0">
-          </iframe>
 
-        </div>
+
+
+        </form>
+        <iframe id="cm" src="cmform.html" width="0" height="0">
+        </iframe>
+
       </div>
     </header>
 
