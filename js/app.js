@@ -7,7 +7,7 @@ $(function(){
     if (height > textHeight) {
       minHeight = height;
     } else {
-      height = textHeight;
+      minHeight = textHeight;
       console.log("Using textHeight", textHeight);
     }
 
