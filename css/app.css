@@ -307,6 +307,9 @@ body {
     .b.demoback {
       width: 354px; } }
 
+.a.short {
+  padding-bottom: 0px; }
+
 .text .a {
   width: 858px; }
   @media all and (max-width: 1999px) {
