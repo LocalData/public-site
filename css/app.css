@@ -483,7 +483,7 @@ header .b {
   background: url(../img/muncie-map.png) no-repeat center center; }
 
 .health .photo {
-  background: url(../img/bg-field.jpg) no-repeat center center;
+  background: url(../img/bg-people-g.jpg) no-repeat center center;
   background-size: cover; }
 
 .health .community-assessment {
@@ -1100,7 +1100,9 @@ img.press-logo {
   display: inline-block;
   margin: 10px 9% 30px 0px;
   width: 300px;
-  height: 265px;
+  /*
+  height: 565px;
+  */
   /*
   width: 20%;
   margin: 10px 4% 10px 0px;
@@ -1121,10 +1123,6 @@ img.press-logo {
       float: none;
       white-space: normal; } }
 
-.price-item a {
-  display: block;
-  text-align: center; }
-
 .price-title {
   font-size: 20px;
   font-family: "Neuzeit Office W01 Bold", Open Sans, Helvetica, sans-serif;
@@ -1144,8 +1142,32 @@ img.press-logo {
   font-size: 15px;
   display: inline; }
 
-.signup-button {
+.price-main {
+  height: 155px; }
+
+.price-more {
+  height: 480px;
+  display: none;
+  position: relative; }
+
+.price-more li {
+  font-size: 15px; }
+
+.price-more p {
   position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px; }
+
+.price-more.short {
+  height: 360px; }
+
+.price-less-link {
+  display: none; }
+
+.signup-button {
+  /*
+  position: absolute;
+  */
   bottom: 0px;
   display: block;
   margin-top: 1em;
