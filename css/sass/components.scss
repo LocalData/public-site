@@ -351,13 +351,16 @@ h1.case {
 }
 
 .health .dashboard {
-  height: 530px;
+  height: 330px;
   width: 708px;
+  margin: -20px auto 0px auto;
 
   position: static;
   background: transparent url(../img/dashboard.png) no-repeat center center;
+  /*
   background-size: auto 60%;
-  margin-top: -20px;
+  */
+  background-size: contain;
 
   @media all and (max-width: 1999px) {
     width: 500px;
@@ -758,7 +761,7 @@ img.press-logo {
   position: relative;
   float: left;
   display: inline-block;
-  margin: 10px 9% 10px 0px;
+  margin: 10px 9% 30px 0px;
   width: 300px;
   height: 265px;
   /*
@@ -831,9 +834,8 @@ img.press-logo {
 }
 
 .signup-button:hover {
-  border-color: #daedff;
   background: #daedff;
-  color: $body-accent;
+  color: $blue;
 }
 
 .signup-button.signup-enterprise {
@@ -841,8 +843,8 @@ img.press-logo {
   background: $orange;
 }
 .signup-button.signup-enterprise:hover {
-  border-color: #ffedc7;
   background: #ffedc7;
+  color: $orange;
 }
 
 .health .callout {
