@@ -1,0 +1,67 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html title="Get started with LocalData" %}
+  <body class="leads">
+    <header class="out">
+
+      <div class="photo" style="min-height:951px;">
+        <div class="a">
+          <h1 class="logo"><a href=".">LocalData</a></h1>
+        </div>
+      </div>
+
+      <div class="b measureme">
+        <h1 class="case"></h1>
+        <div id="sec-start">
+          <h1>Get started with LocalData</h1>
+
+          <h2>LocalData is currently in private beta. Please enter your e-mail address, and we'll notify you as soon as you can join!</h2>
+        </div>
+
+        <div class="hidden" id="sec-thanks">
+          Thank you! We will get back to you shortly.
+        </div>
+
+        <form action="" id="sec-form">
+            <div class="hidden req" id="req-message">Oops, you're missing some required fields.</div>
+
+            <div class="pair">
+              <div class="single">
+                <label for="form-email">Email<a class="req">*</a></label>
+                <input type="text" name="entry.297203720" id="form-email" data-required="true" placeholder="you@example.com" />
+              </div>
+            </div>
+
+            <input type="hidden" value="" class="hidden" name="entry.1261709070" id="form-tier" />
+            <input type="submit" value="Submit" class="input-submit" id="form-submit" />
+          </form>
+
+
+
+        </form>
+        <iframe id="cm" src="cmbetaform.html" width="0" height="0">
+        </iframe>
+
+      </div>
+    </header>
+
+    {% include footer.html %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34929479-1']);
+      _gaq.push(['_trackPageview'], window.location.pathname + window.location.search + window.location.hash);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

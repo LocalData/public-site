@@ -64,6 +64,26 @@
   background: url(../img/muncie-map.png) no-repeat center center;
 }
 
+.health .photo {
+  background: url(../img/beach.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.health .community-assessment {
+  background: url(../img/community-assessment.png) no-repeat center center;
+  min-height: 400px;
+  background-size: cover;
+}
+.health .bike-study {
+  background: url(../img/bike-study.png) no-repeat center center;
+  min-height: 300px;
+  background-size: cover;
+}
+.health .munciemap {
+  background: url(../img/muncie-map.png) no-repeat center center;
+  min-height: 667px;
+}
+
  /* Boxes ------------------------------------------------------------------- */
 
 .box,
@@ -260,6 +280,103 @@ h1.case {
 
   @media all and (max-width: 768px) {
     width: auto;
+  }
+}
+
+.health .iphone {
+  height: 530px;
+  width: 708px;
+
+  position: absolute;
+  background: transparent url(../img/health-phone.png) no-repeat center center;
+  background-size: auto 100%;
+  margin-top: -20px;
+
+  @media all and (max-width: 1999px) {
+    width: 500px;
+  }
+
+  @media all and (max-width: 1119px) {
+    width: 390px;
+    height: 450px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 300px;
+    height: 425px;
+  }
+
+  @media all and (max-width: 768px) {
+    width: auto;
+  }
+}
+
+.health .body.iphone {
+  position: static;
+}
+
+.health .collection {
+  height: 530px;
+  width: 708px;
+  left: -50px;
+
+  position: relative;
+  background: transparent url(../img/data-collection.png) no-repeat center center;
+  background-size: auto 60%;
+  margin-top: -20px;
+
+  @media all and (max-width: 1999px) {
+    width: 500px;
+    left: -50px;
+  }
+
+  @media all and (max-width: 1119px) {
+    width: 390px;
+    height: 450px;
+    left: -45px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 300px;
+    height: 425px;
+    left: -22px;
+    background-size: auto 60%;
+  }
+
+  @media all and (max-width: 768px) {
+    width: auto;
+    left: -55px;
+    background-size: auto 80%;
+  }
+}
+
+.health .dashboard {
+  height: 530px;
+  width: 708px;
+
+  position: static;
+  background: transparent url(../img/dashboard.png) no-repeat center center;
+  background-size: auto 60%;
+  margin-top: -20px;
+
+  @media all and (max-width: 1999px) {
+    width: 500px;
+  }
+
+  @media all and (max-width: 1119px) {
+    width: 390px;
+    height: 450px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 300px;
+    height: 425px;
+    background-size: auto 60%;
+  }
+
+  @media all and (max-width: 768px) {
+    width: auto;
+    background-size: auto 80%;
   }
 }
 
@@ -464,6 +581,34 @@ header .spacer {
   height: 70px;
 }
 
+.partner-list .partner-item {
+  display: block;
+  height: 70px;
+  margin: auto;
+  padding: 0px;
+}
+.partner-list .partner-item.big {
+  height: 120px;
+}
+
+.partner-list img.partner-logo {
+  display: block;
+  max-width: 500px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.partner-list .big img.partner-logo {
+  height: 100px;
+}
+
+.partner-list .partner-item a {
+  display: block;
+}
+
 .partners {
   :first-child {
     padding-left: 0;
@@ -599,6 +744,114 @@ img.press-logo {
   padding-top: 0px;
 }
 
+/* Pricing ------------------------------------------------------------------ */
+.price-box {
+  overflow: auto;
+  padding-bottom: 50px;
+
+  @media all and (max-width: 768px) {
+    white-space: nowrap;
+  }
+}
+
+.price-item {
+  position: relative;
+  float: left;
+  display: inline-block;
+  margin: 10px 9% 10px 0px;
+  width: 300px;
+  height: 265px;
+  /*
+  width: 20%;
+  margin: 10px 4% 10px 0px;
+  width: 25%;
+  */
+  font-size: 17px;
+
+  @media all and (max-width: 768px) {
+    position: static;
+    height: auto;
+    width: 80%;
+    display: block;
+    margin: 20px 4%;
+    *display:inline;/* For IE7*/
+    *zoom:1;/* For IE7*/
+    float: none;
+    white-space: normal;
+  }
+}
+
+.price-item a {
+  display: block;
+  text-align: center;
+}
+
+.price-title {
+  font-size: 20px;
+  font-family: $bold;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: #ffad00;
+  margin-bottom: 10px;
+}
+
+.price-item .number {
+  font-size: 32px;
+  font-family: $bold;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.price-item .time {
+  font-size: 15px;
+  display: inline;
+}
+
+.signup-button {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  margin-top: 1em;
+  cursor: pointer;
+  border: 6px solid #58aeff;
+  font-family: $bold;
+  height: auto;
+  width: 120px;
+  background: $blue;
+
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: 62px;
+  @media all and (max-width: 768px) {
+    position: static;
+  }
+}
+
+.signup-button:hover {
+  border-color: #daedff;
+  background: #daedff;
+  color: $body-accent;
+}
+
+.signup-button.signup-enterprise {
+  border-color: $orange;
+  background: $orange;
+}
+.signup-button.signup-enterprise:hover {
+  border-color: #ffedc7;
+  background: #ffedc7;
+}
+
+.health .callout {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: $bold;
+  color: $blue;
+}
 
 /* Signup ------------------------------------------------------------------- */
 
