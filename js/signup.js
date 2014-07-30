@@ -63,6 +63,6 @@ $(document).ready(function () {
     });
 
     // Record an analytics event
-    _gaq.push(['_trackEvent', 'ltsignup', 'submit']);
+    _gaq.push(['_trackEvent', 'ltsignup', 'submit', tier]);
   });
 });
