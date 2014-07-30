@@ -307,7 +307,7 @@ body {
     .b.demoback {
       width: 354px; } }
 
-.a.short {
+.a.short, .b.short {
   padding-bottom: 0px; }
 
 .text .a {
@@ -486,19 +486,28 @@ header .b {
   background: url(../img/bg-people-g.jpg) no-repeat center center;
   background-size: cover; }
 
-.health .community-assessment {
+.health .community-assessment, .nonprofit .community-assessment {
   background: url(../img/community-assessment.png) no-repeat center center;
   min-height: 400px;
   background-size: cover; }
 
-.health .bike-study {
+.health .bike-study, .nonprofit .bike-study {
   background: url(../img/bike-study.png) no-repeat center center;
   min-height: 300px;
   background-size: cover; }
 
-.health .munciemap {
+.health .munciemap, .nonprofit .munciemap {
   background: url(../img/muncie-map.png) no-repeat center center;
   min-height: 667px; }
+
+.nonprofit .quito {
+  background: url(../img/quito.jpg) no-repeat center center;
+  min-height: 300px;
+  background-size: cover; }
+
+.nonprofit .photo {
+  background: url(../img/bg-people-g.jpg) no-repeat center center;
+  background-size: cover; }
 
 /* Boxes ------------------------------------------------------------------- */
 .box,
@@ -665,7 +674,7 @@ h1.case {
     .home .iphone {
       width: auto; } }
 
-.health .iphone {
+.health .iphone, .nonprofit .iphone {
   height: 530px;
   width: 708px;
   position: absolute;
@@ -673,19 +682,23 @@ h1.case {
   background-size: auto 100%;
   margin-top: -20px; }
   @media all and (max-width: 1999px) {
-    .health .iphone {
+    .health .iphone, .nonprofit .iphone {
       width: 500px; } }
   @media all and (max-width: 1119px) {
-    .health .iphone {
+    .health .iphone, .nonprofit .iphone {
       width: 390px;
       height: 450px; } }
   @media all and (max-width: 899px) {
-    .health .iphone {
+    .health .iphone, .nonprofit .iphone {
       width: 300px;
       height: 425px; } }
   @media all and (max-width: 768px) {
-    .health .iphone {
+    .health .iphone, .nonprofit .iphone {
       width: auto; } }
+
+.nonprofit .iphone {
+  background: transparent url(../img/nonprofit-phone.png) no-repeat center center;
+  background-size: auto 100%; }
 
 .health .body.iphone {
   position: static; }
@@ -719,6 +732,32 @@ h1.case {
       left: -55px;
       background-size: auto 80%; } }
 
+.nonprofit .collection {
+  background: transparent url(../img/nonprofit-collection.png) no-repeat center center;
+  background-size: contain;
+  left: 0px;
+  width: 708px;
+  height: 516px;
+  position: relative; }
+  @media all and (max-width: 1999px) {
+    .nonprofit .collection {
+      width: 500px;
+      height: 364px; } }
+  @media all and (max-width: 1119px) {
+    .nonprofit .collection {
+      width: 390px;
+      height: 429px;
+      left: 15px; } }
+  @media all and (max-width: 899px) {
+    .nonprofit .collection {
+      width: 300px;
+      height: 452px;
+      left: 5px; } }
+  @media all and (max-width: 768px) {
+    .nonprofit .collection {
+      width: auto;
+      height: 400px; } }
+
 .health .dashboard {
   height: 330px;
   width: 708px;
@@ -745,6 +784,46 @@ h1.case {
     .health .dashboard {
       width: auto;
       background-size: auto 80%; } }
+
+.nonprofit .step {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+  min-height: 400px;
+  margin-bottom: 20px;
+  */
+  height: 700px;
+  width: 700px;
+  padding-top: 0px; }
+  @media all and (max-width: 1999px) {
+    .nonprofit .step {
+      width: 500px;
+      height: 500px; } }
+  @media all and (max-width: 1119px) {
+    .nonprofit .step {
+      width: 400px;
+      height: 400px; } }
+  @media all and (max-width: 899px) {
+    .nonprofit .step {
+      width: 300px;
+      height: 300px; } }
+  @media all and (max-width: 768px) {
+    .nonprofit .step {
+      width: auto; } }
+
+.nonprofit .step1 {
+  background-image: url(../img/step1.png); }
+
+.nonprofit .step2 {
+  background-image: url(../img/step2.png); }
+
+.nonprofit .step3 {
+  background-image: url(../img/step3.png); }
+
+.nonprofit .step4 {
+  background-image: url(../img/step4.png); }
 
 .home .graphs {
   clear: both;
