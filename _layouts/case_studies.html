@@ -25,7 +25,7 @@
               <ul>
                 {% for name in site.cases %}
                   {% for case in site.pages %}
-                    {% if case.name == name %}
+                    {% if case.name contains name %}
                       <li {% if case.name == page.name %} class="selected" {% endif %}><a href="{{ case.name }}">{{ case.linkTitle }}</a></li>
                     {% endif %}
                   {% endfor %}
