@@ -126,3 +126,10 @@ blockquote {
   margin-left: 20px;
   color: $body-accent;
 }
+
+.show-for-phone {
+   display: none;
+   @media screen and (max-width: 768px) {
+    display:inline-block
+  }
+}

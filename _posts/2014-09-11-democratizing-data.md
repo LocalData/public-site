@@ -8,6 +8,8 @@ image:
     text: Screenshot of LocalData LIVE
 ---
 
+<img src="img/blog/ldlive.png" style="width:100%;" class="show-for-phone">
+
 Today marks the beginning of an exciting future at LocalData and the end of an incredible five months spent at the Matter.vc Accelerator program in San Francisco. We are privileged and proud to be members of a growing Matter community -- full to the brim with innovative minds, leadership and a growing movement of entrepreneurs who care about using technology for social good.
 
 We began our journey back at Code for America in 2012, practicing human centered design and rapid prototyping to design and deploy lightweight technology in city government. From there, our firm set out to create simple, powerful tools for the democratization of data through digital collection and map-based exploration. We have built ways for community-based organizations, governments and professionals to take advantage of dynamic data previously only available to those with the highest level of technical expertise.
