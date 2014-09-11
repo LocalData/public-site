@@ -18,6 +18,6 @@ We have worked with hundreds of users and are live today in 25 cities. We are pl
 
 ### Better data makes better cities.
 
-**Today we launch a beta version of LocalData LIVE, a new way to aggregate, layer and filter down diverse datasets online.** Moving beyond conventionally available datasets, LocalData hosts and filters all kinds of data-- from social media to Census and geospatial data. LocalData makes it easy to access information quickly with an intuitive map-based user interface.
+**Today we launch a beta version of LocalData LIVE, a new way to aggregate, layer and filter diverse datasets online.** Moving beyond conventionally available datasets, LocalData hosts and filters all kinds of data-- from social media to Census and geospatial data. LocalData makes it easy to access information quickly with an intuitive map-based user interface.
 
 Contact us for more information or to become a beta user at [info@localdata.com](mailto:info@localdata.com)
