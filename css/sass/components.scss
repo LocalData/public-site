@@ -1060,3 +1060,21 @@ form .hidden {
 .attrib {
   font-size: 11px;
 }
+
+
+/* Photo attribution -------------------------------------------------------- */
+.documentation .subnav {
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+
+  a,
+  a:visited {
+    margin: 0;
+    padding: 15px 10px 15px 0;
+    border-bottom: 5px solid #fff;
+    display: block;
+  }
+}

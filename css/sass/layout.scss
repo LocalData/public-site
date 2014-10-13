@@ -181,6 +181,38 @@ body {
   @media all and (max-width: 899px) {
     width: 204px;
   }
+}
+
+
+.documentation .a {
+  width: 200px;
+  @media all and (max-width: 1999px) {
+    width: 200px;
+  }
+
+  @media all and (max-width: 1119px) {
+    width: 200px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 200px;
+  }
+}
+
+.documentation .b {
+  width: 1116px;
+  @media all and (max-width: 1999px) {
+    width: 800px;
+  }
+
+  @media all and (max-width: 1119px) {
+    margin-right: 30px;
+    width: 575px;
+  }
+
+  @media all and (max-width: 899px) {
+    width: 414px;
+  }
 
 }
 

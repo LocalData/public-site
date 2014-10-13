@@ -189,7 +189,7 @@ blockquote {
 
 .show-for-phone {
   display: none; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .show-for-phone {
       display: inline-block; } }
 
@@ -339,6 +339,31 @@ body {
   @media all and (max-width: 899px) {
     .text .b {
       width: 204px; } }
+
+.documentation .a {
+  width: 200px; }
+  @media all and (max-width: 1999px) {
+    .documentation .a {
+      width: 200px; } }
+  @media all and (max-width: 1119px) {
+    .documentation .a {
+      width: 200px; } }
+  @media all and (max-width: 899px) {
+    .documentation .a {
+      width: 200px; } }
+
+.documentation .b {
+  width: 1116px; }
+  @media all and (max-width: 1999px) {
+    .documentation .b {
+      width: 800px; } }
+  @media all and (max-width: 1119px) {
+    .documentation .b {
+      margin-right: 30px;
+      width: 575px; } }
+  @media all and (max-width: 899px) {
+    .documentation .b {
+      width: 414px; } }
 
 .contrast {
   background: #fcf5f0; }
@@ -1355,5 +1380,17 @@ form .hidden {
 /* Photo attribution -------------------------------------------------------- */
 .attrib {
   font-size: 11px; }
+
+/* Photo attribution -------------------------------------------------------- */
+.documentation .subnav {
+  padding: 0; }
+  .documentation .subnav li {
+    list-style: none; }
+  .documentation .subnav a,
+  .documentation .subnav a:visited {
+    margin: 0;
+    padding: 15px 10px 15px 0;
+    border-bottom: 5px solid #fff;
+    display: block; }
 
 /*# sourceMappingURL=app.css.map */
