@@ -175,11 +175,11 @@ body {
 
   @media all and (max-width: 1119px) {
     margin-right: 30px;
-    width: 250px;
   }
 
   @media all and (max-width: 899px) {
-    width: 204px;
+    width: auto;
+    min-width: 204px;
   }
 
 }
