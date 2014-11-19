@@ -95,7 +95,7 @@ $(document).ready(function () {
       //console.log("done");
 
       $('#sec-form').hide(500, function () {
-        window.scrollTo(0, $('.text').position().top);
+        window.scrollTo(0, $('.measureme').position().top);
         $('#sec-start').hide();
         $('#sec-thanks').show(600);
       });
